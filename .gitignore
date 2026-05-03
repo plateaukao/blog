@@ -1,0 +1,13 @@
+public/
+resources/
+.hugo_build.lock
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+
+# OS / editor
+.DS_Store
+.idea/
+.vscode/

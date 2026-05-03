@@ -1,0 +1,60 @@
+baseURL = "https://plateaukao.github.io/blog/"
+languageCode = "en-us"
+title = "Daniel Kao"
+theme = "PaperMod"
+enableRobotsTXT = true
+buildDrafts = false
+hasCJKLanguage = true
+canonifyURLs = true
+
+[pagination]
+  pagerSize = 10
+
+[params]
+  defaultTheme = "auto"
+  ShowReadingTime = true
+  ShowShareButtons = false
+  ShowPostNavLinks = true
+  ShowCodeCopyButtons = true
+  ShowToc = true
+  TocOpen = false
+  ShowBreadCrumbs = true
+
+[params.homeInfoParams]
+  Title = "Daniel Kao"
+  Content = "Notes on Android, Flutter, and tinkering — mirror of medium.com/@danielkao."
+
+[[params.socialIcons]]
+  name = "github"
+  url = "https://github.com/plateaukao"
+
+[[params.socialIcons]]
+  name = "twitter"
+  url = "https://twitter.com/plateau"
+
+[[params.socialIcons]]
+  name = "rss"
+  url = "/index.xml"
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+
+[markup.goldmark.renderer]
+  unsafe = true
+
+[markup.highlight]
+  noClasses = false
+  codeFences = true
+  guessSyntax = true
+
+[[menu.main]]
+  identifier = "archive"
+  name = "Archive"
+  url = "/archives/"
+  weight = 10
+
+[[menu.main]]
+  identifier = "search"
+  name = "Search"
+  url = "/search/"
+  weight = 20
