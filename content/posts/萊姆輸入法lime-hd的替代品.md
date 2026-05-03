@@ -5,6 +5,7 @@ description = "前不久得知，在 Google Play Store 上的萊姆輸入法 (Li
 slug = "萊姆輸入法lime-hd的替代品"
 canonicalURL = "https://medium.com/@danielkao/%E8%90%8A%E5%A7%86%E8%BC%B8%E5%85%A5%E6%B3%95-lime-hd-%E7%9A%84%E6%9B%BF%E4%BB%A3%E5%93%81-3d3a7e8ce234"
 mediumID = "3d3a7e8ce234"
+tags = ["電子書閱讀器"]
 +++
 
 前不久得知，在 Google Play Store 上的萊姆輸入法 (Lime HD) 被下架了。剛好前一陣子因為想要讓萊姆輸入法可以在 Android 平台的電子書閱讀器上有更好的 UI 呈現方式，所以有從萊姆輸入法在 Github 上的 repository 那兒 fork 了一份程式碼來做適度的修改。詳情可以看我上一篇文章：

@@ -5,6 +5,7 @@ description = "如何建立一個 Android Custom View，讓畫面中的兩個 Vi
 slug = "android-中可以調整畫面大小的雙視窗畫面twopanelayout-einkbro-12"
 canonicalURL = "https://medium.com/@danielkao/android-%E4%B8%AD%E5%8F%AF%E4%BB%A5%E8%AA%BF%E6%95%B4%E7%95%AB%E9%9D%A2%E5%A4%A7%E5%B0%8F%E7%9A%84%E9%9B%99%E8%A6%96%E7%AA%97%E7%95%AB%E9%9D%A2-twopanelayout-einkbro-12-5db7795ccf48"
 mediumID = "5db7795ccf48"
+tags = ["EinkBro"]
 +++
 
 ![](/images/5db7795ccf48/1_2DXukqc4AXSXmuOSfVMDNw.png)

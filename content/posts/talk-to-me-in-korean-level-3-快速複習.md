@@ -5,6 +5,7 @@ description = "第一課 너무 太多、非常"
 slug = "talk-to-me-in-korean-level-3-快速複習"
 canonicalURL = "https://medium.com/@danielkao/talk-to-me-in-korean-level-3-%E5%BF%AB%E9%80%9F%E8%A4%87%E7%BF%92-62b71fa21800"
 mediumID = "62b71fa21800"
+tags = ["韓語學習筆記"]
 +++
 
 ![](/images/62b71fa21800/1_H1B1vfMtAVl-AiA9sW0DpQ.png)

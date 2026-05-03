@@ -5,6 +5,7 @@ description = "趁著去日本旅遊的機會，順便去有樂町逛了一下Bi
 slug = "kindle-scribe-的使用感想"
 canonicalURL = "https://medium.com/@danielkao/kindle-scribe-%E7%9A%84%E4%BD%BF%E7%94%A8%E6%84%9F%E6%83%B3-be3cb1e0fb03"
 mediumID = "be3cb1e0fb03"
+tags = ["電子書閱讀器"]
 +++
 
 ![](/images/be3cb1e0fb03/1_k53Py5g-MX1eWqLs3ah7mQ.png)

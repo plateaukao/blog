@@ -5,6 +5,7 @@ description = "買來這台漢王的Clear 7 Turbo 已經幾週了。到目前為
 slug = "漢王-clear-7-turbo"
 canonicalURL = "https://medium.com/@danielkao/%E6%BC%A2%E7%8E%8B-clear-7-turbo-326563ec4d39"
 mediumID = "326563ec4d39"
+tags = ["電子書閱讀器"]
 +++
 
 買來這台漢王的Clear 7 Turbo 已經幾週了。到目前為止，還算是滿意。比類似的掌閱產品線來說，漢王帶給我的可用性更高。以下就是我很個人的使用心得分享。

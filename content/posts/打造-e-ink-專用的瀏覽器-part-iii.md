@@ -5,6 +5,7 @@ description = "離 Part II 文章完成竟然快要一年了！我們在 Part II
 slug = "打造-e-ink-專用的瀏覽器-part-iii"
 canonicalURL = "https://medium.com/@danielkao/%E6%89%93%E9%80%A0-e-ink-%E5%B0%88%E7%94%A8%E7%9A%84%E7%80%8F%E8%A6%BD%E5%99%A8-part-iii-5b0528220252"
 mediumID = "5b0528220252"
+tags = ["EinkBro"]
 +++
 
 ### 打造 E-ink 專用的瀏覽器 (III): 支援 VI 快速鍵

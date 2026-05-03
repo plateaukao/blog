@@ -5,6 +5,7 @@ description = "兩三年前，透過很簡單的 css style 設定，讓 EinkBro 
 slug = "改善-einkbro-中的直排閱讀體驗"
 canonicalURL = "https://medium.com/@danielkao/%E6%94%B9%E5%96%84-einkbro-%E4%B8%AD%E7%9A%84%E7%9B%B4%E6%8E%92%E9%96%B1%E8%AE%80%E9%AB%94%E9%A9%97-c437b39f68e4"
 mediumID = "c437b39f68e4"
+tags = ["EinkBro"]
 +++
 
 ![](/images/c437b39f68e4/1_NmMNQIxxgNlaIUpfJgbXuw.png)

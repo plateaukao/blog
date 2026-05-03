@@ -5,6 +5,7 @@ description = "這篇文章將講解怎麼在 EinkBro 中利用攔截 http reque
 slug = "在-einkbro-中支援-youtube-影片的雙語字幕"
 canonicalURL = "https://medium.com/@danielkao/%E5%9C%A8-einkbro-%E4%B8%AD%E6%94%AF%E6%8F%B4-youtube-%E5%BD%B1%E7%89%87%E7%9A%84%E9%9B%99%E8%AA%9E%E5%AD%97%E5%B9%95-106d2b688cba"
 mediumID = "106d2b688cba"
+tags = ["EinkBro"]
 +++
 
 這篇文章將講解怎麼在 EinkBro 中利用攔截 http request，將 Youtube 影片在呈現字幕時，能夠順便顯示第二種外語字幕。

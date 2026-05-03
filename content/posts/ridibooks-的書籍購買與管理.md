@@ -5,6 +5,7 @@ description = "本文記錄了怎麼在 Ridibooks 上購買韓文書籍，以及
 slug = "ridibooks-的書籍購買與管理"
 canonicalURL = "https://medium.com/@danielkao/ridobooks-%E7%9A%84%E6%9B%B8%E7%B1%8D%E8%B3%BC%E8%B2%B7%E8%88%87%E7%AE%A1%E7%90%86-388d197e5fc2"
 mediumID = "388d197e5fc2"
+tags = ["韓語學習筆記"]
 +++
 
 本文記錄了怎麼在 Ridibooks 上購買韓文書籍，以及事後的書籍管理方式。

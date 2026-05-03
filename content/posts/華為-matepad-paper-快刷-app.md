@@ -5,6 +5,7 @@ description = "我的 matepad paper 復活了！"
 slug = "華為-matepad-paper-快刷-app"
 canonicalURL = "https://medium.com/@danielkao/%E8%8F%AF%E7%82%BA-matepad-paper-%E5%BF%AB%E5%88%B7-app-0641e4ddda3b"
 mediumID = "0641e4ddda3b"
+tags = ["電子書閱讀器"]
 +++
 
 ### 我的 matepad paper 復活了！

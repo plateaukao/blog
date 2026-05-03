@@ -5,6 +5,7 @@ description = "As the CPU power getting stronger and stronger, and screen refres
 slug = "web-browser-for-android-e-ink-devices"
 canonicalURL = "https://medium.com/@danielkao/web-browser-for-android-e-ink-devices-c78b680edf98"
 mediumID = "c78b680edf98"
+tags = ["EinkBro"]
 +++
 
 ### Web Browser for Android E Ink Devices (EinkBro)

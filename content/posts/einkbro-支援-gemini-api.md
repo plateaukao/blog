@@ -5,6 +5,7 @@ description = "Google 在 Google IO 2024 公布了 Gemini 1.5 Flash model，並�
 slug = "einkbro-支援-gemini-api"
 canonicalURL = "https://medium.com/@danielkao/einkbro-gemini-10d5daf135e3"
 mediumID = "10d5daf135e3"
+tags = ["EinkBro"]
 +++
 
 ![](/images/10d5daf135e3/1_mf0rksDlW76GwWX8qbwMtg.png)

@@ -5,6 +5,7 @@ description = "這篇文章會來說說2023年4月多就拿到手的Pubook，這
 slug = "pubook電子書閱讀器的使用心得"
 canonicalURL = "https://medium.com/@danielkao/pubook%E9%9B%BB%E5%AD%90%E6%9B%B8%E9%96%B1%E8%AE%80%E5%99%A8%E7%9A%84%E4%BD%BF%E7%94%A8%E5%BF%83%E5%BE%97-cca916ab4265"
 mediumID = "cca916ab4265"
+tags = ["電子書閱讀器"]
 +++
 
 ![](/images/cca916ab4265/1_3THIEyB_FALTXV6BsgRMGA.png)

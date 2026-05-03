@@ -5,6 +5,7 @@ description = "這篇文章將分享在 KOReader 中怎麼修改 epub 中的 css
 slug = "讓-koreader-再次偉大"
 canonicalURL = "https://medium.com/@danielkao/%E8%AE%93-koreader-%E5%86%8D%E6%AC%A1%E5%81%89%E5%A4%A7-051daa010ef0"
 mediumID = "051daa010ef0"
+tags = ["電子書閱讀器"]
 +++
 
 > 這篇文章將分享在 KOReader 中怎麼修改 epub 中的 css style，讓閱讀體驗可以有更多樣的應用場景。

@@ -5,6 +5,7 @@ description = "A long opened issue for EinkBro states that after creating new ba
 slug = "differences-between-onpause-and-pausetimers-for-android-webview"
 canonicalURL = "https://medium.com/@danielkao/differences-between-onpause-and-pausetimers-for-android-webview-230759d0d092"
 mediumID = "230759d0d092"
+tags = ["EinkBro"]
 +++
 
 [A long opened issue for EinkBro](https://github.com/plateaukao/einkbro/issues/171) states that after creating new background tab, it’s not possible to continue certain behaviors normally (e.g., modify query string, or load more content, etc in Google, and Twitter website).

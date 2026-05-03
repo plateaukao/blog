@@ -5,6 +5,7 @@ description = "其實應該也沒有什麼心得可以寫的，因為在購買 B
 slug = "文石-boox-go-6-白色版開箱心得"
 canonicalURL = "https://medium.com/@danielkao/%E6%96%87%E7%9F%B3-boox-go-6-%E7%99%BD%E8%89%B2%E7%89%88%E9%96%8B%E7%AE%B1%E5%BF%83%E5%BE%97-ff01452635be"
 mediumID = "ff01452635be"
+tags = ["電子書閱讀器"]
 +++
 
 其實應該也沒有什麼心得可以寫的，因為在購買 BOOX Go 6 白色版之前，我已經有同樣尺寸的 Poke 4s，以及也是前一陣子推出的 BOOX Go 7 Color 白色版。

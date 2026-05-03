@@ -5,6 +5,7 @@ description = "用文石閱讀器內建的 neo reader 來看 pdf 格式的書籍
 slug = "文石onyx-boox-電子書閱讀器的字型設定小技巧"
 canonicalURL = "https://medium.com/@danielkao/%E6%96%87%E7%9F%B3-onyx-boox-%E9%9B%BB%E5%AD%90%E6%9B%B8%E9%96%B1%E8%AE%80%E5%99%A8%E7%9A%84%E5%AD%97%E5%9E%8B%E8%A8%AD%E5%AE%9A%E5%B0%8F%E6%8A%80%E5%B7%A7-5867bc9ed588"
 mediumID = "5867bc9ed588"
+tags = ["電子書閱讀器"]
 +++
 
 用文石閱讀器內建的 neo reader 來看 pdf 格式的書籍，堪稱是目前閱讀器中功能最強的(可以自行裁邊，一頁分多區塊閱讀，加強畫面對比度，去除背景浮水印，變成流式方式閱讀等等)；但是用來閱讀最常見的 epub 格式電子書時，還是有些不夠完美的地方。其中一點是，一直到 v3.2.1 之前，都還無法將書籍改為直排閱讀。以中文書的閱讀習慣，我個人相當偏好直排閱讀。無奈之下，平常要做大量閱讀時，還是會改用博閱的 Likebook Mars ，Likebook Mars 的直排閱讀就做得很好。

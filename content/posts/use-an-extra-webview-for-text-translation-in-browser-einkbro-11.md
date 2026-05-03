@@ -5,6 +5,7 @@ description = "Why is this necessary"
 slug = "use-an-extra-webview-for-text-translation-in-browser-einkbro-11"
 canonicalURL = "https://medium.com/@danielkao/use-an-extra-webview-for-text-translation-in-browser-einkbro-11-3813fb663df"
 mediumID = "3813fb663df"
+tags = ["EinkBro"]
 +++
 
 ### Text Translation in Browser by Using an extra WebView: EinkBro (11)

@@ -5,6 +5,7 @@ description = "這篇要來說說怎麼在10 吋的 SONY DPT-CP1 電子書閱讀
 slug = "root-sony-dpt-cp1-並且安裝-koreader-app"
 canonicalURL = "https://medium.com/@danielkao/root-sony-dpt-cp1-%E4%B8%A6%E4%B8%94%E5%AE%89%E8%A3%9D-koreader-app-49a0755df67e"
 mediumID = "49a0755df67e"
+tags = ["電子書閱讀器"]
 +++
 
 ![](/images/49a0755df67e/1_2AIHUr3Cu5T-reEKVFElRg.png)

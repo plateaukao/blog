@@ -5,6 +5,7 @@ description = "這篇文章會整理這一個月來整合 Edge TTS 功能到 Ein
 slug = "整合-edge-tts-文字轉語音"
 canonicalURL = "https://medium.com/@danielkao/%E6%95%B4%E5%90%88-edge-tts-%E6%96%87%E5%AD%97%E8%BD%89%E8%AA%9E%E9%9F%B3-a672964eac10"
 mediumID = "a672964eac10"
+tags = ["EinkBro"]
 +++
 
 這篇文章會整理這一個月來整合 Edge TTS 功能到 EinkBro 中的過程。經過一連串的開發後，總算是把自己想要的功能都開發出來了。
