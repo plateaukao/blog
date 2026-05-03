@@ -50,17 +50,17 @@ canonifyURLs = true
 [[menu.main]]
   identifier = "archive"
   name = "Archive"
-  url = "/archives/"
+  url = "archives/"
   weight = 10
 
 [[menu.main]]
   identifier = "tags"
   name = "Tags"
-  url = "/tags/"
+  url = "tags/"
   weight = 15
 
 [[menu.main]]
   identifier = "search"
   name = "Search"
-  url = "/search/"
+  url = "search/"
   weight = 20
