@@ -1,6 +1,6 @@
 baseURL = "https://plateaukao.github.io/blog/"
 languageCode = "en-us"
-title = "Daniel Kao"
+title = "Daniel @ Nowhere"
 theme = "PaperMod"
 enableRobotsTXT = true
 buildDrafts = false
@@ -21,8 +21,8 @@ canonifyURLs = true
   ShowBreadCrumbs = true
 
 [params.homeInfoParams]
-  Title = "Daniel Kao"
-  Content = "Notes on Android, Flutter, and tinkering — mirror of medium.com/@danielkao."
+  Title = "Daniel @ Nowhere"
+  Content = "Notes on Android, Flutter, and tinkering."
 
 [[params.socialIcons]]
   name = "github"
