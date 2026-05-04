@@ -6,7 +6,10 @@ slug = "購買衝浪滑板-yow-pipe"
 canonicalURL = "https://medium.com/@danielkao/%E8%B3%BC%E8%B2%B7%E8%A1%9D%E6%B5%AA%E6%BB%91%E6%9D%BF-yow-pipe-99679ed85b5e"
 mediumID = "99679ed85b5e"
 tags = ["衝浪滑板二三事"]
+[cover]
+  image = "/images/99679ed85b5e/1_13T4PGQeMvUabfodZUVqaw.jpeg"
 +++
+
 
 ### 購買衝浪滑板 YOW PIPE 32"
 

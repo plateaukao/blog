@@ -6,7 +6,10 @@ slug = "全文翻譯功能再進化-einkbro-13"
 canonicalURL = "https://medium.com/@danielkao/%E5%85%A8%E6%96%87%E7%BF%BB%E8%AD%AF%E5%8A%9F%E8%83%BD%E5%86%8D%E9%80%B2%E5%8C%96-einkbro-13-802683a34e4a"
 mediumID = "802683a34e4a"
 tags = ["EinkBro"]
+[cover]
+  image = "/images/802683a34e4a/1_5XOoKB-hq0-hWSr6TyqfxA.png"
 +++
+
 
 之前在 EinkBro 全文翻譯的作法是：為了要避免丟進翻譯網頁的文字內容充滿太多非本文的部分，會在事前先利用 Reader mode 將網頁內容淨化，然後再把 Reader mode 的內文餵到翻譯網頁中。這樣子雖然可以解決畫面過於淩亂的問題，但畢竟網頁的格式被簡化了，不見得是使用者想要的觀看方式。
 

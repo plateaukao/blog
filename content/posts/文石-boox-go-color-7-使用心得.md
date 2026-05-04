@@ -6,7 +6,10 @@ slug = "文石-boox-go-color-7-使用心得"
 canonicalURL = "https://medium.com/@danielkao/%E6%96%87%E7%9F%B3-boox-go-color-7-50b1f23a053c"
 mediumID = "50b1f23a053c"
 tags = ["電子書閱讀器"]
+[cover]
+  image = "/images/50b1f23a053c/1_mI3hoW5aAE1GHQ2mhrgOLw.png"
 +++
+
 
 ![](/images/50b1f23a053c/1_mI3hoW5aAE1GHQ2mhrgOLw.png)
 

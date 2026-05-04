@@ -6,7 +6,10 @@ slug = "文石-mira-電子紙螢幕的-commandline-調整小工具"
 canonicalURL = "https://medium.com/@danielkao/%E6%96%87%E7%9F%B3-mira-%E9%9B%BB%E5%AD%90%E7%B4%99%E8%9E%A2%E5%B9%95%E7%9A%84-commandline-%E8%AA%BF%E6%95%B4%E5%B0%8F%E5%B7%A5%E5%85%B7-ffcccbc2afce"
 mediumID = "ffcccbc2afce"
 tags = ["電子書閱讀器"]
+[cover]
+  image = "/images/ffcccbc2afce/1_zwTCXXYAh1JkNCp4R3X5ew.png"
 +++
+
 
 ### 文石 Mira 電子紙螢幕的調整小工具
 

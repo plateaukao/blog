@@ -6,7 +6,10 @@ slug = "文石-onyx-nova-3-color-使用心得"
 canonicalURL = "https://medium.com/@danielkao/%E6%96%87%E7%9F%B3-onyx-nova-3-color-%E4%BD%BF%E7%94%A8%E5%BF%83%E5%BE%97-e921801abf46"
 mediumID = "e921801abf46"
 tags = ["電子書閱讀器"]
+[cover]
+  image = "/images/e921801abf46/1_NO77v43Y1Zs2nxM2CRrlHg.png"
 +++
+
 
 ![](/images/e921801abf46/1_NO77v43Y1Zs2nxM2CRrlHg.png)
 

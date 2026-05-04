@@ -5,7 +5,10 @@ description = "Due to the Work From Home policy recently, I need a way to do som
 slug = "table-tennis-practice-tracking-dashboard"
 canonicalURL = "https://medium.com/@danielkao/table-tennis-practice-tracking-dashboard-3c2535037f2b"
 mediumID = "3c2535037f2b"
+[cover]
+  image = "/images/3c2535037f2b/1_nrLYi_jP5EYFTTFJjaqVQg.png"
 +++
+
 
 Due to the Work From Home policy recently, I need a way to do some exercise at home. I bought a 1/4 size table tennis table, and a practice board (red rectangle in the video) to help re-bouncing the ball back. While it works as a way to sweat a bit, it’s not showing how’s the practice performance, and how much time I spent. I would like to have a way to track all the information for each practice, as a reference for later improvement. Moreover, humans like to read numbers. Numbers are magic to motivate people to do something more.
 

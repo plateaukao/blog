@@ -5,7 +5,10 @@ description = "Android 原本內建的 Preference UI 還算方便，只要利用
 slug = "將-android-preference-ui-改寫成-jetpack-compose-ui"
 canonicalURL = "https://medium.com/@danielkao/%E5%B0%87-android-preference-ui-%E6%94%B9%E5%AF%AB%E6%88%90-jetpack-compose-ui-15a8386983a5"
 mediumID = "15a8386983a5"
+[cover]
+  image = "/images/15a8386983a5/1_BxUrzMlGHlDAwxdifPZhwg.png"
 +++
+
 
 Android 原本內建的 Preference UI 還算方便，只要利用 xml 定義好想要的 SharedPreference 項目並指定好相關的標題、描述、key 值，預設值，Android 就可以幫忙建立對應的畫面。
 

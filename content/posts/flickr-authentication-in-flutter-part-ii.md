@@ -5,7 +5,10 @@ description = "Following the steps described in last article, you can have a wor
 slug = "flickr-authentication-in-flutter-part-ii"
 canonicalURL = "https://medium.com/@danielkao/flickr-authentication-in-flutter-part-ii-c06495127f60"
 mediumID = "c06495127f60"
+[cover]
+  image = "/images/c06495127f60/1_pecNyXcm3szOvnyBJH3Xzw.png"
 +++
+
 
 ### Flickr Authentication in Flutter (II)
 

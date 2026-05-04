@@ -6,7 +6,10 @@ slug = "快上加快-einkbro-14"
 canonicalURL = "https://medium.com/@danielkao/%E5%BF%AB%E4%B8%8A%E5%8A%A0%E5%BF%AB-einkbro-14-290ebc6f1d3d"
 mediumID = "290ebc6f1d3d"
 tags = ["EinkBro"]
+[cover]
+  image = "/images/290ebc6f1d3d/1_xX4dqHeSDR48bYNos5EA6g.png"
 +++
+
 
 ### 快上加快 — EinkBro (15)
 

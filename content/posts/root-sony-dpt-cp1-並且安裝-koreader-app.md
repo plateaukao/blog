@@ -6,7 +6,10 @@ slug = "root-sony-dpt-cp1-並且安裝-koreader-app"
 canonicalURL = "https://medium.com/@danielkao/root-sony-dpt-cp1-%E4%B8%A6%E4%B8%94%E5%AE%89%E8%A3%9D-koreader-app-49a0755df67e"
 mediumID = "49a0755df67e"
 tags = ["電子書閱讀器"]
+[cover]
+  image = "/images/49a0755df67e/1_2AIHUr3Cu5T-reEKVFElRg.png"
 +++
+
 
 ![](/images/49a0755df67e/1_2AIHUr3Cu5T-reEKVFElRg.png)
 

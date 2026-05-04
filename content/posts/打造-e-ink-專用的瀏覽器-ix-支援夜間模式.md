@@ -5,7 +5,10 @@ slug = "打造-e-ink-專用的瀏覽器-ix-支援夜間模式"
 canonicalURL = "https://medium.com/@danielkao/%E6%89%93%E9%80%A0-e-ink-%E5%B0%88%E7%94%A8%E7%9A%84%E7%80%8F%E8%A6%BD%E5%99%A8-ix-%E6%94%AF%E6%8F%B4%E5%A4%9C%E9%96%93%E6%A8%A1%E5%BC%8F-4c39c58dac87"
 mediumID = "4c39c58dac87"
 tags = ["EinkBro"]
+[cover]
+  image = "/images/4c39c58dac87/1_9FTUGJSXRiinCihRTfulFg.png"
 +++
+
 
 程式碼寫多了，總是會有技術債要還。剛開始改造 FOSS Browser 時，因為懶，而且為了求快，在把既有的 icon 改成純黑色時，都是直接用 `@android:color/black` 寫死在 xml 中。將各種對話框改成純黑白型式，或是加外框時，也都是直接用上面的黑色色碼。
 

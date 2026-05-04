@@ -5,7 +5,10 @@ description = "內容"
 slug = "電子書雜談draft"
 canonicalURL = "https://medium.com/@danielkao/%E9%9B%BB%E5%AD%90%E6%9B%B8%E9%9B%9C%E8%AB%87-draft-218bf85ff0cd"
 mediumID = "218bf85ff0cd"
+[cover]
+  image = "/images/218bf85ff0cd/1_i-HTu9_SVywkauUC8GNE2w.png"
 +++
+
 
 ### 電子書雜談
 

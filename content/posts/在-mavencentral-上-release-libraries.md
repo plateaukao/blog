@@ -5,7 +5,10 @@ description = "對於 Android  SDK 或 Library 的開發者來說，最近有件
 slug = "在-mavencentral-上-release-libraries"
 canonicalURL = "https://medium.com/@danielkao/%E5%9C%A8-mavencentral-%E4%B8%8A-release-libraries-3928fcede74e"
 mediumID = "3928fcede74e"
+[cover]
+  image = "/images/3928fcede74e/1_kpocjnmzsvnaua5FgP1U4w.png"
 +++
+
 
 對於 Android SDK 或 Library 的開發者來說，最近有件大新聞，JFrog 要 sunset 他們家的 JCenter, GoCenter, ChartCenter 服務了。JCenter 是目前大部分 Android 開發者在發佈函式庫時的主要去處。這項服務即將在明年(2022) 2 月中止，而新的版本發布則是可以到這個月底 (2021/03/31)。
 

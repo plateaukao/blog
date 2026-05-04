@@ -5,7 +5,10 @@ description = "I used to using this plugin for creating android library release 
 slug = "how-to-publish-an-android-library-to-jcenter"
 canonicalURL = "https://medium.com/@danielkao/how-to-publish-an-android-library-to-jcenter-a31231b47241"
 mediumID = "a31231b47241"
+[cover]
+  image = "/images/a31231b47241/1_jYFBXKXr_vrW7Vrb4bF8bQ.jpeg"
 +++
+
 
 ![](/images/a31231b47241/1_jYFBXKXr_vrW7Vrb4bF8bQ.jpeg)
 

@@ -5,7 +5,10 @@ description = "It’s common that an android developer is working on several pro
 slug = "extract-translated-strings-in-android-project"
 canonicalURL = "https://medium.com/@danielkao/extract-translated-strings-in-android-project-adef05165e23"
 mediumID = "adef05165e23"
+[cover]
+  image = "/images/adef05165e23/1_bXZwCYedjvXKLs0P9qPQwg.png"
 +++
+
 
 ![](/images/adef05165e23/1_bXZwCYedjvXKLs0P9qPQwg.png)
 *Hakone.Japan*

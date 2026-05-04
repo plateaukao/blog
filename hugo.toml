@@ -12,6 +12,13 @@ canonifyURLs = true
 
 [params]
   defaultTheme = "auto"
+  # Listing layout: "full" | "thumb-left" | "thumb-right"
+  listStyle = "full"
+
+[params.cover]
+  # Cover already appears as the first inline image in the body, so hide
+  # the dedicated cover figure on the single-post page.
+  hiddenInSingle = true
   ShowReadingTime = true
   ShowShareButtons = false
   ShowPostNavLinks = true

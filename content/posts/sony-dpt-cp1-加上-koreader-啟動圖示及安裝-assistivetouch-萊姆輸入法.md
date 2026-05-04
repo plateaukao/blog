@@ -6,7 +6,10 @@ slug = "sony-dpt-cp1-加上-koreader-啟動圖示及安裝-assistivetouch-萊姆
 canonicalURL = "https://medium.com/@danielkao/sony-dpt-cp1-%E5%8A%A0%E4%B8%8A-koreader-%E5%95%9F%E5%8B%95%E5%9C%96%E7%A4%BA%E5%8F%8A%E5%AE%89%E8%A3%9D-assistivetouch-%E8%90%8A%E5%A7%86%E8%BC%B8%E5%85%A5%E6%B3%95-3fea512ed890"
 mediumID = "3fea512ed890"
 tags = ["電子書閱讀器"]
+[cover]
+  image = "/images/3fea512ed890/1_eggxpN7QAmHDunKlGw3iSQ.png"
 +++
+
 
 ![](/images/3fea512ed890/1_eggxpN7QAmHDunKlGw3iSQ.png)
 

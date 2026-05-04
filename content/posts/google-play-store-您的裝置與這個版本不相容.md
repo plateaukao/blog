@@ -6,7 +6,10 @@ slug = "google-play-store-您的裝置與這個版本不相容"
 canonicalURL = "https://medium.com/@danielkao/google-play-store-%E6%82%A8%E7%9A%84%E8%A3%9D%E7%BD%AE%E8%88%87%E9%80%99%E5%80%8B%E7%89%88%E6%9C%AC%E4%B8%8D%E7%9B%B8%E5%AE%B9-11a8a3bbccdb"
 mediumID = "11a8a3bbccdb"
 tags = ["EinkBro"]
+[cover]
+  image = "/images/11a8a3bbccdb/1_3B8bWSRpmnViR5E35PGvug.png"
 +++
+
 
 這也是老毛病了。三不五時會有使用者反應，雖然在 Google Play Store 中可以找到 EinkBro，但想要下載時，畫面上卻顯示 “您的裝置與這個版本不相容”。由於之前我也沒認真去研究為什麼會發生，所以通常解決方式都是：請使用者上 Github 網站，直接下載 apk 來安裝或是去 f-droid 上安裝。
 

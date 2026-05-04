@@ -6,7 +6,10 @@ slug = "華為-p20-pro-拍照心得-ii-望遠鏡頭"
 canonicalURL = "https://medium.com/@danielkao/%E8%8F%AF%E7%82%BA-p20-pro-%E6%8B%8D%E7%85%A7%E5%BF%83%E5%BE%97-ii-%E6%9C%9B%E9%81%A0%E9%8F%A1%E9%A0%AD-faa69f5ef77d"
 mediumID = "faa69f5ef77d"
 tags = ["邊跑邊拍"]
+[cover]
+  image = "/images/faa69f5ef77d/1_Sz6T1n2PC0mtyKJ0beQS3A.jpeg"
 +++
+
 
 這支手機多了一個望遠的鏡頭，雖然像素比較低，畫質也沒有主要鏡頭好，但是跟一般只能拍標準視角的眾多手機比起來，就像是多了一雙能飛但飛不高的翅膀，稍微能帶你看看不太一樣的世界。
 

@@ -5,7 +5,10 @@ description = "最近剛拿到 M1 Mac Mini 最基本規格(8GB RAM/256GB SSD)的
 slug = "在-m1-mac-mini-上開發-android-app"
 canonicalURL = "https://medium.com/@danielkao/%E5%9C%A8-m1-mac-mini-%E4%B8%8A%E9%96%8B%E7%99%BC-android-app-acf835681671"
 mediumID = "acf835681671"
+[cover]
+  image = "/images/acf835681671/1_lezW1YgmFDsQFH7P6xmZfw.png"
 +++
+
 
 最近剛拿到 M1 Mac Mini 最基本規格(8GB RAM/256GB SSD)的機器，開始嘗試要用它來開發，所以會這兒記錄有哪些需要注意的地方。(持續更新中)
 

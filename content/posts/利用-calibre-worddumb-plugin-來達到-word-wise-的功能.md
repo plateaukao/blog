@@ -6,7 +6,10 @@ slug = "利用-calibre-worddumb-plugin-來達到-word-wise-的功能"
 canonicalURL = "https://medium.com/@danielkao/%E5%88%A9%E7%94%A8-calibre-worddumb-plugin-%E4%BE%86%E9%81%94%E5%88%B0-word-wise-%E7%9A%84%E5%8A%9F%E8%83%BD-6c21d93ccae0"
 mediumID = "6c21d93ccae0"
 tags = ["電子書閱讀器"]
+[cover]
+  image = "/images/6c21d93ccae0/0_EOA12nxOnzg6uYEZ.png"
 +++
+
 
 ### 大綱
 

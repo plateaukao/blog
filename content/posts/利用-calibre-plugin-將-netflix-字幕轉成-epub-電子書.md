@@ -6,7 +6,10 @@ slug = "利用-calibre-plugin-將-netflix-字幕轉成-epub-電子書"
 canonicalURL = "https://medium.com/@danielkao/%E5%88%A9%E7%94%A8-calibre-plugin-%E5%B0%87-netflix-%E5%AD%97%E5%B9%95%E8%BD%89%E6%88%90-epub-%E9%9B%BB%E5%AD%90%E6%9B%B8-fb1401bc2584"
 mediumID = "fb1401bc2584"
 tags = ["電子書閱讀器"]
+[cover]
+  image = "/images/fb1401bc2584/1_Q_PXc2w-IZEMNV8-86zNqw.png"
 +++
+
 
 在前一篇文章中有提到怎麼將從 Netflix 下載下來的字幕轉成電子書(請看文章最下方連結)，不過流程很複雜，而且還有許多要打指令的地方。這一篇則是要介紹如何藉由 Calibre Plugin 來達到同樣的目的。
 

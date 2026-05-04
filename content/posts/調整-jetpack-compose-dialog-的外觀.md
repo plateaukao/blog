@@ -5,7 +5,10 @@ description = "這篇文章將說明怎麼實作 Jetpack Compose Dialog，讓它
 slug = "調整-jetpack-compose-dialog-的外觀"
 canonicalURL = "https://medium.com/@danielkao/%E8%AA%BF%E6%95%B4-jetpack-compose-dialog-%E7%9A%84%E5%A4%96%E8%A7%80-cf0d3e887312"
 mediumID = "cf0d3e887312"
+[cover]
+  image = "/images/cf0d3e887312/1_paGSGyClklgUuQ8-0B_XuA.png"
 +++
+
 
 這篇文章將說明怎麼實作 Jetpack Compose Dialog，讓它的外圈能夠沒有暗掉的效果，而且對話框周圍能有黑色的框線。
 

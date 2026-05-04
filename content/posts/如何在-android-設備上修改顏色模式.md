@@ -6,7 +6,10 @@ slug = "如何在-android-設備上修改顏色模式"
 canonicalURL = "https://medium.com/@danielkao/%E5%A6%82%E4%BD%95%E5%9C%A8-android-%E8%A8%AD%E5%82%99%E4%B8%8A%E4%BF%AE%E6%94%B9%E9%A1%8F%E8%89%B2%E6%A8%A1%E5%BC%8F-4d4eead4ed19"
 mediumID = "4d4eead4ed19"
 tags = ["電子書閱讀器"]
+[cover]
+  image = "/images/4d4eead4ed19/1_ZR1KLpfP94QtjFuIsBSSqA.jpeg"
 +++
+
 
 會想要修改模式是因為在彩色電子紙閱讀器上，廠商通常只有提供增強整體顏色，加強鮮豔度和色彩亮度等選項，但並沒有提供 R, G, B 個別顏色的調整方式。
 

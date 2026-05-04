@@ -5,7 +5,10 @@ description = "2021 年年底 OPPO 宣布 OPPO Find N 折疊機時，Youtube 上
 slug = "oppo-find-n-入手一個月後的使用心得"
 canonicalURL = "https://medium.com/@danielkao/oppo-find-n-%E4%BD%BF%E7%94%A8%E5%BF%83%E5%BE%97-2e981ca3205f"
 mediumID = "2e981ca3205f"
+[cover]
+  image = "/images/2e981ca3205f/1_A4s-7lUOzRpEngu_f3SJow.jpeg"
 +++
+
 
 ![](/images/2e981ca3205f/1_A4s-7lUOzRpEngu_f3SJow.jpeg)
 *OPPO Find N + Hisense A7*

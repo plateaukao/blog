@@ -5,7 +5,10 @@ description = "In Flutter, it’s easy to load an Image widget. Flutter provides
 slug = "my-2-cents-on-image-processing-in-flutter"
 canonicalURL = "https://medium.com/@danielkao/my-2-cents-on-image-processing-in-flutter-a6ab5166f590"
 mediumID = "a6ab5166f590"
+[cover]
+  image = "/images/a6ab5166f590/1_qKJvABWGL9EyztFfvLlJbQ.png"
 +++
+
 
 ![](/images/a6ab5166f590/1_qKJvABWGL9EyztFfvLlJbQ.png)
 

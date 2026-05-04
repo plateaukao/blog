@@ -6,7 +6,10 @@ slug = "如何解決-cloudflare-認證問題-暴力版"
 canonicalURL = "https://medium.com/@danielkao/%E5%A6%82%E4%BD%95%E8%A7%A3%E6%B1%BA-cloudflare-%E8%AA%8D%E8%AD%89%E5%95%8F%E9%A1%8C-%E6%9A%B4%E5%8A%9B%E7%89%88-ce8899b6d8f0"
 mediumID = "ce8899b6d8f0"
 tags = ["EinkBro"]
+[cover]
+  image = "/images/ce8899b6d8f0/1_UuxwU-FYlm3_lLsJ3C0OPg.png"
 +++
+
 
 最近 chatGPT 相當熱門，不論有什麼問題需要網路的協助，總是可以先找 chatGPT 聊聊，看看它有什麼想法。不過，在使用 EinkBro 想要登入 chat.openai.com 時，它會跳出下面的畫面要我先檢驗我是 human。然後，我怎麼按它都會回傳失敗。也因此，一直無法在 EinkBro 中使用 chatGPT 網頁的服務。
 

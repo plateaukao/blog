@@ -6,7 +6,10 @@ slug = "naver-deview-2021-shopping-of-untact-era-naver-shopping-live-development
 canonicalURL = "https://medium.com/@danielkao/naver-deview-2021-shopping-of-untact-era-naver-shopping-live-development-story-58a8a56f7f80"
 mediumID = "58a8a56f7f80"
 tags = ["conference_summary"]
+[cover]
+  image = "/images/58a8a56f7f80/1_UjsPkDYljAarxnAMfEgCiQ.png"
 +++
+
 
 ### **Shopping of Untact era, Naver Shopping Live Development Story —**NAVER DEVIEW 2021
 

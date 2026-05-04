@@ -5,7 +5,10 @@ description = "雖然標題是英文，內文還是用中文撰寫，造福一�
 slug = "advanced-isolate-usage-in-flutter"
 canonicalURL = "https://medium.com/@danielkao/advanced-isolate-usage-in-flutter-94b124deacdd"
 mediumID = "94b124deacdd"
+[cover]
+  image = "/images/94b124deacdd/1_TYtiTKgefFO_2lSRwo9M0Q.png"
 +++
+
 
 ![](/images/94b124deacdd/1_TYtiTKgefFO_2lSRwo9M0Q.png)
 

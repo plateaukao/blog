@@ -6,7 +6,10 @@ slug = "talk-to-me-in-korean-level-4-筆記"
 canonicalURL = "https://medium.com/@danielkao/talk-to-me-in-korean-level-4-%E5%BF%AB%E9%80%9F%E8%A4%87%E7%BF%92-eaee8e94974e"
 mediumID = "eaee8e94974e"
 tags = ["韓語學習筆記"]
+[cover]
+  image = "/images/eaee8e94974e/1_DZko6oxnmTD4M6nsm6hSzA.png"
 +++
+
 
 ![](/images/eaee8e94974e/1_DZko6oxnmTD4M6nsm6hSzA.png)
 

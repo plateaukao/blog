@@ -5,7 +5,10 @@ description = "從開始用手機以來，中文輸入法就一直是使用 Lime
 slug = "改造-android-上的無蝦米輸入法-limehd"
 canonicalURL = "https://medium.com/@danielkao/%E6%94%B9%E9%80%A0-android-%E4%B8%8A%E7%9A%84%E7%84%A1%E8%9D%A6%E7%B1%B3%E8%BC%B8%E5%85%A5%E6%B3%95-limehd-6e903668c21e"
 mediumID = "6e903668c21e"
+[cover]
+  image = "/images/6e903668c21e/1_CMWmaQRJWVJoFFqZlaSDOg.png"
 +++
+
 
 ![](/images/6e903668c21e/1_CMWmaQRJWVJoFFqZlaSDOg.png)
 

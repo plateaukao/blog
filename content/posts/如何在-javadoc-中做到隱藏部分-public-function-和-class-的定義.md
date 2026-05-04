@@ -5,7 +5,10 @@ description = "有時，雖然部分的 classes 或是 functions 是設為 publi
 slug = "如何在-javadoc-中做到隱藏部分-public-function-和-class-的定義"
 canonicalURL = "https://medium.com/@danielkao/%E5%A6%82%E4%BD%95%E5%9C%A8-javadoc-%E4%B8%AD%E5%81%9A%E5%88%B0%E9%9A%B1%E8%97%8F%E9%83%A8%E5%88%86-public-function-%E5%92%8C-class-%E7%9A%84%E5%AE%9A%E7%BE%A9-848119471f66"
 mediumID = "848119471f66"
+[cover]
+  image = "/images/848119471f66/1_NhLD_BIklQgsLk8jIDqmLA.jpeg"
 +++
+
 
 ![](/images/848119471f66/1_NhLD_BIklQgsLk8jIDqmLA.jpeg)
 

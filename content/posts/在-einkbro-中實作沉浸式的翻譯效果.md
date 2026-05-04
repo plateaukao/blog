@@ -6,7 +6,10 @@ slug = "在-einkbro-中實作沉浸式的翻譯效果"
 canonicalURL = "https://medium.com/@danielkao/%E5%9C%A8-einkbro-%E4%B8%AD%E5%AF%A6%E4%BD%9C%E6%B2%89%E6%B5%B8%E5%BC%8F%E7%9A%84%E7%BF%BB%E8%AD%AF%E6%95%88%E6%9E%9C-4b5a146b4e69"
 mediumID = "4b5a146b4e69"
 tags = ["EinkBro"]
+[cover]
+  image = "/images/4b5a146b4e69/1_9CfK3Q5EnbRnb9c-OHF_iA.png"
 +++
+
 
 前不久有人推出了 Desktop 上瀏覽器的 [Immersive Translation Plugin](https://youtu.be/0nIzWCseLVo)，可以在看外文網頁時，以段落的方式翻譯內容。這種方式對於正在學習語言或是想要雙語對照著看的用戶來說，真的是一大福音。
 

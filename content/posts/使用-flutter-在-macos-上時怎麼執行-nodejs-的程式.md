@@ -6,7 +6,10 @@ slug = "使用-flutter-在-macos-上時怎麼執行-nodejs-的程式"
 canonicalURL = "https://medium.com/@danielkao/%E4%BD%BF%E7%94%A8-flutter-%E5%9C%A8-macos-%E4%B8%8A%E6%99%82-%E6%80%8E%E9%BA%BC%E5%9F%B7%E8%A1%8C-node-js-%E7%9A%84%E7%A8%8B%E5%BC%8F-7a35cdf2b521"
 mediumID = "7a35cdf2b521"
 tags = ["電子書閱讀器"]
+[cover]
+  image = "/images/7a35cdf2b521/1_MmAoOHIWq8Y2UMbUeJL6fQ.png"
 +++
+
 
 ![](/images/7a35cdf2b521/1_MmAoOHIWq8Y2UMbUeJL6fQ.png)
 

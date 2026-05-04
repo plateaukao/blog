@@ -5,7 +5,10 @@ description = "Flickr used to be a cool photo service that gathered many talente
 slug = "flickr-api-integration-in-flutter-with-dart"
 canonicalURL = "https://medium.com/@danielkao/flickr-api-integration-in-flutter-with-dart-1c07d4b9e8d6"
 mediumID = "1c07d4b9e8d6"
+[cover]
+  image = "/images/1c07d4b9e8d6/1_BR4aqmuc6kDpZ8CbJ9_z0A.png"
 +++
+
 
 ![](/images/1c07d4b9e8d6/1_BR4aqmuc6kDpZ8CbJ9_z0A.png)
 

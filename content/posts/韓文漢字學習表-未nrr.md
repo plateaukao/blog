@@ -6,7 +6,10 @@ slug = "韓文漢字學習表-未nrr"
 canonicalURL = "https://medium.com/@danielkao/%E9%9F%93%E6%96%87%E6%BC%A2%E5%AD%97%E5%AD%B8%E7%BF%92%E8%A1%A8-%E6%9C%AAnrr-8ccbd5d1f4f6"
 mediumID = "8ccbd5d1f4f6"
 tags = ["韓語學習筆記"]
+[cover]
+  image = "/images/8ccbd5d1f4f6/1_LSI8R6eDNkc7rER48lqNPw.png"
 +++
+
 
 ### 韓文漢字學習表 (未完)
 

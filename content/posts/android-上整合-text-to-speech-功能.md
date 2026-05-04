@@ -6,7 +6,10 @@ slug = "android-上整合-text-to-speech-功能"
 canonicalURL = "https://medium.com/@danielkao/android-%E4%B8%8A%E6%95%B4%E5%90%88-text-to-speech-%E5%8A%9F%E8%83%BD-d5f50eb920ac"
 mediumID = "d5f50eb920ac"
 tags = ["EinkBro"]
+[cover]
+  image = "/images/d5f50eb920ac/1_6kubw9JkK-gY-FQNL7fWzQ.png"
 +++
+
 
 ![](/images/d5f50eb920ac/1_6kubw9JkK-gY-FQNL7fWzQ.png)
 

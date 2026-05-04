@@ -5,7 +5,10 @@ description = "從 LINE LIFF 開放使用以來，一直不斷有在更新 API�
 slug = "開啟-line-liff-v2-的無限潛力-liffsharetargetpicker"
 canonicalURL = "https://medium.com/@danielkao/%E9%96%8B%E5%95%9F-line-liff-v2-%E7%9A%84%E7%84%A1%E9%99%90%E6%BD%9B%E5%8A%9B-liff-sharetargetpicker-24b47b0b4252"
 mediumID = "24b47b0b4252"
+[cover]
+  image = "/images/24b47b0b4252/1_zjy4NEztsBMtIMPoSl_Gqw.png"
 +++
+
 
 ### 開啟 LINE LIFF v2 的無限潛力 — liff.shareTargetPicker
 

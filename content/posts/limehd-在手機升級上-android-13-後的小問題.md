@@ -5,7 +5,10 @@ description = "在 LimeHD 中有個功能是：如果懶得打字輸入的話，
 slug = "limehd-在手機升級上-android-13-後的小問題"
 canonicalURL = "https://medium.com/@danielkao/limehd-%E5%9C%A8%E6%89%8B%E6%A9%9F%E5%8D%87%E7%B4%9A%E4%B8%8A-android-13-%E5%BE%8C%E7%9A%84%E5%B0%8F%E5%95%8F%E9%A1%8C-daf937ead2c4"
 mediumID = "daf937ead2c4"
+[cover]
+  image = "/images/daf937ead2c4/1_WAa-X-k2_wllf4HMa0hpcw.png"
 +++
+
 
 在 LimeHD 中有個功能是：如果懶得打字輸入的話，在候選列右邊有個麥克風圖案，可以點擊它啟動 Google Voice Input，直接換成語音輸入。這個功能從以前到現在都 work 得好好的。
 

@@ -5,7 +5,10 @@ description = "開發 Flutter  App 時，偶爾需要使用 WebView 提供一些
 slug = "如何在-flutter-webview-中登入-google-或-facebook-帳號"
 canonicalURL = "https://medium.com/@danielkao/%E5%A6%82%E4%BD%95%E5%9C%A8-flutter-webview-%E4%B8%AD%E7%99%BB%E5%85%A5-google-%E6%88%96-facebook-%E5%B8%B3%E8%99%9F-cf5135af59df"
 mediumID = "cf5135af59df"
+[cover]
+  image = "/images/cf5135af59df/1_xnRtbhmh3IIX8qd_sAIRbA.png"
 +++
+
 
 開發 Flutter App 時，偶爾需要使用 WebView 提供一些既有的功能，或是短暫地開啟一個 App 內的 Web 畫面讓使用者在不離開 App 的情況下，能夠使用其他網站的內容。這時常常會遇到別人的 Web 服務需要先登入 Google 或 Facebook 才能繼續使用。如果沒有為此修改一下 WebView 實作的話，通常是會登入失敗的。
 

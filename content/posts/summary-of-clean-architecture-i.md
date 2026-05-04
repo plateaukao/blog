@@ -5,7 +5,10 @@ description = "Part I"
 slug = "summary-of-clean-architecture-i"
 canonicalURL = "https://medium.com/@danielkao/summary-of-clean-architecture-i-910d1ebdc60b"
 mediumID = "910d1ebdc60b"
+[cover]
+  image = "/images/910d1ebdc60b/1_rnOWr47Ytu91MtOhw6qLFw.png"
 +++
+
 
 ![](/images/910d1ebdc60b/1_rnOWr47Ytu91MtOhw6qLFw.png)
 *上高地。日本*

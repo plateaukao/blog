@@ -6,7 +6,10 @@ slug = "einkbro-分頁列表的小改進"
 canonicalURL = "https://medium.com/@danielkao/einkbro-%E5%88%86%E9%A0%81%E5%88%97%E8%A1%A8%E7%9A%84%E5%B0%8F%E6%94%B9%E9%80%B2-4cf300373947"
 mediumID = "4cf300373947"
 tags = ["EinkBro"]
+[cover]
+  image = "/images/4cf300373947/1_0HMuFbmd0-j4lYEqa77MjA.png"
 +++
+
 
 從 v9.7.0 開始，EinkBro 支援在畫面上固定顯示分頁的列表。如果開啟這功能的話，整個介面看起來會更像是傳統的瀏覽器；能夠在不同分頁間快速切換。很適合在一般的電子書閱讀器上開啟。
 

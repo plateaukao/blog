@@ -6,7 +6,10 @@ slug = "annotation-support-for-epub-file-in-einkbro-app"
 canonicalURL = "https://medium.com/@danielkao/annotation-support-for-epub-file-in-einkbro-app-fe8c2ac87bf7"
 mediumID = "fe8c2ac87bf7"
 tags = ["EinkBro"]
+[cover]
+  image = "/images/fe8c2ac87bf7/1_2caSccnCro9WChmRIef4ug.png"
 +++
+
 
 ![](/images/fe8c2ac87bf7/1_2caSccnCro9WChmRIef4ug.png)
 

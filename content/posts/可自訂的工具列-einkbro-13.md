@@ -6,7 +6,10 @@ slug = "可自訂的工具列-einkbro-13"
 canonicalURL = "https://medium.com/@danielkao/%E5%8F%AF%E8%87%AA%E8%A8%82%E7%9A%84%E5%B7%A5%E5%85%B7%E5%88%97-einkbro-13-c00350972a7a"
 mediumID = "c00350972a7a"
 tags = ["EinkBro"]
+[cover]
+  image = "/images/c00350972a7a/1_HSqcpXujTwA3bh9KpyUYAw.jpeg"
 +++
+
 
 ### 可自訂的工具列 — EinkBro (14)
 

@@ -5,7 +5,10 @@ description = "用 Flutter 開發 App 很快速，但遇到需要有後台的應
 slug = "用-flutter-google-sheets-建立單字本-app"
 canonicalURL = "https://medium.com/@danielkao/%E7%94%A8-flutter-google-sheets-%E5%BB%BA%E7%AB%8B%E5%96%AE%E5%AD%97%E6%9C%AC-app-c51f198cfbf3"
 mediumID = "c51f198cfbf3"
+[cover]
+  image = "/images/c51f198cfbf3/1_lQ_29FE33bt-ig-Yg0UcBQ.jpeg"
 +++
+
 
 ### Flutter 整合 Google Sheets 建立單字本 App
 

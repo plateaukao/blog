@@ -5,7 +5,10 @@ description = "Youtube 和 Netlifx 的內容包羅萬象，很適合拿來學習
 slug = "將-youtube-和-netflix-字幕設為雙語對照"
 canonicalURL = "https://medium.com/@danielkao/%E5%B0%87-youtube-%E5%92%8C-netflix-%E5%AD%97%E5%B9%95%E8%A8%AD%E7%82%BA%E9%9B%99%E8%AA%9E%E5%B0%8D%E7%85%A7-2976fa971f5"
 mediumID = "2976fa971f5"
+[cover]
+  image = "/images/2976fa971f5/1_3VePGIxHdfQMniO3y5eqKw.png"
 +++
+
 
 ![](/images/2976fa971f5/1_3VePGIxHdfQMniO3y5eqKw.png)
 

@@ -6,7 +6,10 @@ slug = "einkbro-期待已久的功能-選取連結的文字"
 canonicalURL = "https://medium.com/@danielkao/einkbro-%E6%9C%9F%E5%BE%85%E5%B7%B2%E4%B9%85%E7%9A%84%E5%8A%9F%E8%83%BD-%E9%81%B8%E5%8F%96%E9%80%A3%E7%B5%90%E7%9A%84%E6%96%87%E5%AD%97-9408285898cc"
 mediumID = "9408285898cc"
 tags = ["EinkBro"]
+[cover]
+  image = "/images/9408285898cc/0_AC6uCjUPJt42oZNP"
 +++
+
 
 期待了很久，一直不知道怎麼實作的功能終於做出來了！在 Android WebView中，一般來說，只可以長按非連結的文字，選取文字進行複製或其他的動作。如果想要選取**連結上的文字**的話，必須要用些小技巧才能達成。
 

@@ -6,7 +6,10 @@ slug = "如何在掌閱-ocean2-上安裝軟體"
 canonicalURL = "https://medium.com/@danielkao/%E5%A6%82%E4%BD%95%E5%9C%A8%E6%8E%8C%E9%96%B1-ocean2-%E4%B8%8A%E5%AE%89%E8%A3%9D%E8%BB%9F%E9%AB%94-1b7dd98451e5"
 mediumID = "1b7dd98451e5"
 tags = ["電子書閱讀器"]
+[cover]
+  image = "/images/1b7dd98451e5/1_QAqn3gT02bCdAVy7JS-z8Q.png"
 +++
+
 
 ![](/images/1b7dd98451e5/1_QAqn3gT02bCdAVy7JS-z8Q.png)
 

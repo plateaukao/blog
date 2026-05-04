@@ -5,7 +5,10 @@ description = "如果 App 完全用 Flutter 開發，是件很愉快的事情，
 slug = "與-flutter-webview-奮鬥的故事"
 canonicalURL = "https://medium.com/@danielkao/%E8%88%87-flutter-webview-%E5%A5%AE%E9%AC%A5%E7%9A%84%E6%95%85%E4%BA%8B-a353f0094734"
 mediumID = "a353f0094734"
+[cover]
+  image = "/images/a353f0094734/1_wkDc2HijgBPP8qrAWPTV6w.jpeg"
 +++
+
 
 ### 與 Flutter WebView 奮鬥的那些日子
 

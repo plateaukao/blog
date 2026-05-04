@@ -5,7 +5,10 @@ description = "2021/12/16"
 slug = "twitter-上的心得整理-i"
 canonicalURL = "https://medium.com/@danielkao/twitter-%E4%B8%8A%E7%9A%84%E5%BF%83%E5%BE%97%E6%95%B4%E7%90%86-i-efad4a1b7f1e"
 mediumID = "efad4a1b7f1e"
+[cover]
+  image = "/images/efad4a1b7f1e/0_sMcGr4hAbNhwZFnc"
 +++
+
 
 ### 2021/12/16
 

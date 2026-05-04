@@ -5,7 +5,10 @@ description = "這篇文章將介紹怎麼把 iThome 鐵人賽的參賽文章集
 slug = "自製-ithome-鐵人賽參賽主題電子書"
 canonicalURL = "https://medium.com/@danielkao/%E8%87%AA%E8%A3%BD-ithome-%E9%90%B5%E4%BA%BA%E8%B3%BD%E5%8F%83%E8%B3%BD%E4%B8%BB%E9%A1%8C%E9%9B%BB%E5%AD%90%E6%9B%B8-52c13131e222"
 mediumID = "52c13131e222"
+[cover]
+  image = "/images/52c13131e222/1_U186tbCkk4C2pTL2qcqyuA.png"
 +++
+
 
 這篇文章將介紹怎麼把 iThome 鐵人賽的參賽文章集結成冊，變成可以離線閱讀的電子書。就算一時半刻沒有時間閱讀，也可以有種自己收藏了不少好書的滿足感。
 

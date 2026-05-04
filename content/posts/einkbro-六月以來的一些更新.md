@@ -6,7 +6,10 @@ slug = "einkbro-六月以來的一些更新"
 canonicalURL = "https://medium.com/@danielkao/einkbro-%E5%85%AD%E6%9C%88%E4%BB%A5%E4%BE%86%E7%9A%84%E4%B8%80%E4%BA%9B%E6%9B%B4%E6%96%B0-1a091f99ab5f"
 mediumID = "1a091f99ab5f"
 tags = ["EinkBro"]
+[cover]
+  image = "/images/1a091f99ab5f/1_U7_A7KAID90_lJW75td99g.png"
 +++
+
 
 ![](/images/1a091f99ab5f/1_U7_A7KAID90_lJW75td99g.png)
 

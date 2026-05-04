@@ -6,7 +6,10 @@ slug = "jb-kindle-voyage-和-askgpt-plugin-for-koreader"
 canonicalURL = "https://medium.com/@danielkao/jb-kindle-voyage-%E5%92%8C-askgpt-plugin-for-koreader-17e17ce7bc39"
 mediumID = "17e17ce7bc39"
 tags = ["電子書閱讀器"]
+[cover]
+  image = "/images/17e17ce7bc39/1_K5s6N20THFZ8SPSXuKa8kA.jpeg"
 +++
+
 
 kindle voyage 買來有快十年了吧，隨著最近又買了 kindle scribe 和 kindle oasis3，以及對於 koreader 的熟悉程度愈來愈高，終於下定決心來越獄一下，為它安裝 koreader app。
 

@@ -5,7 +5,10 @@ description = "在開發 LINE Message API 的 LIFF 新功能時，藉由 signatu
 slug = "擴充-signature_pad-javascript-library"
 canonicalURL = "https://medium.com/@danielkao/%E6%93%B4%E5%85%85-signature-pad-javascript-library-b659f1c2430a"
 mediumID = "b659f1c2430a"
+[cover]
+  image = "/images/b659f1c2430a/1_rlNmoxbL1qKfmTBLB02YrQ.jpeg"
 +++
+
 
 ### 擴充 signature\_pad javascript library
 

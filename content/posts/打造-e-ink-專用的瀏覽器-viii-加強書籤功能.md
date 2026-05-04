@@ -5,7 +5,10 @@ slug = "打造-e-ink-專用的瀏覽器-viii-加強書籤功能"
 canonicalURL = "https://medium.com/@danielkao/%E6%89%93%E9%80%A0-e-ink-%E5%B0%88%E7%94%A8%E7%9A%84%E7%80%8F%E8%A6%BD%E5%99%A8-viii-%E5%8A%A0%E5%BC%B7%E6%9B%B8%E7%B1%A4%E5%8A%9F%E8%83%BD-d014821d9cf7"
 mediumID = "d014821d9cf7"
 tags = ["EinkBro"]
+[cover]
+  image = "/images/d014821d9cf7/1_FSSe5sUj3HuiXXiMxfa2Fg.png"
 +++
+
 
 書籤功能在 PC 的瀏覽器是個很重要的功能，因為操作方便，所以通常會記錄一大堆連結，並且分門別類放在不同的目錄中。但是手機上的瀏覽器，情況略有不同。大部分人比較常用的功能，應該都已經下載對應的 App 了；剩下一些不常用的服務，才會開啟網頁偶爾使用；或是需要搜尋網頁內容時，會開啟瀏覽器；再來是很大一部分是從其他 App 中轉導到瀏覽器的。這些應用場景，都不見得需要像 PC 上一樣，建立書籤、管理書籤。
 

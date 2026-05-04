@@ -5,7 +5,10 @@ description = "Scenario"
 slug = "implementation-of-instagram-like-long-press-popup-dialog-in-flutter"
 canonicalURL = "https://medium.com/@danielkao/implementation-of-instagram-like-long-press-popup-dialog-in-flutter-25fd955fd38a"
 mediumID = "25fd955fd38a"
+[cover]
+  image = "/images/25fd955fd38a/1_b5v-yXolHum1xLXjHYKqIA.gif"
 +++
+
 
 ### Scenario
 

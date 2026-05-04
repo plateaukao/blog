@@ -6,7 +6,10 @@ slug = "在-android-webview-中使用手機上的字型檔案"
 canonicalURL = "https://medium.com/@danielkao/%E5%9C%A8-android-webview-%E4%B8%AD%E4%BD%BF%E7%94%A8%E6%89%8B%E6%A9%9F%E4%B8%8A%E7%9A%84%E5%AD%97%E5%9E%8B%E6%AA%94%E6%A1%88-de9157906ee9"
 mediumID = "de9157906ee9"
 tags = ["電子書閱讀器"]
+[cover]
+  image = "/images/de9157906ee9/1_kHbSqlE6uZVFbyncCblxQQ.png"
 +++
+
 
 這個需求來自於每台手機或電子書閱讀器的預設字型都長得不太一樣，有的是用比較粗的黑體，有的是用我不太喜歡的細圓體；有些時候網頁還會套上自己想要的雲端字體。面對這麼多系統或網頁提供的字型，看久了總是會覺得膩，或是單純地只是想要用一套自己最喜歡的字型就好。
 

@@ -6,7 +6,10 @@ slug = "更利於使用的-naver-字典-app"
 canonicalURL = "https://medium.com/@danielkao/%E6%9B%B4%E5%88%A9%E6%96%BC%E4%BD%BF%E7%94%A8%E7%9A%84-naver-%E5%AD%97%E5%85%B8-app-1354aaeabc30"
 mediumID = "1354aaeabc30"
 tags = ["韓語學習筆記"]
+[cover]
+  image = "/images/1354aaeabc30/1_t49TylwSpEcFb0g2WEx7UQ.png"
 +++
+
 
 在學習韓文的路上，Naver 字典是公認的好用。但如果在平板或手機上想一邊看電子書或是看網頁，然後一邊使用 Naver 字典的話；不論是網頁版或是 App 版本的 Naver 字典，用起來都很麻煩，得在不同的 App 間不停地切換。來回個幾次之後，就會放棄這麼做。
 

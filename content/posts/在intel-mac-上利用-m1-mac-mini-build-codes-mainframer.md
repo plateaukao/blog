@@ -4,7 +4,10 @@ date = "2021-05-14T11:47:04.343Z"
 slug = "在intel-mac-上利用-m1-mac-mini-build-codes-mainframer"
 canonicalURL = "https://medium.com/@danielkao/%E5%9C%A8intel-mac-%E4%B8%8A%E5%88%A9%E7%94%A8-m1-mac-mini-build-codes-mainframer-d99b00395f16"
 mediumID = "d99b00395f16"
+[cover]
+  image = "/images/d99b00395f16/1_B_ukXYfsryFiBwYSMirrZg.png"
 +++
+
 
 在新的 M1 系列出來後，這一兩年有買 Mac 電腦的人不禁覺得苦惱。想要一嚐 M1 的強大性能，卻又苦於已經擁有了一台不算慢的 Mac 電腦，現在想轉賣又不見得能賣到什麼好價錢。一個折衷的方案是：買台最便宜的 M1 設備 Mac min，然後讓原本的 Mac 電腦能呼叫這台 Mac mini 幫忙執行很花 CPU 的工作，像是編譯程式！
 

@@ -5,7 +5,10 @@ description = "這是人生第二次購買 iOS 系列的手機。上一支是十
 slug = "多年-android-使用者購入-iphone14-pro-的簡單心得"
 canonicalURL = "https://medium.com/@danielkao/%E5%A4%9A%E5%B9%B4-android-%E4%BD%BF%E7%94%A8%E8%80%85%E8%B3%BC%E5%85%A5-iphone14-pro-%E7%9A%84%E7%B0%A1%E5%96%AE%E5%BF%83%E5%BE%97-98a330964670"
 mediumID = "98a330964670"
+[cover]
+  image = "/images/98a330964670/1_OXoehWRm39riSYOXteMIsA.png"
 +++
+
 
 這是人生第二次購買 iOS 系列的手機。上一支是十三年前 Apple 推出的第二支手機 3GS 了。經過這十幾年的演進，手機的機身除了愈來愈大，愈來愈重之外，功能面也不斷突飛猛進。
 

@@ -6,7 +6,10 @@ slug = "擴充-askgpt-koreader-plugin"
 canonicalURL = "https://medium.com/@danielkao/%E6%93%B4%E5%85%85-askgpt-koreader-plugin-d53aa5f5a38b"
 mediumID = "d53aa5f5a38b"
 tags = ["電子書閱讀器"]
+[cover]
+  image = "/images/d53aa5f5a38b/1_vpkT4Spo1oqWx_a0jnXxug.png"
 +++
+
 
 KOReader 的 AskGPT plugin 沒有任何預設的 prompt；再加上 KOReader 中又只能用它內建很陽春的軟體鍵盤，在使用上並不是很方便。因此，這幾天我一邊看書，一邊改良了一版，加入了最常使用的幾個 template，讓它們直接以按鈕的型式出現在選單中，也加入了 Google Gemini Model 的支援。
 

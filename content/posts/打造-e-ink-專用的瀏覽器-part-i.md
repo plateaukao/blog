@@ -6,7 +6,10 @@ slug = "打造-e-ink-專用的瀏覽器-part-i"
 canonicalURL = "https://medium.com/@danielkao/%E6%89%93%E9%80%A0%E4%B8%80%E5%80%8B%E9%9B%BB%E5%AD%90%E6%9B%B8%E7%9A%84%E7%80%8F%E8%A6%BD%E5%99%A8-part-i-e6c3d2e55e82"
 mediumID = "e6c3d2e55e82"
 tags = ["EinkBro"]
+[cover]
+  image = "/images/e6c3d2e55e82/1_EgEAOM9E5TTNFHa_KWnAIA.jpeg"
 +++
+
 
 ### 打造 E-ink 專用的瀏覽器 (I): Onyx Boox 上的怪現象
 

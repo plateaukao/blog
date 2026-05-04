@@ -6,7 +6,10 @@ slug = "文石-boox-mira-的購買方式與使用心得"
 canonicalURL = "https://medium.com/@danielkao/%E6%96%87%E7%9F%B3-boox-mira-%E7%9A%84%E8%B3%BC%E8%B2%B7%E8%88%87%E4%BD%BF%E7%94%A8%E5%BF%83%E5%BE%97-c3a7f8bb1d53"
 mediumID = "c3a7f8bb1d53"
 tags = ["電子書閱讀器"]
+[cover]
+  image = "/images/c3a7f8bb1d53/1_kRn72d25A4x9kdzehMjJaA.png"
 +++
+
 
 ![](/images/c3a7f8bb1d53/1_kRn72d25A4x9kdzehMjJaA.png)
 

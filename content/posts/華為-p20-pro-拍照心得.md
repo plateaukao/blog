@@ -6,7 +6,10 @@ slug = "華為-p20-pro-拍照心得"
 canonicalURL = "https://medium.com/@danielkao/%E8%8F%AF%E7%82%BA-p20-pro-%E6%8B%8D%E7%85%A7%E5%BF%83%E5%BE%97-4e26fcc260a6"
 mediumID = "4e26fcc260a6"
 tags = ["邊跑邊拍"]
+[cover]
+  image = "/images/4e26fcc260a6/1_CE9x2mENUzUDvaF6qfSUQA.jpeg"
 +++
+
 
 ![](/images/4e26fcc260a6/1_CE9x2mENUzUDvaF6qfSUQA.jpeg)
 

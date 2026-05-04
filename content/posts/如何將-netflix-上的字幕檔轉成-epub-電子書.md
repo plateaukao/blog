@@ -6,7 +6,10 @@ slug = "如何將-netflix-上的字幕檔轉成-epub-電子書"
 canonicalURL = "https://medium.com/@danielkao/%E5%A6%82%E4%BD%95%E5%B0%87-netflix-%E4%B8%8A%E7%9A%84%E5%AD%97%E5%B9%95%E6%AA%94%E8%BD%89%E6%88%90-epub-%E9%9B%BB%E5%AD%90%E6%9B%B8-bd2c78cb1694"
 mediumID = "bd2c78cb1694"
 tags = ["電子書閱讀器"]
+[cover]
+  image = "/images/bd2c78cb1694/1_puxcy8fOYRjGhyR469N09A.png"
 +++
+
 
 想要跟大家分享一下怎麼把 Netflix 上喜歡的影集或電影的字幕轉換成電子書。這個需求主要是來自於自己平常看影片一方面是休閒，另一方面希望同時也可以訓練自己的外語能力。
 

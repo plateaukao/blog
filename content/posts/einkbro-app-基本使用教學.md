@@ -6,7 +6,10 @@ slug = "einkbro-app-基本使用教學"
 canonicalURL = "https://medium.com/@danielkao/einkbro-%E4%BD%BF%E7%94%A8%E6%95%99%E5%AD%B8%E8%88%87%E5%B0%8F%E6%8A%80%E5%B7%A7-db9c93b4d890"
 mediumID = "db9c93b4d890"
 tags = ["EinkBro"]
+[cover]
+  image = "/images/db9c93b4d890/1_HoxDGEB0YhiC9VqLn5NKig.png"
 +++
+
 
 EinkBro 是一個專門為 Eink 電子紙閱讀器開發的瀏覽器 APP。由於介面長得跟一般的瀏覽器 APP 很不一樣，而且又有很多按鈕可以按，和很多設定可以調整，所以寫了這篇文章來介紹一下它。首先會講解基本功能和設定。然後在第二部分說明一些更進階的用法，以及我自己在使用上的技巧。
 

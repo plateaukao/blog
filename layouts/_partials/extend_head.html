@@ -9,4 +9,62 @@
 .home-social .social-icons a:first-of-type {
     padding-inline-start: 0;
 }
+
+/* ---------------------------------------------------------------- */
+/* Listing styles. Controlled by params.listStyle in hugo.toml:     */
+/*   "full"        — full-width cover above the post text (default) */
+/*   "thumb-left"  — small thumbnail on the left, text on the right */
+/*   "thumb-right" — small thumbnail on the right, text on the left */
+/* ---------------------------------------------------------------- */
+
+/* Show cover images on tag/term listing pages too (theme hides them by default) */
+.tag-entry .entry-cover {
+    display: flex;
+}
+
+/* Style: thumb-left / thumb-right share a horizontal layout */
+.list-style-thumb-left,
+.list-style-thumb-right {
+    display: flex;
+    align-items: center;
+    gap: var(--gap);
+}
+.list-style-thumb-left .entry-cover,
+.list-style-thumb-right .entry-cover {
+    flex: 0 0 160px;
+    margin: 0;
+}
+.list-style-thumb-left .entry-cover img,
+.list-style-thumb-right .entry-cover img {
+    width: 160px;
+    height: 110px;
+    object-fit: cover;
+    border-radius: var(--radius);
+}
+.list-style-thumb-left .entry-body,
+.list-style-thumb-right .entry-body {
+    flex: 1 1 auto;
+    min-width: 0;
+}
+.list-style-thumb-right {
+    flex-direction: row-reverse;
+}
+
+/* On narrow viewports, fall back to stacked layout */
+@media (max-width: 600px) {
+    .list-style-thumb-left,
+    .list-style-thumb-right {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    .list-style-thumb-left .entry-cover,
+    .list-style-thumb-right .entry-cover {
+        flex: 0 0 auto;
+    }
+    .list-style-thumb-left .entry-cover img,
+    .list-style-thumb-right .entry-cover img {
+        width: 100%;
+        height: auto;
+    }
+}
 </style>

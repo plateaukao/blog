@@ -5,7 +5,10 @@ description = "Re-reading Clean Architecture. Still in progress, but the mindmap
 slug = "mindmap-of-clean-architecture"
 canonicalURL = "https://medium.com/@danielkao/mindmap-of-clean-architecture-679b107fa9d6"
 mediumID = "679b107fa9d6"
+[cover]
+  image = "/images/679b107fa9d6/1_mL5s9io5wjS9lfSpk59u3Q.png"
 +++
+
 
 Re-reading Clean Architecture. Still in progress, but the mindmap could be shared here first.
 

@@ -6,7 +6,10 @@ slug = "用-ai-cli-開發的一些記錄"
 canonicalURL = "https://medium.com/@danielkao/%E7%94%A8-ai-cli-%E9%96%8B%E7%99%BC%E7%9A%84%E4%B8%80%E4%BA%9B%E8%A8%98%E9%8C%84-933152a04882"
 mediumID = "933152a04882"
 tags = ["EinkBro"]
+[cover]
+  image = "/images/933152a04882/1_vK2smFo5jOY-iHIGx_IM5g.png"
 +++
+
 
 ![](/images/933152a04882/1_vK2smFo5jOY-iHIGx_IM5g.png)
 

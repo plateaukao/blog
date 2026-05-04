@@ -6,7 +6,10 @@ slug = "打造-e-ink-專用的瀏覽器-x-支援全文翻譯對照"
 canonicalURL = "https://medium.com/@danielkao/%E6%89%93%E9%80%A0-e-ink-%E5%B0%88%E7%94%A8%E7%9A%84%E7%80%8F%E8%A6%BD%E5%99%A8-x-%E6%94%AF%E6%8F%B4%E5%85%A8%E6%96%87%E7%BF%BB%E8%AD%AF%E5%B0%8D%E7%85%A7-9fd49e769b63"
 mediumID = "9fd49e769b63"
 tags = ["EinkBro"]
+[cover]
+  image = "/images/9fd49e769b63/1_vyRA1oiEKf-BmD3lIjHEGQ.png"
 +++
+
 
 寫著寫著，竟然寫到第十篇了，真是一段漫長的歲月(嚴格來說，其實也只有幾個月而已)。這次開發的功能，對我個人來說，是個 killer feature 啊！雖然還有其他的幾十個功能也是。
 

@@ -6,7 +6,10 @@ slug = "從-einkbro-app-中直接安裝升級版本"
 canonicalURL = "https://medium.com/@danielkao/%E5%BE%9E-einkbro-app-%E4%B8%AD%E7%9B%B4%E6%8E%A5%E5%AE%89%E8%A3%9D%E5%8D%87%E7%B4%9A%E7%89%88%E6%9C%AC-3fc8c7927a31"
 mediumID = "3fc8c7927a31"
 tags = ["EinkBro"]
+[cover]
+  image = "/images/3fc8c7927a31/1_4qyFXmCSAe973WhJ8K3pRg.png"
 +++
+
 
 ### 早該做的提升效率的事 — 從 EinkBro App 中直接安裝升級版本
 

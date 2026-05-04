@@ -6,7 +6,10 @@ slug = "hyread-gaze-one-s-的使用心得感想"
 canonicalURL = "https://medium.com/@danielkao/hyread-gaze-one-s-%E7%9A%84%E4%BD%BF%E7%94%A8%E5%BF%83%E5%BE%97%E6%84%9F%E6%83%B3-ac49cbeee17c"
 mediumID = "ac49cbeee17c"
 tags = ["電子書閱讀器"]
+[cover]
+  image = "/images/ac49cbeee17c/1_oS-eXf24Dx7Xt9YO5mKdWQ.jpeg"
 +++
+
 
 ### 緣由
 

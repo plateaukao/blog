@@ -1,0 +1,32 @@
+{{- with .cxt}} {{/* Apply proper context from dict */}}
+{{- if (and .Params.cover.image (not $.isHidden)) }}
+<figure class="entry-cover">
+    {{- $loading := cond $.IsSingle "eager" "lazy" }}
+    {{- $addLink := (and site.Params.cover.linkFullImages $.IsSingle) }}
+    {{- $alt := (.Params.cover.alt | default .Params.cover.caption | plainify) }}
+
+    {{- /* Build URL by joining site.Home.RelPermalink (which encodes the */}}
+    {{- /* baseURL path, e.g. "/blog/") with the cover path. This matches */}}
+    {{- /* how Hugo rewrites markdown body image links. */}}
+    {{- $imgdl := urls.JoinPath site.Home.RelPermalink .Params.cover.image }}
+
+
+    {{- if $addLink }}
+        <a href="{{ $imgdl }}" target="_blank" rel="noopener noreferrer">
+    {{- end }}
+
+    <img loading="{{ $loading }}" src="{{ $imgdl }}" alt="{{ $alt }}">
+
+    {{- if $addLink }}
+        </a>
+    {{- end -}}
+
+    {{- /*  Display Caption  */}}
+    {{- if $.IsSingle }}
+        {{ with .Params.cover.caption -}}
+            <figcaption>{{ . | markdownify }}</figcaption>
+        {{- end }}
+    {{- end }}
+</figure>
+{{- end }}{{/* End image */}}
+{{- end -}}{{/* End context */ -}}

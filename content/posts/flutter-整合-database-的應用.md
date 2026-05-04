@@ -6,7 +6,10 @@ slug = "flutter-整合-database-的應用"
 canonicalURL = "https://medium.com/@danielkao/flutter-%E6%95%B4%E5%90%88-database-%E7%9A%84%E6%87%89%E7%94%A8-b9024af88daa"
 mediumID = "b9024af88daa"
 tags = ["韓語學習筆記"]
+[cover]
+  image = "/images/b9024af88daa/1_aDegaTz8oRMp921bnG_d_w.jpeg"
 +++
+
 
 ![](/images/b9024af88daa/1_aDegaTz8oRMp921bnG_d_w.jpeg)
 *Taichung.Taiwan*

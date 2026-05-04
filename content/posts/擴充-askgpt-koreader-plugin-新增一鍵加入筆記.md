@@ -6,7 +6,10 @@ slug = "擴充-askgpt-koreader-plugin-新增一鍵加入筆記"
 canonicalURL = "https://medium.com/@danielkao/%E6%93%B4%E5%85%85-askgpt-koreader-plugin-%E6%96%B0%E5%A2%9E%E4%B8%80%E9%8D%B5%E5%8A%A0%E5%85%A5%E7%AD%86%E8%A8%98-4553765388b2"
 mediumID = "4553765388b2"
 tags = ["電子書閱讀器"]
+[cover]
+  image = "/images/4553765388b2/1_e38Ub6mLUYv7UkC_IE1myQ.png"
 +++
+
 
 ### [擴充 AskGPT KOReader plugin](https://medium.com/me/stats/post/d53aa5f5a38b?source=stats_homepage-------------------------------------): 新增一鍵加入筆記
 

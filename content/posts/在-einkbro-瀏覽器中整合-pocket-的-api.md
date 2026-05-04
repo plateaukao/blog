@@ -6,7 +6,10 @@ slug = "在-einkbro-瀏覽器中整合-pocket-的-api"
 canonicalURL = "https://medium.com/@danielkao/%E5%9C%A8-einkbro-%E7%80%8F%E8%A6%BD%E5%99%A8%E4%B8%AD%E6%95%B4%E5%90%88-pocket-%E7%9A%84-api-836ccdd395df"
 mediumID = "836ccdd395df"
 tags = ["EinkBro"]
+[cover]
+  image = "/images/836ccdd395df/1_nuyvULFtogktKnCtU-frJg.png"
 +++
+
 
 ![](/images/836ccdd395df/1_nuyvULFtogktKnCtU-frJg.png)
 

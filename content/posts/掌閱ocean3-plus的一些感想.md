@@ -6,7 +6,10 @@ slug = "掌閱ocean3-plus的一些感想"
 canonicalURL = "https://medium.com/@danielkao/%E6%8E%8C%E9%96%B1ocean3-plus%E7%9A%84%E4%B8%80%E4%BA%9B%E6%84%9F%E6%83%B3-574620954c57"
 mediumID = "574620954c57"
 tags = ["電子書閱讀器"]
+[cover]
+  image = "/images/574620954c57/1_mGAbFwmireHGuyn4X0749Q.jpeg"
 +++
+
 
 ![](/images/574620954c57/1_mGAbFwmireHGuyn4X0749Q.jpeg)
 

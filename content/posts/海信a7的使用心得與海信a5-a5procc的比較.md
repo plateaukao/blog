@@ -6,7 +6,10 @@ slug = "海信a7的使用心得與海信a5-a5procc的比較"
 canonicalURL = "https://medium.com/@danielkao/%E6%B5%B7%E4%BF%A1a7%E7%9A%84%E4%BD%BF%E7%94%A8%E5%BF%83%E5%BE%97%E8%88%87%E6%B5%B7%E4%BF%A1a5-a5procc%E7%9A%84%E6%AF%94%E8%BC%83-6807aad9baa8"
 mediumID = "6807aad9baa8"
 tags = ["電子書閱讀器"]
+[cover]
+  image = "/images/6807aad9baa8/1_mKl09uGCFWJWnsuPjYkSfg.jpeg"
 +++
+
 
 ### 海信 A7 的使用心得與海信A5 / A5proCC 的比較
 

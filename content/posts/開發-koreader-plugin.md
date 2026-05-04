@@ -6,7 +6,10 @@ slug = "開發-koreader-plugin"
 canonicalURL = "https://medium.com/@danielkao/%E9%96%8B%E7%99%BC-koreader-plugin-fda80c51b098"
 mediumID = "fda80c51b098"
 tags = ["電子書閱讀器"]
+[cover]
+  image = "/images/fda80c51b098/1_Izm8TnmZ0Q70iPWRedbwow.png"
 +++
+
 
 Koreader 是個跨設備的閱讀 App，提供強大的閱讀功能以及相當多的客製化彈性。除了內建的許多功能外，它也提供開發者可以透過撰寫 lua script，擴充新功能或是修改原先的行為。這篇文章將會說明怎麼開發一個簡單的 koreader plugin，讓使用者在呼叫辭典時，可以連結到 EinkBro 做搜尋。
 

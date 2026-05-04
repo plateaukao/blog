@@ -6,7 +6,10 @@ slug = "kotlin-coroutine-channel-的使用簡介"
 canonicalURL = "https://medium.com/@danielkao/kotlin-coroutine-channel-%E7%9A%84%E4%BD%BF%E7%94%A8%E7%B0%A1%E4%BB%8B-2b95a342a8b3"
 mediumID = "2b95a342a8b3"
 tags = ["EinkBro"]
+[cover]
+  image = "/images/2b95a342a8b3/1_CZivT9zQC0OMJ7kW6Z6Peg.png"
 +++
+
 
 這篇文章會分享 EinkBro 在整合 OpenAI tts API 時，藉由 Kotlin Coroutine Channel 處理 API 邏輯和播放的實作。
 

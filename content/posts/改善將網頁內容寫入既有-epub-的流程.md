@@ -6,7 +6,10 @@ slug = "改善將網頁內容寫入既有-epub-的流程"
 canonicalURL = "https://medium.com/@danielkao/%E6%94%B9%E5%96%84%E5%B0%87%E7%B6%B2%E9%A0%81%E5%85%A7%E5%AE%B9%E5%AF%AB%E5%85%A5%E6%97%A2%E6%9C%89-epub-%E7%9A%84%E6%B5%81%E7%A8%8B-2bee7bfa09f1"
 mediumID = "2bee7bfa09f1"
 tags = ["EinkBro"]
+[cover]
+  image = "/images/2bee7bfa09f1/1_M9aQq7V5iFyfKIwTdGzzcw.png"
 +++
+
 
 目前 EinkBro 有提供儲存網頁成 epub 檔案的功能，這大概是少數(或是唯一)瀏覽器有提供的功能之一。不過，礙於 Android 每次升版對於檔案的存取方式都不斷在(亂無章法地)改進，到目前為止，最通用的開啟手機上檔案方式是：利用 Intent.ACTION\_CREATE\_DOCUMENT 叫起系統的 file expolorer default APP，從那很不好用的介面中選取想要的檔案，或新增一個檔案。
 

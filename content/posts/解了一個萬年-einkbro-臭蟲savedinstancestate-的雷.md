@@ -6,7 +6,10 @@ slug = "解了一個萬年-einkbro-臭蟲savedinstancestate-的雷"
 canonicalURL = "https://medium.com/@danielkao/%E8%A7%A3%E4%BA%86%E4%B8%80%E5%80%8B%E8%90%AC%E5%B9%B4-einkbro-%E8%87%AD%E8%9F%B2-1b04a685008e"
 mediumID = "1b04a685008e"
 tags = ["EinkBro"]
+[cover]
+  image = "/images/1b04a685008e/1_hvjSHf7-P99X9xE5OS2JZA.png"
 +++
+
 
 ![](/images/1b04a685008e/1_hvjSHf7-P99X9xE5OS2JZA.png)
 

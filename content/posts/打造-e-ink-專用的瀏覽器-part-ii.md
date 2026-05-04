@@ -6,7 +6,10 @@ slug = "打造-e-ink-專用的瀏覽器-part-ii"
 canonicalURL = "https://medium.com/@danielkao/%E6%89%93%E9%80%A0-e-ink-%E5%B0%88%E7%94%A8%E7%9A%84%E7%80%8F%E8%A6%BD%E5%99%A8-part-ii-a7bfb98233f7"
 mediumID = "a7bfb98233f7"
 tags = ["EinkBro"]
+[cover]
+  image = "/images/a7bfb98233f7/1_Wj_38xUoGa66K0P3aQWwPA.png"
 +++
+
 
 ### 打造 E-ink 專用的瀏覽器 (II): 增加按鈕、桌面模式、改善 UI
 

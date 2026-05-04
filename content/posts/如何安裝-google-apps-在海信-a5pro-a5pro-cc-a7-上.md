@@ -6,7 +6,10 @@ slug = "如何安裝-google-apps-在海信-a5pro-a5pro-cc-a7-上"
 canonicalURL = "https://medium.com/@danielkao/%E5%A6%82%E4%BD%95%E5%AE%89%E8%A3%9D-google-apps-%E5%9C%A8%E6%B5%B7%E4%BF%A1-a5pro-a5pro-cc-a7-%E4%B8%8A-4b2c5d30562"
 mediumID = "4b2c5d30562"
 tags = ["電子書閱讀器"]
+[cover]
+  image = "/images/4b2c5d30562/1_AG27Z9a4iIfKqBVRRRx7kQ.png"
 +++
+
 
 從去年起(2020年)，海信出了一系列純電子紙螢幕的手機，從一開始的 A5，到 A5PRO 系列，再到去年底的 A7，海信不斷地改善電子紙做為手機螢幕上的體驗。但礙於市場的關係，這幾款手機都沒有內建 GMS (Google Mobile Service)：沒有 Google Play Store, Gmail, Youtube等等。其他有跟 Google Play Service 整合的 App 在這幾款手機上也會遇到無法登入的問題，讓很多人因此打了退堂鼓。
 

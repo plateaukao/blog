@@ -6,7 +6,10 @@ slug = "改善-einkbro-的工具列設定畫面"
 canonicalURL = "https://medium.com/@danielkao/%E6%94%B9%E5%96%84-einkbro-%E7%9A%84%E5%B7%A5%E5%85%B7%E5%88%97%E8%A8%AD%E5%AE%9A%E7%95%AB%E9%9D%A2-2b70a3a25e57"
 mediumID = "2b70a3a25e57"
 tags = ["EinkBro"]
+[cover]
+  image = "/images/2b70a3a25e57/0_R0ivP7OPKxP5M7zJ.png"
 +++
+
 
 為了要可以塞入更多的功能按鈕，而又同時可以輕鬆的設定工具列，我改寫了工具列設定畫面。
 

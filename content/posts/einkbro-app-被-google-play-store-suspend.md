@@ -6,7 +6,10 @@ slug = "einkbro-app-被-google-play-store-suspend"
 canonicalURL = "https://medium.com/@danielkao/einkbro-app-%E8%A2%AB-google-play-store-suspend-2022f827081d"
 mediumID = "2022f827081d"
 tags = ["EinkBro"]
+[cover]
+  image = "/images/2022f827081d/1_4DDeoNxtFDdExuaPxQzXzA.png"
 +++
+
 
 沒想到在 2024 年初竟然迎來了這樣子的結果，真的是始料未及。下面會來說說被 suspend 的原委，希望讓剛好看到這篇文章的讀者能夠有所警惕，不要踩到 Google 大大的雷。
 

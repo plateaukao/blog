@@ -5,7 +5,10 @@ description = "從 startActivityForResult 和 onActivityResult 到 registerForAc
 slug = "android-裡從另一個-activity-中取得資訊的方式"
 canonicalURL = "https://medium.com/@danielkao/android-%E8%A3%A1%E5%BE%9E%E5%8F%A6%E4%B8%80%E5%80%8B-activity-%E4%B8%AD%E5%8F%96%E5%BE%97%E8%B3%87%E8%A8%8A%E7%9A%84%E6%96%B9%E5%BC%8F-906f91e1bbbc"
 mediumID = "906f91e1bbbc"
+[cover]
+  image = "/images/906f91e1bbbc/1_uExXxRTROEC2It1WLmDQGA.png"
 +++
+
 
 早期的寫法都是
 

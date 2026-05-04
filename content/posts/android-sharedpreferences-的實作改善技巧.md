@@ -5,7 +5,10 @@ description = "在今年 iTHome 鐵人賽最後一天的文章中有介紹到，
 slug = "android-sharedpreferences-的實作改善技巧"
 canonicalURL = "https://medium.com/@danielkao/android-sharedpreferences-%E7%9A%84%E5%AF%A6%E4%BD%9C%E6%94%B9%E5%96%84%E6%8A%80%E5%B7%A7-5651a732158b"
 mediumID = "5651a732158b"
+[cover]
+  image = "/images/5651a732158b/1_85hSkEsxO_BRbjsz3PhVRA.png"
 +++
+
 
 在[今年 iTHome 鐵人賽最後一天的文章](https://ithelp.ithome.com.tw/articles/10304792)中有介紹到，怎麼將 `Boolean` 的 `SharedPreferences` 包裝起來，讓原本很煩瑣的 value getter setter 可以透過 delegate 的方式，一行搞定。下面是包裝前和包裝後的程式碼。
 

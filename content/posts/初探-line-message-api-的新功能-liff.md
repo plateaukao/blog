@@ -5,7 +5,10 @@ description = "LIFF 全名是 LINE Front-end Framework，一個可以在 LINE ap
 slug = "初探-line-message-api-的新功能-liff"
 canonicalURL = "https://medium.com/@danielkao/%E5%88%9D%E6%8E%A2-line-message-api-%E7%9A%84%E6%96%B0%E5%8A%9F%E8%83%BD-liff-51d5e7ff1a6a"
 mediumID = "51d5e7ff1a6a"
+[cover]
+  image = "/images/51d5e7ff1a6a/1_L9UaB0W_2OaGhF71UX60EA.jpeg"
 +++
+
 
 ![](/images/51d5e7ff1a6a/1_L9UaB0W_2OaGhF71UX60EA.jpeg)
 *小烏來*

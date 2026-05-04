@@ -6,7 +6,10 @@ slug = "打造-e-ink-專用的瀏覽器-vi-匯出-epub-檔案"
 canonicalURL = "https://medium.com/@danielkao/%E6%89%93%E9%80%A0-e-ink-%E5%B0%88%E7%94%A8%E7%9A%84%E7%80%8F%E8%A6%BD%E5%99%A8-vi-%E5%8C%AF%E5%87%BA-epub-%E6%AA%94%E6%A1%88-98ce6ef56d24"
 mediumID = "98ce6ef56d24"
 tags = ["EinkBro"]
+[cover]
+  image = "/images/98ce6ef56d24/1_oul9c2Q--bvoW3yG9PRucw.png"
 +++
+
 
 為電子書閱讀器而開發的瀏覽器，在繞了一大圈之後，終於又繞回了電子書本身。原本的實作就已經可以將網頁輸出成 pdf 檔案。不過，如果希望產生的檔案可以更有彈性地調整字型大小，或是在不同的設備上閱讀，轉成 epub 格式會是更好的選擇。但目前市面上的行動瀏覽器都沒有這樣子的設計，頂多提供輸出成 pdf，mhtml 等格式。
 

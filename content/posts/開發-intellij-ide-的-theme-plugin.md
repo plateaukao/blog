@@ -6,7 +6,10 @@ slug = "開發-intellij-ide-的-theme-plugin"
 canonicalURL = "https://medium.com/@danielkao/%E9%96%8B%E7%99%BC-intellij-ide-%E7%9A%84-theme-plugin-91e06f5b1fcd"
 mediumID = "91e06f5b1fcd"
 tags = ["電子書閱讀器"]
+[cover]
+  image = "/images/91e06f5b1fcd/1_GE3Pm7UIVERQ2dvdJlFIGw.png"
 +++
+
 
 使用文石的電子紙螢幕 Mira 差不多要一年了，平常拿來看網路上的文章外，還很常拿它來開發 side projects。不過，在使用 Android Studio 時，一直是很克難地使用系統內建的 IntelliJ Light 主題。雖然不會整個畫面一片黑，但是大面積的淺色背景依然不夠黑白分明，使用一段時間後，還是要不定時地手動刷新畫面。所以，今天花了點時間，寫了一個 Eink 螢幕專用的 theme，在這邊也順便記錄一下開發的方式。
 

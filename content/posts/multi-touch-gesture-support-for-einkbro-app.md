@@ -6,7 +6,10 @@ slug = "multi-touch-gesture-support-for-einkbro-app"
 canonicalURL = "https://medium.com/@danielkao/multi-touch-gesture-support-for-einkbro-app-54b74b643f76"
 mediumID = "54b74b643f76"
 tags = ["EinkBro"]
+[cover]
+  image = "/images/54b74b643f76/1_eMV0FPgRLDDajEZgPMC1cw.png"
 +++
+
 
 ![](/images/54b74b643f76/1_eMV0FPgRLDDajEZgPMC1cw.png)
 

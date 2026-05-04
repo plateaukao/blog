@@ -6,7 +6,10 @@ slug = "升級-einkbro-的廣告阻擋機制"
 canonicalURL = "https://medium.com/@danielkao/%E5%8D%87%E7%B4%9A-einkbro-%E7%9A%84%E5%BB%A3%E5%91%8A%E9%98%BB%E6%93%8B%E6%A9%9F%E5%88%B6-5f3756c4b3af"
 mediumID = "5f3756c4b3af"
 tags = ["EinkBro"]
+[cover]
+  image = "/images/5f3756c4b3af/1_X6JIDNNT32UJOH8Hn2mfdA.png"
 +++
+
 
 ![](/images/5f3756c4b3af/1_X6JIDNNT32UJOH8Hn2mfdA.png)
 

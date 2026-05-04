@@ -6,7 +6,10 @@ slug = "web-browser-for-android-e-ink-devices"
 canonicalURL = "https://medium.com/@danielkao/web-browser-for-android-e-ink-devices-c78b680edf98"
 mediumID = "c78b680edf98"
 tags = ["EinkBro"]
+[cover]
+  image = "/images/c78b680edf98/1_y5X5xs3rZ_fJEacMoNN0dw.png"
 +++
+
 
 ### Web Browser for Android E Ink Devices (EinkBro)
 

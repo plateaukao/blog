@@ -5,7 +5,10 @@ description = "原以為 Flutter 寫起來很開心，有任何耗時比較長�
 slug = "幻滅是成長的開始-flutter-的-async-與-isolate"
 canonicalURL = "https://medium.com/@danielkao/%E5%B9%BB%E6%BB%85-%E6%98%AF%E6%88%90%E9%95%B7%E7%9A%84%E9%96%8B%E5%A7%8B-flutter-%E7%9A%84-async-%E8%88%87-isolate-2f87321a7ba8"
 mediumID = "2f87321a7ba8"
+[cover]
+  image = "/images/2f87321a7ba8/1_yyCGSU6ph3dCpTMk1SfBGA.png"
 +++
+
 
 ![](/images/2f87321a7ba8/1_yyCGSU6ph3dCpTMk1SfBGA.png)
 

@@ -6,7 +6,10 @@ slug = "整合-chatgpt-到-einkbro-中"
 canonicalURL = "https://medium.com/@danielkao/%E6%95%B4%E5%90%88-chatgpt-%E5%88%B0-einkbro-%E4%B8%AD-941a77f8715c"
 mediumID = "941a77f8715c"
 tags = ["EinkBro"]
+[cover]
+  image = "/images/941a77f8715c/0_Vo5emrhnax9l6WW1.png"
 +++
+
 
 - 找到合適的 OpenAI 函式庫
 - 包裝成 Repository 和 ViewModel

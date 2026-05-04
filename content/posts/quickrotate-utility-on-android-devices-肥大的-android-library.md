@@ -6,7 +6,10 @@ slug = "quickrotate-utility-on-android-devices-肥大的-android-library"
 canonicalURL = "https://medium.com/@danielkao/quickrotate-utility-on-android-devices-%E8%82%A5%E5%A4%A7%E7%9A%84-android-library-e844a54c9e42"
 mediumID = "e844a54c9e42"
 tags = ["電子書閱讀器"]
+[cover]
+  image = "/images/e844a54c9e42/0_RuXfzPIIvX_ftizd"
 +++
+
 
 ### QuickRotate Utility on Android Devices — 1.8 MB 與 57.9 KB 的距離
 

@@ -6,7 +6,10 @@ slug = "華為-matepad-paper-購買心得與使用感想"
 canonicalURL = "https://medium.com/@danielkao/%E8%8F%AF%E7%82%BA-matepad-paper-%E8%B3%BC%E8%B2%B7%E5%BF%83%E5%BE%97%E8%88%87%E4%BD%BF%E7%94%A8%E6%84%9F%E6%83%B3-906712695f7f"
 mediumID = "906712695f7f"
 tags = ["電子書閱讀器"]
+[cover]
+  image = "/images/906712695f7f/1_4BiN7m-cmGmR5Ow6c2-EhA.jpeg"
 +++
+
 
 ### 購買
 

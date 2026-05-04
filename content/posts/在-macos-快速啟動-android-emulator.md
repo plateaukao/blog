@@ -5,7 +5,10 @@ description = "雖然無法做到如同 M1 chip 的 Mac 設備可以直接執行
 slug = "在-macos-快速啟動-android-emulator"
 canonicalURL = "https://medium.com/@danielkao/%E5%9C%A8-macos-%E5%BF%AB%E9%80%9F%E5%95%9F%E5%8B%95-android-emulator-674585499447"
 mediumID = "674585499447"
+[cover]
+  image = "/images/674585499447/1_25a44wP9U8WL0mSJB7MRWA.png"
 +++
+
 
 目前在 M1 chip 的 Mac 設備上，可以很方便的安裝 iOS App，執行上也都沒有什麼問題，除了有些 App 因為還沒有針對 MacOS 做處理，所以畫面大小不能很彈性地調整。如果是 Android App 的話，就沒那麼好命了；要在 Mac 設備上執行的話，還是得透過 Emulator 來執行。
 

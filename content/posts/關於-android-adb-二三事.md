@@ -5,7 +5,10 @@ description = "開發 Android app 時，一直是用 command line 模式在操�
 slug = "關於-android-adb-二三事"
 canonicalURL = "https://medium.com/@danielkao/%E9%97%9C%E6%96%BC-android-adb-%E4%BA%8C%E4%B8%89%E4%BA%8B-1f8627318d6f"
 mediumID = "1f8627318d6f"
+[cover]
+  image = "/images/1f8627318d6f/1_Ley7dmpL7fUGk4RCNRnDWg.jpeg"
 +++
+
 
 ![](/images/1f8627318d6f/1_Ley7dmpL7fUGk4RCNRnDWg.jpeg)
 *花蓮七星潭*

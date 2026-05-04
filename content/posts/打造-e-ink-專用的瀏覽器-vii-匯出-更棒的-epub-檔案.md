@@ -6,7 +6,10 @@ slug = "打造-e-ink-專用的瀏覽器-vii-匯出-更棒的-epub-檔案"
 canonicalURL = "https://medium.com/@danielkao/%E6%89%93%E9%80%A0-e-ink-%E5%B0%88%E7%94%A8%E7%9A%84%E7%80%8F%E8%A6%BD%E5%99%A8-vii-%E5%8C%AF%E5%87%BA-%E6%9B%B4%E6%A3%92%E7%9A%84-epub-%E6%AA%94%E6%A1%88-e1c727f65a07"
 mediumID = "e1c727f65a07"
 tags = ["EinkBro"]
+[cover]
+  image = "/images/e1c727f65a07/1_eNs-soRkXUFK2CQxee7fAg.png"
 +++
+
 
 在前一篇提到，可以利用 epublib 將網頁內容儲存成 epub 檔案，便於事後用其他的閱讀軟體中操作。不過，由於當時對於 epublib 函式庫不夠熟悉，只能將網頁中的文字部分儲存下來。今天要來說說，怎麼實作儲存圖片的方式，和使用者體驗改善。
 
