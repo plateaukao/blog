@@ -4,7 +4,7 @@ date = "2013-05-24T12:53:00.004Z"
 slug = "tips-for-using-admod-module-in-android-studio"
 canonicalURL = "https://netherlandsdaniel.blogspot.com/2013/05/tips-for-using-admod-module-in-android.html"
 bloggerID = "7263569642981193798"
-tags = ["programming", "Android"]
+tags = ["Programming", "Android"]
 [cover]
   image = "/images/blogger/7263569642981193798/2043865899_2f123a0ab8_b.jpg"
 +++

@@ -4,7 +4,7 @@ date = "2008-04-24T21:49:00Z"
 slug = "sony-reader-再進化"
 canonicalURL = "https://netherlandsdaniel.blogspot.com/2008/04/sony-reader.html"
 bloggerID = "2610217805467080354"
-tags = ["Annecy Life", "SONY READER", "Olympus E510"]
+tags = ["Annecy Life", "Sony Reader", "Olympus E510"]
 +++
 
 [![P4194745 (by plateaukao)](/images/blogger/2610217805467080354/2431775521_0df3564671.jpg "P4194745 (by plateaukao)")](http://www.flickr.com/photos/plateau/2431775521/ "P4194745 (by plateaukao)")  

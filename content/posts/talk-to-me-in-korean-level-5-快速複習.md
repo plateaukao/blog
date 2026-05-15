@@ -4,7 +4,7 @@ date = "2020-02-25T14:31:00.002Z"
 slug = "talk-to-me-in-korean-level-5-快速複習"
 canonicalURL = "https://netherlandsdaniel.blogspot.com/2020/02/talk-to-me-in-korean-level-5.html"
 bloggerID = "2227331513226162423"
-tags = ["korean"]
+tags = ["Korean"]
 +++
 
 **第一課　-(으)ㄹ 뻔했다, 할 뻔했다　幾乎做了～**  

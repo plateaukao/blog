@@ -4,7 +4,7 @@ date = "2019-12-29T10:37:00.001Z"
 slug = "talk-to-me-in-korean-level-2-快速複習"
 canonicalURL = "https://netherlandsdaniel.blogspot.com/2019/12/talk-to-me-in-korean-level-2.html"
 bloggerID = "5350339909050500616"
-tags = ["korean"]
+tags = ["Korean"]
 +++
 
 最近開始比較認真的學習韓文。想說應該要來把一些資料記錄下來，方便之後複習用。Talk to Me in Korean 是一份很不錯的教材，每篇教學大約都 20 分鐘左右。平常上班通勤時間大約 40 分鐘，所以把 podcast 播放速度設定為 1.2 倍的話，都可以聽個兩課。  

@@ -4,7 +4,7 @@ date = "2008-10-04T16:51:00Z"
 slug = "單車烏來-windows-xp-英文化"
 canonicalURL = "https://netherlandsdaniel.blogspot.com/2008/10/windows-xp.html"
 bloggerID = "3813139290602440608"
-tags = ["Computer", "velo"]
+tags = ["Computer", "Cycling"]
 [cover]
   image = "/images/blogger/3813139290602440608/2912183794_d75eaec89a.jpg"
 +++

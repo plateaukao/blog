@@ -4,7 +4,7 @@ date = "2008-04-30T08:51:00Z"
 slug = "pc-version-of-vocabreview"
 canonicalURL = "https://netherlandsdaniel.blogspot.com/2008/04/pc-version-of-vocabreview.html"
 bloggerID = "2299633039893199712"
-tags = ["Computer", "onlineDic"]
+tags = ["Computer", "Online Dictionary"]
 [cover]
   image = "/images/blogger/2299633039893199712/2453427229_19297db7af.jpg"
 +++

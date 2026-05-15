@@ -4,7 +4,7 @@ date = "2008-03-16T08:00:00Z"
 slug = "onlinedic-update-again"
 canonicalURL = "https://netherlandsdaniel.blogspot.com/2008/03/onlinedic-update-again.html"
 bloggerID = "4569478266272591422"
-tags = ["Computer", "onlineDic", "Python"]
+tags = ["Computer", "Online Dictionary", "Python"]
 [cover]
   image = "/images/blogger/4569478266272591422/2336327899_b9639b9f8f_o.png"
 +++

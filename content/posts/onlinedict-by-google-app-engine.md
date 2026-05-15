@@ -4,7 +4,7 @@ date = "2010-03-04T23:47:00Z"
 slug = "onlinedict-by-google-app-engine"
 canonicalURL = "https://netherlandsdaniel.blogspot.com/2010/03/onlinedict-by-google-app-engine.html"
 bloggerID = "1742694637497403009"
-tags = ["Python", "onlineDic"]
+tags = ["Python", "Online Dictionary"]
 [cover]
   image = "/images/blogger/1742694637497403009/4405933201_fdbddd578f.jpg"
 +++

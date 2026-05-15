@@ -4,7 +4,7 @@ date = "2008-05-17T20:43:00Z"
 slug = "一不做二不休-modification-of-stardict-dictionary-file"
 canonicalURL = "https://netherlandsdaniel.blogspot.com/2008/05/modification-of-stardict-dictionary.html"
 bloggerID = "2583551067247184670"
-tags = ["onlineDic"]
+tags = ["Online Dictionary"]
 +++
 
 [![p7135667 (by plateaukao)](/images/blogger/2583551067247184670/431946618_2ec77df921.jpg "p7135667 (by plateaukao)")](http://www.flickr.com/photos/plateau/431946618/ "p7135667 (by plateaukao)")  

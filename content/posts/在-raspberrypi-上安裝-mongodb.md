@@ -4,7 +4,7 @@ date = "2014-07-23T05:04:00.004Z"
 slug = "在-raspberrypi-上安裝-mongodb"
 canonicalURL = "https://netherlandsdaniel.blogspot.com/2014/07/raspberrypi-mongodb.html"
 bloggerID = "8011221910639584033"
-tags = ["RaspberryPi"]
+tags = ["Raspberry Pi"]
 [cover]
   image = "/images/blogger/8011221910639584033/4107616709_5d1be58bb9_o.jpg"
 +++

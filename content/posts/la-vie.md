@@ -4,7 +4,7 @@ date = "2009-08-01T18:12:00Z"
 slug = "la-vie"
 canonicalURL = "https://netherlandsdaniel.blogspot.com/2009/08/la-vie.html"
 bloggerID = "1977334441174049569"
-tags = ["velo"]
+tags = ["Cycling"]
 +++
 
 [![P8012638.jpg (by plateaukao)](/images/blogger/1977334441174049569/3778676048_1c056007e6.jpg "P8012638.jpg (by plateaukao)")](http://www.flickr.com/photos/plateau/3778676048/ "P8012638.jpg (by plateaukao)")  

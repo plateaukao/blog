@@ -4,7 +4,7 @@ date = "2013-02-20T17:05:00.002Z"
 slug = "在未參加ios-developer-program的前提下在iphoneipad實機上測試開發中app"
 canonicalURL = "https://netherlandsdaniel.blogspot.com/2013/02/ios-developer-programiphoneipadapp.html"
 bloggerID = "8686974382411629765"
-tags = ["iOS", "programming"]
+tags = ["iOS", "Programming"]
 [cover]
   image = "/images/blogger/8686974382411629765/5427758925_c8ff86cf54_b.jpg"
 +++

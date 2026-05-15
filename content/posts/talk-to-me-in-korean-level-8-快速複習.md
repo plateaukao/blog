@@ -4,7 +4,7 @@ date = "2020-06-07T08:28:00.009Z"
 slug = "talk-to-me-in-korean-level-8-快速複習"
 canonicalURL = "https://netherlandsdaniel.blogspot.com/2020/06/talk-to-me-in-korean-level-8.html"
 bloggerID = "2437284655696990691"
-tags = ["korean"]
+tags = ["Korean"]
 +++
 
 **第一課 눈 眼 (I)**  

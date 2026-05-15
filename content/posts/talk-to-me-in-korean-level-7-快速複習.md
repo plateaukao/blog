@@ -4,7 +4,7 @@ date = "2020-04-15T14:57:00.001Z"
 slug = "talk-to-me-in-korean-level-7-快速複習"
 canonicalURL = "https://netherlandsdaniel.blogspot.com/2020/04/talk-to-me-in-korean-level-7.html"
 bloggerID = "8564941748954982369"
-tags = ["korean"]
+tags = ["Korean"]
 +++
 
 **第一課 -(는)구나 / -(는)군요 啊~原來~ (現在才了解/意識到~**  

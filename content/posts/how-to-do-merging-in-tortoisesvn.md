@@ -4,7 +4,7 @@ date = "2008-06-23T12:29:00Z"
 slug = "how-to-do-merging-in-tortoisesvn"
 canonicalURL = "https://netherlandsdaniel.blogspot.com/2008/06/how-to-do-merging-in-tortoisesvn.html"
 bloggerID = "9144630136791525351"
-tags = ["Annecy Life", "onlineDic"]
+tags = ["Annecy Life", "Online Dictionary"]
 +++
 
 [![R8071976 (by plateaukao)](/images/blogger/9144630136791525351/2602945683_da5f6eb41a.jpg "R8071976 (by plateaukao)")](http://www.flickr.com/photos/plateau/2602945683/ "R8071976 (by plateaukao)")  

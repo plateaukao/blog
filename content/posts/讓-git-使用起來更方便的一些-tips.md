@@ -4,7 +4,7 @@ date = "2014-10-10T17:28:00.001Z"
 slug = "讓-git-使用起來更方便的一些-tips"
 canonicalURL = "https://netherlandsdaniel.blogspot.com/2014/10/git-tips.html"
 bloggerID = "6283022408433599776"
-tags = ["git"]
+tags = ["Git"]
 [cover]
   image = "/images/blogger/6283022408433599776/PA081264.jpg"
 +++

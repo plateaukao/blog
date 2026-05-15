@@ -4,7 +4,7 @@ date = "2014-12-23T14:20:00.002Z"
 slug = "豈止於大-sony-dpt-s1-不專業開箱和心得分享"
 canonicalURL = "https://netherlandsdaniel.blogspot.com/2014/12/sony-dpt-s1.html"
 bloggerID = "2899222593558883865"
-tags = ["SONY READER"]
+tags = ["Sony Reader"]
 [cover]
   image = "/images/blogger/2899222593558883865/15467791323_c2376b0903_o.jpg"
 +++

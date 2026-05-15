@@ -4,7 +4,7 @@ date = "2013-02-17T17:53:00.001Z"
 slug = "ios-programming"
 canonicalURL = "https://netherlandsdaniel.blogspot.com/2013/02/ios-programming.html"
 bloggerID = "285253268776997783"
-tags = ["iOS", "programming"]
+tags = ["iOS", "Programming"]
 [cover]
   image = "/images/blogger/285253268776997783/8407172630_18d28a2ed3_b.jpg"
 +++

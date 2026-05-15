@@ -4,7 +4,7 @@ date = "2016-12-19T15:26:00Z"
 slug = "android-studio-升級至-22-後的-gradle-問題"
 canonicalURL = "https://netherlandsdaniel.blogspot.com/2016/12/android-studio-22-gradle.html"
 bloggerID = "3509823763714373228"
-tags = ["programming", "Android"]
+tags = ["Programming", "Android"]
 [cover]
   image = "/images/blogger/3509823763714373228/Screen_Shot_2016-12-19_at_11.24.58_PM.png"
 +++

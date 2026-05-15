@@ -4,7 +4,7 @@ date = "2016-12-30T10:25:00Z"
 slug = "line-bot-in-python-on-heroku"
 canonicalURL = "https://netherlandsdaniel.blogspot.com/2016/12/line-bot-in-python-on-heroku.html"
 bloggerID = "5891304227152096248"
-tags = ["bot", "programming"]
+tags = ["Bot", "Programming"]
 +++
 
 # 加入 cloud storage  

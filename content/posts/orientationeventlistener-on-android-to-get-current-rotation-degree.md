@@ -4,7 +4,7 @@ date = "2013-05-28T06:33:00.001Z"
 slug = "orientationeventlistener-on-android-to-get-current-rotation-degree"
 canonicalURL = "https://netherlandsdaniel.blogspot.com/2013/05/orientationeventlistener-on-android-to.html"
 bloggerID = "1898616034331393813"
-tags = ["programming", "Android"]
+tags = ["Programming", "Android"]
 [cover]
   image = "/images/blogger/1898616034331393813/4120153199_93cc8874c2_b.jpg"
 +++

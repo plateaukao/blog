@@ -4,7 +4,7 @@ date = "2013-02-20T08:01:00.001Z"
 slug = "難搞的oauth-process和文件不夠清楚的flickr-developer-documentation"
 canonicalURL = "https://netherlandsdaniel.blogspot.com/2013/02/oauth-processflickr-developer.html"
 bloggerID = "6270304994648693634"
-tags = ["iOS", "programming"]
+tags = ["iOS", "Programming"]
 [cover]
   image = "/images/blogger/6270304994648693634/197084726_44e5127d95_o.jpg"
 +++

@@ -4,7 +4,7 @@ date = "2017-01-31T13:07:00.001Z"
 slug = "learn-to-speak-korean-1"
 canonicalURL = "https://netherlandsdaniel.blogspot.com/2017/01/learn-to-speak-korean-1.html"
 bloggerID = "7430230061337735029"
-tags = ["korean"]
+tags = ["Korean"]
 +++
 
 看到之前同事有上完這堂課，想說也來看一下，反正已經胡亂地學了一陣子。

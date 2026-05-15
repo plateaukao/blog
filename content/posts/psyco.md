@@ -4,7 +4,7 @@ date = "2008-05-12T12:32:00Z"
 slug = "psyco"
 canonicalURL = "https://netherlandsdaniel.blogspot.com/2008/05/psyco.html"
 bloggerID = "865235787464995292"
-tags = ["Annecy Life", "onlineDic", "Ricoh GRD", "Python"]
+tags = ["Annecy Life", "Online Dictionary", "Ricoh GRD", "Python"]
 +++
 
 [![R8070920 (by plateaukao)](/images/blogger/865235787464995292/2483125369_8695d26953.jpg "R8070920 (by plateaukao)")](http://www.flickr.com/photos/plateau/2483125369/ "R8070920 (by plateaukao)")  

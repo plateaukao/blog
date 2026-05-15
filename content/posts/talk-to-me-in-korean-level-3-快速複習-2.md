@@ -4,7 +4,7 @@ date = "2020-01-04T09:30:00.003Z"
 slug = "talk-to-me-in-korean-level-3-快速複習-2"
 canonicalURL = "https://netherlandsdaniel.blogspot.com/2020/01/talk-to-me-in-korean-level-3.html"
 bloggerID = "6669076085698984209"
-tags = ["korean"]
+tags = ["Korean"]
 +++
 
 p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 17.0px 'Helvetica Neue'}

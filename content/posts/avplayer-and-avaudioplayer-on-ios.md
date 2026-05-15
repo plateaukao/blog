@@ -4,7 +4,7 @@ date = "2013-03-30T19:51:00Z"
 slug = "avplayer-and-avaudioplayer-on-ios"
 canonicalURL = "https://netherlandsdaniel.blogspot.com/2013/03/avplayer-and-avaudioplayer-on-ios.html"
 bloggerID = "3913354364059932815"
-tags = ["iOS", "programming"]
+tags = ["iOS", "Programming"]
 [cover]
   image = "/images/blogger/3913354364059932815/376379415_52e857274b_b.jpg"
 +++

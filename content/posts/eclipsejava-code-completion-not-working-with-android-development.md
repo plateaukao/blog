@@ -4,7 +4,7 @@ date = "2013-05-14T23:01:00.003Z"
 slug = "eclipsejava-code-completion-not-working-with-android-development"
 canonicalURL = "https://netherlandsdaniel.blogspot.com/2013/05/eclipsejava-code-completion-not-working.html"
 bloggerID = "4151509157271445010"
-tags = ["Android", "eclipse"]
+tags = ["Android", "Eclipse"]
 [cover]
   image = "/images/blogger/4151509157271445010/5009629221_af0f304ee4_b.jpg"
 +++

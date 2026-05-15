@@ -4,7 +4,7 @@ date = "2008-05-26T09:11:00Z"
 slug = "details-for-comiplation-of-ebmodule-20-under-ubuntu"
 canonicalURL = "https://netherlandsdaniel.blogspot.com/2008/05/details-for-comiplation-of-ebmodule-20.html"
 bloggerID = "1911249131889135482"
-tags = ["Computer", "onlineDic", "Linux", "Ricoh GRD"]
+tags = ["Computer", "Online Dictionary", "Linux", "Ricoh GRD"]
 [cover]
   image = "/images/blogger/1911249131889135482/2421215845_6324fb7a73.jpg"
 +++

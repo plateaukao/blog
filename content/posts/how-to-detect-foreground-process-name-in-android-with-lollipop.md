@@ -4,7 +4,7 @@ date = "2015-09-27T04:10:00Z"
 slug = "how-to-detect-foreground-process-name-in-android-with-lollipop"
 canonicalURL = "https://netherlandsdaniel.blogspot.com/2015/09/how-to-detect-foreground-process-name.html"
 bloggerID = "8280208682070887822"
-tags = ["programming", "Android"]
+tags = ["Programming", "Android"]
 [cover]
   image = "/images/blogger/8280208682070887822/373538371_70f1fe9eeb_o.jpg"
 +++

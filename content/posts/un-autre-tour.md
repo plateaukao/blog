@@ -4,7 +4,7 @@ date = "2008-09-21T11:05:00Z"
 slug = "un-autre-tour"
 canonicalURL = "https://netherlandsdaniel.blogspot.com/2008/09/un-autre-tour.html"
 bloggerID = "8119371395423091332"
-tags = ["velo", "Olympus E510"]
+tags = ["Cycling", "Olympus E510"]
 +++
 
 [![P9217138 (by plateaukao)](/images/blogger/8119371395423091332/2874482581_d23609441f.jpg "P9217138 (by plateaukao)")](http://flickr.com/photos/plateau/2874482581/ "P9217138 (by plateaukao)")  

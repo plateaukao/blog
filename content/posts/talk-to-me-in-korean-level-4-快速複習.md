@@ -4,7 +4,7 @@ date = "2020-01-26T01:08:00Z"
 slug = "talk-to-me-in-korean-level-4-快速複習"
 canonicalURL = "https://netherlandsdaniel.blogspot.com/2020/01/talk-to-me-in-korean-level-4.html"
 bloggerID = "1666276143832065114"
-tags = ["korean"]
+tags = ["Korean"]
 +++
 
 **第一課 -면 Vst  + 을수록 愈~愈~**  

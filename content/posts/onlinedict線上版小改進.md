@@ -4,7 +4,7 @@ date = "2010-03-22T14:54:00Z"
 slug = "onlinedict線上版小改進"
 canonicalURL = "https://netherlandsdaniel.blogspot.com/2010/03/onlinedict.html"
 bloggerID = "3122924360478465834"
-tags = ["Python", "onlineDic"]
+tags = ["Python", "Online Dictionary"]
 [cover]
   image = "/images/blogger/3122924360478465834/2013246339_5de3a794ba.jpg"
 +++

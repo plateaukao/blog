@@ -4,7 +4,7 @@ date = "2020-03-16T14:50:00.003Z"
 slug = "talk-to-me-in-korean-level-6-快速複習"
 canonicalURL = "https://netherlandsdaniel.blogspot.com/2020/03/talk-to-me-in-korean-level-6.html"
 bloggerID = "2292461040666301517"
-tags = ["korean"]
+tags = ["Korean"]
 +++
 
 **第一課 ~ 어때요? ~如何**  

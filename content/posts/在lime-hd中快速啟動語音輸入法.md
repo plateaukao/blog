@@ -4,7 +4,7 @@ date = "2013-06-09T16:14:00Z"
 slug = "在lime-hd中快速啟動語音輸入法"
 canonicalURL = "https://netherlandsdaniel.blogspot.com/2013/06/lime-hd.html"
 bloggerID = "8586416849300642508"
-tags = ["programming", "Android"]
+tags = ["Programming", "Android"]
 [cover]
   image = "/images/blogger/8586416849300642508/8988184819_15e50ca1d3_k.jpg"
 +++

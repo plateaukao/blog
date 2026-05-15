@@ -4,7 +4,7 @@ date = "2017-02-16T07:01:00.002Z"
 slug = "在-mac-裡一直被要求輸入-ssh-passphrase"
 canonicalURL = "https://netherlandsdaniel.blogspot.com/2017/02/mac-ssh-passphrase.html"
 bloggerID = "6763686174160027143"
-tags = ["ssh", "Mac"]
+tags = ["SSH", "Mac"]
 +++
 
 不知道從哪次更新後，每次要用 git 指令跟遠端的 git server 互動時，都會跳出輸入 passphrase 的要求。一次兩次還好，久了就覺得很煩。  

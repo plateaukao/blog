@@ -4,7 +4,7 @@ date = "2010-02-23T18:14:00Z"
 slug = "development-on-android"
 canonicalURL = "https://netherlandsdaniel.blogspot.com/2010/02/development-on-android.html"
 bloggerID = "1948276915746663846"
-tags = ["onlineDic", "Python", "Android"]
+tags = ["Online Dictionary", "Python", "Android"]
 [cover]
   image = "/images/blogger/1948276915746663846/1988442594_283751c7d0.jpg"
 +++

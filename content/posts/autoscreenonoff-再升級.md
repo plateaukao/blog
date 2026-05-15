@@ -4,7 +4,7 @@ date = "2014-07-22T15:00:00.001Z"
 slug = "autoscreenonoff-再升級"
 canonicalURL = "https://netherlandsdaniel.blogspot.com/2014/07/autoscreenonoff.html"
 bloggerID = "5027626825927423780"
-tags = ["Computer", "programming", "Android"]
+tags = ["Computer", "Programming", "Android"]
 [cover]
   image = "/images/blogger/5027626825927423780/5479178966_7069c28f5f_o.jpg"
 +++

@@ -4,7 +4,7 @@ date = "2022-06-26T13:26:00.003Z"
 slug = "kickstart-modern-android-development-with-jetpack-and-kotlin-catalin-ghita"
 canonicalURL = "https://netherlandsdaniel.blogspot.com/2022/06/kickstart-modern-android-development.html"
 bloggerID = "7702191605544384962"
-tags = ["Books", "programming", "Android"]
+tags = ["Books", "Programming", "Android"]
 [cover]
   image = "/images/blogger/7702191605544384962/AVvXsEiR91K77JLKtBQxeeMz28r8QXb8_zxOVJ3m_m5iXzoj7z8oXhw5G4QMJ1pOY1U_V_JZ8kJAC37Q7-bGlw48p79M3WwDxrH7TgH1GH8zMbkVptuQp1HmgA5keSUfpJN5I8TU3LuUwzMWQBw1CdVs3oQMaD4keZNSR0CRq91V7yP_e4LZEomP17Q1AGL0.jpg"
 +++

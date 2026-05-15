@@ -4,7 +4,7 @@ date = "2009-10-25T17:42:00Z"
 slug = "resurrect-my-onlinedict"
 canonicalURL = "https://netherlandsdaniel.blogspot.com/2009/10/resurrect-my-onlinedict.html"
 bloggerID = "1704814435752824213"
-tags = ["onlineDic"]
+tags = ["Online Dictionary"]
 +++
 
 [![R8076411 (by plateaukao)](/images/blogger/1704814435752824213/4027271926_1552f2f592.jpg "R8076411 (by plateaukao)")](http://www.flickr.com/photos/plateau/4027271926/ "R8076411 (by plateaukao)")  

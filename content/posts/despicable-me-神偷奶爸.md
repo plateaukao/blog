@@ -4,7 +4,7 @@ date = "2010-08-01T13:37:00Z"
 slug = "despicable-me-神偷奶爸"
 canonicalURL = "https://netherlandsdaniel.blogspot.com/2010/08/despicable-me.html"
 bloggerID = "442695215379684687"
-tags = ["velo", "Movie"]
+tags = ["Cycling", "Movie"]
 [cover]
   image = "/images/blogger/442695215379684687/4849046172_80cf63ed06_z.jpg"
 +++

@@ -4,7 +4,7 @@ date = "2013-06-06T09:25:00Z"
 slug = "some-hacking-articles-about-ideavim-under-intellij"
 canonicalURL = "https://netherlandsdaniel.blogspot.com/2013/06/some-hacking-articles-about-ideavim.html"
 bloggerID = "2169089169489441445"
-tags = ["programming", "Android"]
+tags = ["Programming", "Android"]
 [cover]
   image = "/images/blogger/2169089169489441445/376535441_f2749ab9f5_o.jpg"
 +++

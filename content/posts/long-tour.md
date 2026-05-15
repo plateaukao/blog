@@ -4,7 +4,7 @@ date = "2008-09-20T14:13:00Z"
 slug = "long-tour"
 canonicalURL = "https://netherlandsdaniel.blogspot.com/2008/09/long-tour.html"
 bloggerID = "5723953767806797116"
-tags = ["velo"]
+tags = ["Cycling"]
 +++
 
 [![DSC_0910 (by plateaukao)](/images/blogger/5723953767806797116/2872958048_28214c152b.jpg "DSC_0910 (by plateaukao)")](http://www.flickr.com/photos/plateau/2872958048/ "DSC_0910 (by plateaukao)")  

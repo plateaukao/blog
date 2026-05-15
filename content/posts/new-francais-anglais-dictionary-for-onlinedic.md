@@ -4,7 +4,7 @@ date = "2008-04-02T11:17:00Z"
 slug = "new-francais-anglais-dictionary-for-onlinedic"
 canonicalURL = "https://netherlandsdaniel.blogspot.com/2008/04/new-francais-anglais-dictionary-for.html"
 bloggerID = "6388428973726346216"
-tags = ["Annecy Life", "onlineDic", "Python"]
+tags = ["Annecy Life", "Online Dictionary", "Python"]
 +++
 
 [![PA273853 (by plateaukao)](/images/blogger/6388428973726346216/1779980644_79f4b22b48.jpg "PA273853 (by plateaukao)")](http://www.flickr.com/photos/plateau/1779980644/ "PA273853 (by plateaukao)")  

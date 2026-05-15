@@ -4,7 +4,7 @@ date = "2008-05-07T20:29:00Z"
 slug = "add-global-hotkeys-for-onlinedic-on-windows-platform"
 canonicalURL = "https://netherlandsdaniel.blogspot.com/2008/05/add-global-hotkeys-for-onlinedic-on.html"
 bloggerID = "1646829690445729770"
-tags = ["Annecy Life", "onlineDic", "Ricoh GRD", "Python"]
+tags = ["Annecy Life", "Online Dictionary", "Ricoh GRD", "Python"]
 +++
 
 [![R8070831 (by plateaukao)](/images/blogger/1646829690445729770/2474074696_0f5d8f18cb.jpg "R8070831 (by plateaukao)")](http://www.flickr.com/photos/plateau/2474074696/ "R8070831 (by plateaukao)")  

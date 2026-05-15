@@ -4,7 +4,7 @@ date = "2013-02-28T14:16:00.001Z"
 slug = "big-data-and-hadoop"
 canonicalURL = "https://netherlandsdaniel.blogspot.com/2013/02/big-data-and-hadoop.html"
 bloggerID = "1841076477405711307"
-tags = ["programming"]
+tags = ["Programming"]
 [cover]
   image = "/images/blogger/1841076477405711307/392332859_6d08197b35_b.jpg"
 +++

@@ -4,7 +4,7 @@ date = "2008-05-16T15:01:00Z"
 slug = "onlinedic-supports-word-list-now"
 canonicalURL = "https://netherlandsdaniel.blogspot.com/2008/05/onlinedic-supports-word-list-now.html"
 bloggerID = "5134133652107807728"
-tags = ["onlineDic"]
+tags = ["Online Dictionary"]
 +++
 
 [![onlinedic_word_list (by plateaukao)](/images/blogger/5134133652107807728/2497410610_472791d66a.jpg "onlinedic_word_list (by plateaukao)")](http://www.flickr.com/photos/plateau/2497410610/ "onlinedic_word_list (by plateaukao)")  

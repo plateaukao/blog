@@ -4,7 +4,7 @@ date = "2013-06-01T10:48:00.001Z"
 slug = "gradle-build-error-in-comman-line-for-android-studio-app-projects"
 canonicalURL = "https://netherlandsdaniel.blogspot.com/2013/06/gradle-build-error-in-comman-line-for.html"
 bloggerID = "4105251298569710537"
-tags = ["programming", "Android"]
+tags = ["Programming", "Android"]
 [cover]
   image = "/images/blogger/4105251298569710537/IMAG1396_ZOE001-MOTION.gif"
 +++

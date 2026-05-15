@@ -4,7 +4,7 @@ date = "2008-07-28T08:02:00Z"
 slug = "feed-parsing-in-calibre-for-sony-reader-prs-500"
 canonicalURL = "https://netherlandsdaniel.blogspot.com/2008/07/feed-parsing-in-calibre-for-sony-reader.html"
 bloggerID = "5928581211822009176"
-tags = ["Computer", "Olympus E300", "SONY READER"]
+tags = ["Computer", "Olympus E300", "Sony Reader"]
 +++
 
 [![P1100010 (by plateaukao)](/images/blogger/5928581211822009176/2185635102_58f43dcd1b.jpg "P1100010 (by plateaukao)")](http://www.flickr.com/photos/plateau/2185635102/ "P1100010 (by plateaukao)")  

@@ -4,7 +4,7 @@ date = "2009-02-22T16:41:00Z"
 slug = "mt-rainier"
 canonicalURL = "https://netherlandsdaniel.blogspot.com/2009/02/mt-rainier.html"
 bloggerID = "8844797921197430594"
-tags = ["Travail", "Drawing", "Windows Mobile", "velo"]
+tags = ["Travail", "Drawing", "Windows Mobile", "Cycling"]
 +++
 
 [![R8073981 (by plateaukao)](/images/blogger/8844797921197430594/3299793909_948c45f661.jpg "R8073981 (by plateaukao)")](http://flickr.com/photos/plateau/3299793909/ "R8073981 (by plateaukao)")  

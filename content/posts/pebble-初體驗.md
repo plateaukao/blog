@@ -4,7 +4,7 @@ date = "2014-08-07T16:57:00Z"
 slug = "pebble-初體驗"
 canonicalURL = "https://netherlandsdaniel.blogspot.com/2014/08/pebble.html"
 bloggerID = "2824160816506306488"
-tags = ["pebble"]
+tags = ["Pebble"]
 [cover]
   image = "/images/blogger/2824160816506306488/1986083479_ea2b59638b_o.jpg"
 +++

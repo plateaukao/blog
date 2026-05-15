@@ -4,7 +4,7 @@ date = "2008-01-15T19:55:00Z"
 slug = "sony-reader-再復活"
 canonicalURL = "https://netherlandsdaniel.blogspot.com/2008/01/sony-reader.html"
 bloggerID = "824299446149482811"
-tags = ["Olympus E300", "SONY READER"]
+tags = ["Olympus E300", "Sony Reader"]
 +++
 
 [![PB104497 (by plateaukao)](/images/blogger/824299446149482811/1961849964_0f91f1960d.jpg "PB104497 (by plateaukao)")](http://www.flickr.com/photos/plateau/1961849964/ "PB104497 (by plateaukao)")  

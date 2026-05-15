@@ -4,7 +4,7 @@ date = "2016-11-26T09:10:00.002Z"
 slug = "升級-android-studio"
 canonicalURL = "https://netherlandsdaniel.blogspot.com/2016/11/android-studio.html"
 bloggerID = "409242588430470794"
-tags = ["programming", "Android"]
+tags = ["Programming", "Android"]
 +++
 
 有半年以上沒有動 Android Studio 了吧。最近又要開始使用 NerAudioList ，想說把原本串 parse.com 的部分改為 firebase，因為 parse.com 的大限快到了。為了改 code，只好升級一下 android studio，沒想到這是條漫長的路。  

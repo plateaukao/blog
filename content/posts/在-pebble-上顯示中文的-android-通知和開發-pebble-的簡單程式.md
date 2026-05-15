@@ -4,7 +4,7 @@ date = "2014-08-13T15:51:00Z"
 slug = "在-pebble-上顯示中文的-android-通知和開發-pebble-的簡單程式"
 canonicalURL = "https://netherlandsdaniel.blogspot.com/2014/08/pebble-android-pebble.html"
 bloggerID = "3424188634377675216"
-tags = ["pebble", "programming"]
+tags = ["Pebble", "Programming"]
 [cover]
   image = "/images/blogger/3424188634377675216/2096998891_364264a8a1_o.jpg"
 +++

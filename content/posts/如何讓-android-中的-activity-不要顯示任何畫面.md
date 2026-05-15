@@ -4,7 +4,7 @@ date = "2014-06-22T03:08:00Z"
 slug = "如何讓-android-中的-activity-不要顯示任何畫面"
 canonicalURL = "https://netherlandsdaniel.blogspot.com/2014/06/android-activity.html"
 bloggerID = "3191908606506004196"
-tags = ["programming", "Android"]
+tags = ["Programming", "Android"]
 [cover]
   image = "http://3.bp.blogspot.com/-899VDUUPPQU/U6ZG46PQq8I/AAAAAAAA9YQ/XLkOcTeJ7h4/s1600/P6210357.JPG"
 +++

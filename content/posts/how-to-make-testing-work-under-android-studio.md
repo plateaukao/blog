@@ -4,7 +4,7 @@ date = "2013-06-03T18:10:00.002Z"
 slug = "how-to-make-testing-work-under-android-studio"
 canonicalURL = "https://netherlandsdaniel.blogspot.com/2013/06/how-to-make-testing-work-under-android.html"
 bloggerID = "5121282738638358012"
-tags = ["programming", "Android"]
+tags = ["Programming", "Android"]
 [cover]
   image = "/images/blogger/5121282738638358012/2044110721_0ef215ae91_b.jpg"
 +++

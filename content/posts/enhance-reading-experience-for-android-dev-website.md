@@ -4,7 +4,7 @@ date = "2013-05-20T13:59:00.002Z"
 slug = "enhance-reading-experience-for-android-dev-website"
 canonicalURL = "https://netherlandsdaniel.blogspot.com/2013/05/enhance-reading-experience-for-android.html"
 bloggerID = "8040249807488410138"
-tags = ["Computer", "programming", "Android"]
+tags = ["Computer", "Programming", "Android"]
 [cover]
   image = "/images/blogger/8040249807488410138/266808319_85a363fd82_o.jpg"
 +++

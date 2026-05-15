@@ -4,7 +4,7 @@ date = "2008-01-22T10:12:00Z"
 slug = "libprs500-for-sony-reader"
 canonicalURL = "https://netherlandsdaniel.blogspot.com/2008/01/libprs500-for-sony-reader.html"
 bloggerID = "895369896837961734"
-tags = ["Olympus E300", "SONY READER"]
+tags = ["Olympus E300", "Sony Reader"]
 +++
 
 [![Elephant Fountain (by plateaukao)](/images/blogger/895369896837961734/2205183132_762d3b8e45.jpg "Elephant Fountain (by plateaukao)")](http://www.flickr.com/photos/plateau/2205183132/ "Elephant Fountain (by plateaukao)")  
