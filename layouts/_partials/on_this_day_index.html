@@ -1,0 +1,14 @@
+{{- /*
+  Builds a map of "MM-DD" -> all posts published on that calendar day, across
+  every year. Call via partialCached so this whole-archive scan runs once per
+  build, not once per post:  {{ $idx := partialCached "on_this_day_index.html" . }}
+
+  NOTE: do not use Pages.GroupByDate here — it only groups *contiguous* pages
+  sharing a key, so with the default date-sorted page list the same MM-DD
+  recurs as a separate group per year. We accumulate manually instead.
+*/ -}}
+{{- $s := newScratch }}
+{{- range (where site.RegularPages "Section" "posts") }}
+{{- $s.Add (.Date.Format "01-02") (slice .) }}
+{{- end }}
+{{- return $s.Values }}

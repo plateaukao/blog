@@ -1,0 +1,22 @@
+{{- /*
+  "On this day" — other posts published on the same month/day in other years.
+  Renders nothing when the current post is the only one for that calendar day.
+*/ -}}
+{{- $idx := partialCached "on_this_day_index.html" . }}
+{{- $key := .Date.Format "01-02" }}
+{{- $all := index $idx $key }}
+{{- $others := where $all "Permalink" "!=" .Permalink }}
+{{- with $others }}
+{{- $title := site.Params.onThisDayTitle | default "歷史上的今天" }}
+<section class="on-this-day">
+  <h3>{{ $title }} · {{ $.Date.Format "1/2" }}</h3>
+  <ul>
+    {{- range sort . "Date" "desc" }}
+    <li>
+      <time>{{ .Date.Format "2006" }}</time>
+      <a href="{{ .Permalink }}">{{ .Title }}</a>
+    </li>
+    {{- end }}
+  </ul>
+</section>
+{{- end }}
