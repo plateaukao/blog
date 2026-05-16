@@ -1,4 +1,8 @@
 {{- with site.Params.homeInfoParams }}
+<figure class="home-banner">
+    <img src="{{ "images/banner/banner.jpg" | relURL }}" width="1449" height="831"
+         alt="Snowy mountain slope, Niseko" loading="eager" fetchpriority="high">
+</figure>
 <div class="home-social">
     {{ partial "social_icons.html" (dict "align" .AlignSocialIconsTo) }}
 </div>

@@ -14,6 +14,10 @@ canonifyURLs = true
   defaultTheme = "auto"
   # Listing layout: "full" | "thumb-left" | "thumb-right"
   listStyle = "full"
+  # Fallback share image (Open Graph / Twitter) for pages without their own
+  # image — e.g. the home page. Posts override this with their first inline
+  # image via each post's [cover].image front matter.
+  images = ["images/banner/og.jpg"]
 
 [params.cover]
   # Cover already appears as the first inline image in the body, so hide
