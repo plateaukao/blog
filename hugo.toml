@@ -6,6 +6,7 @@ enableRobotsTXT = true
 buildDrafts = false
 hasCJKLanguage = true
 canonifyURLs = true
+googleAnalytics = "G-XQSZXV7E00"
 
 [pagination]
   pagerSize = 10
