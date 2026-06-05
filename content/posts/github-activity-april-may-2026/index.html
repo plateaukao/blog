@@ -1,0 +1,488 @@
++++
+title = "My GitHub Activity — April & May 2026"
+date = "2026-06-06T00:00:00+08:00"
+description = "A data-driven look at two months of open-source work: 318 dev commits across 22 repos, what the line counts actually are (code vs. assets vs. docs), and why EinkBro dominated."
+slug = "github-activity-april-may-2026"
+tags = ["EinkBro", "Report", "Programming"]
+layout = "report"
+[cover]
+  hidden = true
++++
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>GitHub Activity · Apr–May 2026</title>
+<style>
+  :root {
+    --bg:#0b0e14; --panel:#141925; --panel2:#1b2333; --ink:#e6edf3; --muted:#8b98a9;
+    --line:#222c3d; --accent:#6366f1; --pos:#3fb950; --neg:#f85149;
+  }
+  * { box-sizing:border-box; }
+  body { margin:0; background:linear-gradient(180deg,#0b0e14,#0d1320); color:var(--ink);
+    font:15px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif; }
+  .wrap { max-width:1040px; margin:0 auto; padding:56px 28px 80px; }
+  header h1 { font-size:34px; font-weight:700; margin:0 0 6px; letter-spacing:-.02em; }
+  header .sub { color:var(--muted); font-size:16px; margin-bottom:4px; }
+  header .who { color:var(--accent); font-weight:600; }
+  .stats { display:grid; grid-template-columns:repeat(4,1fr); gap:14px; margin:34px 0 8px; }
+  .stat { background:var(--panel); border:1px solid var(--line); border-radius:14px; padding:20px 18px; }
+  .stat .v { font-size:30px; font-weight:700; letter-spacing:-.02em; }
+  .stat .l { color:var(--muted); font-size:13px; margin-top:4px; }
+  .stat .v.pos { color:var(--pos); } .stat .v.neg { color:var(--neg); }
+  section { margin-top:48px; }
+  h2 { font-size:13px; text-transform:uppercase; letter-spacing:.12em; color:var(--muted);
+    font-weight:600; margin:0 0 18px; padding-bottom:10px; border-bottom:1px solid var(--line); }
+  .card { background:var(--panel); border:1px solid var(--line); border-radius:16px; padding:26px; }
+  /* weekly chart */
+  .weekly { display:flex; gap:14px; align-items:flex-end; height:240px; }
+  .wk { flex:1; display:flex; flex-direction:column; align-items:center; gap:10px; height:100%; }
+  .wk-bar-wrap { flex:1; width:100%; display:flex; flex-direction:column; justify-content:flex-end; align-items:center; gap:6px; }
+  .wk-bar { width:70%; max-width:54px; background:linear-gradient(180deg,#818cf8,#4f46e5); border-radius:7px 7px 3px 3px; min-height:4px; }
+  .wk-val { font-size:13px; font-weight:700; color:var(--ink); }
+  .wk-label { font-size:11px; color:var(--muted); text-align:center; line-height:1.3; }
+  /* daily */
+  .daily { display:flex; gap:2px; align-items:flex-end; height:90px; }
+  .d-bar { flex:1; background:linear-gradient(180deg,#34d399,#059669); border-radius:2px 2px 0 0; min-height:2px; }
+  .d-bar.zero { background:#222c3d; }
+  .daily-axis { display:flex; justify-content:space-between; color:var(--muted); font-size:11px; margin-top:8px; }
+  /* repo table */
+  table { width:100%; border-collapse:collapse; }
+  thead th { text-align:left; font-size:11px; text-transform:uppercase; letter-spacing:.08em;
+    color:var(--muted); font-weight:600; padding:0 12px 12px; border-bottom:1px solid var(--line); }
+  th.num,td.num { text-align:right; font-variant-numeric:tabular-nums; }
+  tbody td { padding:13px 12px; border-bottom:1px solid var(--line); vertical-align:middle; }
+  tbody tr:last-child td { border-bottom:none; }
+  .repo a { color:var(--ink); text-decoration:none; font-weight:600; }
+  .repo a:hover { color:var(--accent); }
+  .repo .desc { color:var(--muted); font-size:12px; font-weight:400; margin-top:2px; }
+  .dot { display:inline-block; width:9px; height:9px; border-radius:50%; margin-right:8px; vertical-align:middle; }
+  .bar-cell { width:20%; }
+  .bar { height:8px; border-radius:5px; min-width:3px; }
+  .bar-split { display:flex; height:8px; border-radius:5px; overflow:hidden; background:#1b2333; }
+  .bseg { height:8px; }
+  td.mo { color:var(--muted); font-size:13px; }
+  .pos { color:var(--pos); } .neg { color:var(--neg); }
+  /* month cards */
+  .months { display:grid; grid-template-columns:1fr 1fr; gap:16px; }
+  .mcard { background:var(--panel); border:1px solid var(--line); border-radius:16px; padding:24px; }
+  .mhead { display:flex; justify-content:space-between; align-items:baseline; margin-bottom:14px; }
+  .mname { font-size:22px; font-weight:700; letter-spacing:-.01em; }
+  .mcount { font-size:14px; color:var(--accent); font-weight:600; }
+  .mbarwrap { height:10px; background:#1b2333; border-radius:6px; overflow:hidden; margin-bottom:20px; }
+  .mbar { height:10px; background:linear-gradient(90deg,#818cf8,#22d3ee); border-radius:6px; }
+  .mgrid { display:grid; grid-template-columns:repeat(4,1fr); gap:12px; margin-bottom:16px; }
+  .mv { font-size:20px; font-weight:700; letter-spacing:-.01em; }
+  .ml { color:var(--muted); font-size:12px; margin-top:2px; }
+  .mtop { color:#c4cdda; font-size:13px; padding-top:14px; border-top:1px solid var(--line); }
+  .mtop strong { color:var(--ink); }
+  .legend { display:flex; gap:18px; margin-top:16px; color:var(--muted); font-size:12px; align-items:center; flex-wrap:wrap; }
+  .legend span { display:inline-flex; align-items:center; gap:6px; }
+  .legend i { width:11px; height:11px; border-radius:3px; display:inline-block; }
+  /* line composition */
+  .comp-bar { display:flex; height:34px; border-radius:9px; overflow:hidden; background:#1b2333; }
+  .cseg { height:34px; }
+  .comp-legend { display:grid; grid-template-columns:repeat(3,1fr); gap:16px; margin-top:22px; }
+  .citem { display:flex; gap:10px; align-items:flex-start; }
+  .cdot { width:13px; height:13px; border-radius:4px; margin-top:4px; flex:none; }
+  .cval { font-size:20px; font-weight:700; letter-spacing:-.01em; }
+  .cpct { font-size:13px; color:var(--muted); font-weight:600; }
+  .clbl { color:var(--muted); font-size:12px; margin-top:2px; }
+  /* line-type table cells */
+  td.code { color:#a5b4fc; font-variant-numeric:tabular-nums; }
+  td.asset { color:#6ee7b7; font-variant-numeric:tabular-nums; }
+  td.doc { color:#fcd34d; font-variant-numeric:tabular-nums; }
+  .cat-head { display:flex; align-items:baseline; gap:10px; margin:6px 0 2px; }
+  .cat-head h3 { font-size:16px; margin:0; }
+  .cat-head .ch-sub { color:var(--muted); font-size:13px; }
+  tr.subtotal td { border-top:1px solid var(--line); border-bottom:none; font-weight:700;
+    color:var(--ink); background:rgba(99,102,241,.06); }
+  tr.subtotal td:first-child { color:var(--muted); font-weight:600; text-transform:uppercase; font-size:11px; letter-spacing:.06em; }
+  /* hero row */
+  .hero { background:linear-gradient(135deg,rgba(99,102,241,.16),rgba(34,211,238,.08));
+    border:1px solid #34406b; border-radius:14px; padding:20px 22px; margin-bottom:24px; }
+  .hero-top { display:flex; justify-content:space-between; align-items:flex-start; gap:14px; margin-bottom:14px; }
+  .hero-name { font-size:19px; font-weight:700; color:var(--ink); text-decoration:none; letter-spacing:-.01em; }
+  .hero-name:hover { color:var(--accent); }
+  .hero-desc { color:var(--muted); font-size:13px; margin-top:3px; }
+  .hero-badge { flex:none; background:#4f46e5; color:#fff; font-size:13px; font-weight:600;
+    padding:7px 14px; border-radius:999px; white-space:nowrap; }
+  .hero-bar { display:flex; height:12px; border-radius:7px; overflow:hidden; background:#1b2333; margin-bottom:14px; }
+  .hero-meta { display:flex; gap:22px; flex-wrap:wrap; font-size:13px; color:var(--muted); }
+  .hero-meta b { font-weight:700; }
+  .hero-meta .hero-split { margin-left:auto; }
+  .scale-note { color:var(--muted); font-size:12px; margin:2px 0 14px; }
+  /* narrative */
+  .prose p { color:#c4cdda; }
+  .prose strong { color:var(--ink); }
+  .tag { display:inline-block; background:var(--panel2); border:1px solid var(--line); color:var(--muted);
+    border-radius:999px; padding:3px 11px; font-size:12px; margin:0 6px 8px 0; }
+  .callout { background:var(--panel2); border-left:3px solid var(--accent); border-radius:8px;
+    padding:14px 18px; margin:16px 0; color:#c4cdda; font-size:14px; }
+  /* weekly detail */
+  .wgrid { display:grid; grid-template-columns:1fr 1fr; gap:16px; }
+  .wcard { background:var(--panel); border:1px solid var(--line); border-radius:14px; padding:18px 20px; }
+  .wcard h3 { margin:0 0 12px; font-size:15px; display:flex; justify-content:space-between; align-items:baseline; flex-wrap:wrap; gap:6px; }
+  .wsum { font-size:12px; color:var(--muted); font-weight:500; }
+  .wtable td,.wtable th { padding:7px 8px; font-size:13px; }
+  .wtable td { border-bottom:1px solid var(--line); }
+  footer { margin-top:56px; color:var(--muted); font-size:12px; text-align:center; }
+  @media (max-width:720px) { .stats { grid-template-columns:repeat(2,1fr); } .wgrid { grid-template-columns:1fr; } .weekly { height:190px; } }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>GitHub Activity Report</h1>
+    <div class="sub">April – May 2026 · <span class="who">@plateaukao</span></div>
+    <div class="sub" style="font-size:13px;margin-top:6px">Dev activity only — <strong style="color:#c4cdda">ADR</strong> (46 auto-generated commits) and <strong style="color:#c4cdda">blog</strong> (16 content commits) excluded from all counts.</div>
+  </header>
+
+  <div class="stats">
+    <div class="stat"><div class="v">318</div><div class="l">Commits</div></div>
+    <div class="stat"><div class="v pos">+89,764</div><div class="l">Lines added</div></div>
+    <div class="stat"><div class="v neg">−25,236</div><div class="l">Lines removed</div></div>
+    <div class="stat"><div class="v">22</div><div class="l">Repositories</div></div>
+  </div>
+  <div class="stats">
+    <div class="stat"><div class="v" style="color:#a5b4fc">+67,238</div><div class="l">Actual code lines (75% of additions)</div></div>
+    <div class="stat"><div class="v">194<span style="font-size:16px;color:var(--muted)"> / 318</span></div><div class="l">Commits on EinkBro (61%)</div></div>
+    <div class="stat"><div class="v">47<span style="font-size:16px;color:var(--muted)"> / 61</span></div><div class="l">Active days · 6.8/day</div></div>
+    <div class="stat"><div class="v">27</div><div class="l">Busiest day (Apr 6)</div></div>
+  </div>
+
+  <section>
+    <h2>By month</h2>
+    <div class="months"><div class="mcard">
+      <div class="mhead"><span class="mname">April</span><span class="mcount">240 commits</span></div>
+      <div class="mbarwrap"><div class="mbar" style="width:100.0%"></div></div>
+      <div class="mgrid">
+        <div><div class="mv pos">+70,229</div><div class="ml">added</div></div>
+        <div><div class="mv neg">−23,156</div><div class="ml">removed</div></div>
+        <div><div class="mv">29</div><div class="ml">active days</div></div>
+        <div><div class="mv">14</div><div class="ml">repos</div></div>
+      </div>
+      <div class="mtop">Top project · <strong>EinkBro browser</strong> (157 commits)</div>
+    </div><div class="mcard">
+      <div class="mhead"><span class="mname">May</span><span class="mcount">78 commits</span></div>
+      <div class="mbarwrap"><div class="mbar" style="width:32.5%"></div></div>
+      <div class="mgrid">
+        <div><div class="mv pos">+19,535</div><div class="ml">added</div></div>
+        <div><div class="mv neg">−2,080</div><div class="ml">removed</div></div>
+        <div><div class="mv">18</div><div class="ml">active days</div></div>
+        <div><div class="mv">11</div><div class="ml">repos</div></div>
+      </div>
+      <div class="mtop">Top project · <strong>EinkBro browser</strong> (37 commits)</div>
+    </div></div>
+  </section>
+
+  <section>
+    <h2>What the line changes actually are</h2>
+    <div class="card">
+      <div class="comp-bar"><div class="cseg" style="width:74.91%;background:#6366f1" title="Code: +67,238"></div><div class="cseg" style="width:2.84%;background:#f59e0b" title="Docs &amp; content: +2,551"></div><div class="cseg" style="width:22.25%;background:#10b981" title="Assets &amp; resources: +19,975"></div></div>
+      <div class="comp-legend"><div class="citem"><span class="cdot" style="background:#6366f1"></span><div><div class="cval">+67,238 <span class="cpct">75%</span></div><div class="clbl">Code</div></div></div><div class="citem"><span class="cdot" style="background:#f59e0b"></span><div><div class="cval">+2,551 <span class="cpct">3%</span></div><div class="clbl">Docs &amp; content</div></div></div><div class="citem"><span class="cdot" style="background:#10b981"></span><div><div class="cval">+19,975 <span class="cpct">22%</span></div><div class="clbl">Assets &amp; resources</div></div></div></div>
+      <div class="callout" style="margin-top:22px;margin-bottom:0">With ADR and blog removed, <strong style="color:#a5b4fc">75% of the +89,764 additions is hand-written code</strong>. The rest is <strong>22% binary assets/resources</strong> (mostly calliplus's SVG calligraphy library, plus images &amp; fonts) and just <strong>3% docs</strong> (READMEs and in-repo notes). Real engineering output is <strong style="color:#a5b4fc">+67,238 code lines</strong>.</div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Commits by week</h2>
+    <div class="card"><div class="weekly"><div class="wk">
+      <div class="wk-bar-wrap"><div class="wk-val">53</div><div class="wk-bar" style="height:53.0%"></div></div>
+      <div class="wk-label">Apr 1 – Apr 5</div>
+    </div><div class="wk">
+      <div class="wk-bar-wrap"><div class="wk-val">100</div><div class="wk-bar" style="height:100.0%"></div></div>
+      <div class="wk-label">Apr 6 – Apr 12</div>
+    </div><div class="wk">
+      <div class="wk-bar-wrap"><div class="wk-val">41</div><div class="wk-bar" style="height:41.0%"></div></div>
+      <div class="wk-label">Apr 13 – Apr 19</div>
+    </div><div class="wk">
+      <div class="wk-bar-wrap"><div class="wk-val">41</div><div class="wk-bar" style="height:41.0%"></div></div>
+      <div class="wk-label">Apr 20 – Apr 26</div>
+    </div><div class="wk">
+      <div class="wk-bar-wrap"><div class="wk-val">9</div><div class="wk-bar" style="height:9.0%"></div></div>
+      <div class="wk-label">Apr 27 – May 3</div>
+    </div><div class="wk">
+      <div class="wk-bar-wrap"><div class="wk-val">39</div><div class="wk-bar" style="height:39.0%"></div></div>
+      <div class="wk-label">May 4 – May 10</div>
+    </div><div class="wk">
+      <div class="wk-bar-wrap"><div class="wk-val">17</div><div class="wk-bar" style="height:17.0%"></div></div>
+      <div class="wk-label">May 11 – May 17</div>
+    </div><div class="wk">
+      <div class="wk-bar-wrap"><div class="wk-val">5</div><div class="wk-bar" style="height:5.0%"></div></div>
+      <div class="wk-label">May 18 – May 24</div>
+    </div><div class="wk">
+      <div class="wk-bar-wrap"><div class="wk-val">13</div><div class="wk-bar" style="height:13.0%"></div></div>
+      <div class="wk-label">May 25 – May 31</div>
+    </div></div></div>
+  </section>
+
+  <section>
+    <h2>Daily commit cadence</h2>
+    <div class="card">
+      <div class="daily"><div class="d-bar" style="height:37.0%" title="Wed Apr 1: 10 commits"></div><div class="d-bar" style="height:25.9%" title="Thu Apr 2: 7 commits"></div><div class="d-bar" style="height:51.9%" title="Fri Apr 3: 14 commits"></div><div class="d-bar" style="height:51.9%" title="Sat Apr 4: 14 commits"></div><div class="d-bar" style="height:29.6%" title="Sun Apr 5: 8 commits"></div><div class="d-bar" style="height:100.0%" title="Mon Apr 6: 27 commits"></div><div class="d-bar" style="height:33.3%" title="Tue Apr 7: 9 commits"></div><div class="d-bar" style="height:55.6%" title="Wed Apr 8: 15 commits"></div><div class="d-bar" style="height:48.1%" title="Thu Apr 9: 13 commits"></div><div class="d-bar" style="height:33.3%" title="Fri Apr 10: 9 commits"></div><div class="d-bar" style="height:81.5%" title="Sat Apr 11: 22 commits"></div><div class="d-bar" style="height:18.5%" title="Sun Apr 12: 5 commits"></div><div class="d-bar" style="height:14.8%" title="Mon Apr 13: 4 commits"></div><div class="d-bar" style="height:33.3%" title="Tue Apr 14: 9 commits"></div><div class="d-bar" style="height:18.5%" title="Wed Apr 15: 5 commits"></div><div class="d-bar" style="height:11.1%" title="Thu Apr 16: 3 commits"></div><div class="d-bar" style="height:40.7%" title="Fri Apr 17: 11 commits"></div><div class="d-bar" style="height:25.9%" title="Sat Apr 18: 7 commits"></div><div class="d-bar" style="height:7.4%" title="Sun Apr 19: 2 commits"></div><div class="d-bar" style="height:11.1%" title="Mon Apr 20: 3 commits"></div><div class="d-bar" style="height:18.5%" title="Tue Apr 21: 5 commits"></div><div class="d-bar" style="height:11.1%" title="Wed Apr 22: 3 commits"></div><div class="d-bar" style="height:51.9%" title="Thu Apr 23: 14 commits"></div><div class="d-bar" style="height:7.4%" title="Fri Apr 24: 2 commits"></div><div class="d-bar" style="height:25.9%" title="Sat Apr 25: 7 commits"></div><div class="d-bar" style="height:25.9%" title="Sun Apr 26: 7 commits"></div><div class="d-bar" style="height:11.1%" title="Mon Apr 27: 3 commits"></div><div class="d-bar zero" style="height:2.0%" title="Tue Apr 28: 0 commits"></div><div class="d-bar" style="height:3.7%" title="Wed Apr 29: 1 commits"></div><div class="d-bar" style="height:3.7%" title="Thu Apr 30: 1 commits"></div><div class="d-bar zero" style="height:2.0%" title="Fri May 1: 0 commits"></div><div class="d-bar zero" style="height:2.0%" title="Sat May 2: 0 commits"></div><div class="d-bar" style="height:14.8%" title="Sun May 3: 4 commits"></div><div class="d-bar zero" style="height:2.0%" title="Mon May 4: 0 commits"></div><div class="d-bar" style="height:11.1%" title="Tue May 5: 3 commits"></div><div class="d-bar" style="height:25.9%" title="Wed May 6: 7 commits"></div><div class="d-bar" style="height:3.7%" title="Thu May 7: 1 commits"></div><div class="d-bar" style="height:11.1%" title="Fri May 8: 3 commits"></div><div class="d-bar" style="height:29.6%" title="Sat May 9: 8 commits"></div><div class="d-bar" style="height:63.0%" title="Sun May 10: 17 commits"></div><div class="d-bar" style="height:11.1%" title="Mon May 11: 3 commits"></div><div class="d-bar" style="height:3.7%" title="Tue May 12: 1 commits"></div><div class="d-bar" style="height:11.1%" title="Wed May 13: 3 commits"></div><div class="d-bar zero" style="height:2.0%" title="Thu May 14: 0 commits"></div><div class="d-bar" style="height:18.5%" title="Fri May 15: 5 commits"></div><div class="d-bar" style="height:18.5%" title="Sat May 16: 5 commits"></div><div class="d-bar zero" style="height:2.0%" title="Sun May 17: 0 commits"></div><div class="d-bar zero" style="height:2.0%" title="Mon May 18: 0 commits"></div><div class="d-bar zero" style="height:2.0%" title="Tue May 19: 0 commits"></div><div class="d-bar" style="height:11.1%" title="Wed May 20: 3 commits"></div><div class="d-bar zero" style="height:2.0%" title="Thu May 21: 0 commits"></div><div class="d-bar zero" style="height:2.0%" title="Fri May 22: 0 commits"></div><div class="d-bar zero" style="height:2.0%" title="Sat May 23: 0 commits"></div><div class="d-bar" style="height:7.4%" title="Sun May 24: 2 commits"></div><div class="d-bar" style="height:11.1%" title="Mon May 25: 3 commits"></div><div class="d-bar" style="height:18.5%" title="Tue May 26: 5 commits"></div><div class="d-bar zero" style="height:2.0%" title="Wed May 27: 0 commits"></div><div class="d-bar zero" style="height:2.0%" title="Thu May 28: 0 commits"></div><div class="d-bar zero" style="height:2.0%" title="Fri May 29: 0 commits"></div><div class="d-bar" style="height:3.7%" title="Sat May 30: 1 commits"></div><div class="d-bar" style="height:14.8%" title="Sun May 31: 4 commits"></div></div>
+      <div class="daily-axis"><span>Apr 1</span><span>Apr 15</span><span>May 1</span><span>May 15</span><span>May 31</span></div>
+    </div>
+  </section>
+
+  <section>
+    <h2>By project (22 repos)</h2>
+    <div class="card">
+      <div class="cat-head"><h3>Dev projects</h3><span class="ch-sub">ADR &amp; blog excluded · line changes split into code / assets / docs</span></div>
+      <div class="hero">
+      <div class="hero-top">
+        <div><a href="https://github.com/plateaukao/einkbro" target="_blank" class="hero-name">EinkBro browser</a>
+          <div class="hero-desc">Flagship open-source e-ink–optimized Android web browser</div></div>
+        <div class="hero-badge">194 commits · 61% of all dev work</div>
+      </div>
+      <div class="hero-bar"><div class="bseg" style="width:80.9%;background:#6366f1"></div><div class="bseg" style="width:19.1%;background:#22d3ee"></div></div>
+      <div class="hero-meta">
+        <span><b class="code">+49,328</b> code</span>
+        <span><b class="asset">+57</b> assets</span>
+        <span><b class="doc">+303</b> docs</span>
+        <span class="hero-split">Apr 157 · May 37</span>
+      </div>
+    </div>
+      <table>
+        <thead><tr><th>Repository</th><th class="num">Total</th><th class="num">Apr</th><th class="num">May</th><th class="num">Code+</th><th class="num">Asset+</th><th class="num">Doc+</th></tr></thead>
+        <tbody><tr>
+      <td class="repo"><span class="dot" style="background:#0891b2"></span><a href="https://github.com/plateaukao/ask_web" target="_blank">ask_web</a><div class="desc">Browser extension: AI chat & assistant over any web page</div></td>
+      <td class="num">22</td>
+      <td class="num mo">17</td>
+      <td class="num mo">5</td>
+      <td class="num code">+1,869</td>
+      <td class="num asset">+2,314</td>
+      <td class="num doc">+84</td>
+    </tr><tr>
+      <td class="repo"><span class="dot" style="background:#059669"></span><a href="https://github.com/plateaukao/mandroid-transfer" target="_blank">Mandroid Transfer</a><div class="desc">macOS Finder-style file browser for Android over ADB</div></td>
+      <td class="num">13</td>
+      <td class="num mo">13</td>
+      <td class="num mo">·</td>
+      <td class="num code">+2,803</td>
+      <td class="num asset">·</td>
+      <td class="num doc">+38</td>
+    </tr><tr>
+      <td class="repo"><span class="dot" style="background:#d97706"></span><a href="https://github.com/plateaukao/mmgo-mac" target="_blank">mmgo-mac</a><div class="desc">Mermaid diagram CLI for macOS</div></td>
+      <td class="num">11</td>
+      <td class="num mo">·</td>
+      <td class="num mo">11</td>
+      <td class="num code">+1,238</td>
+      <td class="num asset">+3,405</td>
+      <td class="num doc">+266</td>
+    </tr><tr>
+      <td class="repo"><span class="dot" style="background:#dc2626"></span><a href="https://github.com/plateaukao/whisperASR" target="_blank">whisperASR</a><div class="desc">Whisper speech-to-text tooling</div></td>
+      <td class="num">11</td>
+      <td class="num mo">11</td>
+      <td class="num mo">·</td>
+      <td class="num code">+636</td>
+      <td class="num asset">·</td>
+      <td class="num doc">·</td>
+    </tr><tr>
+      <td class="repo"><span class="dot" style="background:#7c3aed"></span><a href="https://github.com/plateaukao/notable" target="_blank">notable</a><div class="desc">Note-taking app tweaks</div></td>
+      <td class="num">9</td>
+      <td class="num mo">9</td>
+      <td class="num mo">·</td>
+      <td class="num code">+509</td>
+      <td class="num asset">·</td>
+      <td class="num doc">+3</td>
+    </tr><tr>
+      <td class="repo"><span class="dot" style="background:#db2777"></span><a href="https://github.com/plateaukao/sony_draw" target="_blank">sony_draw</a><div class="desc">Sony DPT-CP1 stylus drawing app + KOReader port</div></td>
+      <td class="num">7</td>
+      <td class="num mo">·</td>
+      <td class="num mo">7</td>
+      <td class="num code">+1,665</td>
+      <td class="num asset">·</td>
+      <td class="num doc">+814</td>
+    </tr><tr>
+      <td class="repo"><span class="dot" style="background:#0d9488"></span><a href="https://github.com/plateaukao/mandroid_finder" target="_blank">Mandroid Finder</a><div class="desc">Android device file explorer for macOS</div></td>
+      <td class="num">7</td>
+      <td class="num mo">7</td>
+      <td class="num mo">·</td>
+      <td class="num code">+1,782</td>
+      <td class="num asset">·</td>
+      <td class="num doc">+124</td>
+    </tr><tr>
+      <td class="repo"><span class="dot" style="background:#ca8a04"></span><a href="https://github.com/plateaukao/calliplus_android" target="_blank">Calli+ Android</a><div class="desc">Chinese calligraphy practice app — open-source prep</div></td>
+      <td class="num">7</td>
+      <td class="num mo">7</td>
+      <td class="num mo">·</td>
+      <td class="num code">+1,313</td>
+      <td class="num asset">+14,196</td>
+      <td class="num doc">+569</td>
+    </tr><tr>
+      <td class="repo"><span class="dot" style="background:#2563eb"></span><a href="https://github.com/plateaukao/sweetlime" target="_blank">sweetlime</a><div class="desc">Side project</div></td>
+      <td class="num">5</td>
+      <td class="num mo">5</td>
+      <td class="num mo">·</td>
+      <td class="num code">+92</td>
+      <td class="num asset">·</td>
+      <td class="num doc">·</td>
+    </tr><tr>
+      <td class="repo"><span class="dot" style="background:#94a3b8"></span><a href="https://github.com/plateaukao/game2048" target="_blank">game2048</a><div class="desc">2048 game</div></td>
+      <td class="num">5</td>
+      <td class="num mo">5</td>
+      <td class="num mo">·</td>
+      <td class="num code">+419</td>
+      <td class="num asset">·</td>
+      <td class="num doc">+26</td>
+    </tr><tr>
+      <td class="repo"><span class="dot" style="background:#94a3b8"></span><a href="https://github.com/plateaukao/webvtt_converter_plugin" target="_blank">webvtt converter</a><div class="desc">WebVTT subtitle converter plugin</div></td>
+      <td class="num">5</td>
+      <td class="num mo">5</td>
+      <td class="num mo">·</td>
+      <td class="num code">+48</td>
+      <td class="num asset">·</td>
+      <td class="num doc">·</td>
+    </tr><tr>
+      <td class="repo"><span class="dot" style="background:#94a3b8"></span><a href="https://github.com/plateaukao/plateaukao.github.io" target="_blank">GitHub Pages</a><div class="desc">Personal site</div></td>
+      <td class="num">4</td>
+      <td class="num mo">·</td>
+      <td class="num mo">4</td>
+      <td class="num code">+285</td>
+      <td class="num asset">·</td>
+      <td class="num doc">·</td>
+    </tr><tr>
+      <td class="repo"><span class="dot" style="background:#94a3b8"></span><a href="https://github.com/plateaukao/koreader_patch_vertical_read" target="_blank">KOReader patch</a><div class="desc">Vertical reading patch for KOReader</div></td>
+      <td class="num">4</td>
+      <td class="num mo">1</td>
+      <td class="num mo">3</td>
+      <td class="num code">+304</td>
+      <td class="num asset">·</td>
+      <td class="num doc">·</td>
+    </tr><tr>
+      <td class="repo"><span class="dot" style="background:#94a3b8"></span><a href="https://github.com/plateaukao/pwidgets" target="_blank">pwidgets</a><div class="desc">Personal widgets</div></td>
+      <td class="num">4</td>
+      <td class="num mo">·</td>
+      <td class="num mo">4</td>
+      <td class="num code">+2,516</td>
+      <td class="num asset">·</td>
+      <td class="num doc">+171</td>
+    </tr><tr>
+      <td class="repo"><span class="dot" style="background:#94a3b8"></span><a href="https://github.com/julianshen/mmgo" target="_blank">mmgo (upstream)</a><div class="desc">Contributions to upstream mermaid CLI</div></td>
+      <td class="num">3</td>
+      <td class="num mo">·</td>
+      <td class="num mo">3</td>
+      <td class="num code">+518</td>
+      <td class="num asset">+3</td>
+      <td class="num doc">·</td>
+    </tr><tr>
+      <td class="repo"><span class="dot" style="background:#94a3b8"></span><a href="https://github.com/plateaukao/koreader-squiggly-highlight" target="_blank">KOReader highlight</a><div class="desc">Squiggly highlight patch for KOReader</div></td>
+      <td class="num">2</td>
+      <td class="num mo">·</td>
+      <td class="num mo">2</td>
+      <td class="num code">+42</td>
+      <td class="num asset">·</td>
+      <td class="num doc">+41</td>
+    </tr><tr>
+      <td class="repo"><span class="dot" style="background:#94a3b8"></span><a href="https://github.com/plateaukao/dpt-cp1-home-assistant" target="_blank">DPT-CP1 HA</a><div class="desc">Home Assistant integration for Sony DPT-CP1</div></td>
+      <td class="num">1</td>
+      <td class="num mo">·</td>
+      <td class="num mo">1</td>
+      <td class="num code">+819</td>
+      <td class="num asset">·</td>
+      <td class="num doc">+65</td>
+    </tr><tr>
+      <td class="repo"><span class="dot" style="background:#94a3b8"></span><a href="https://github.com/plateaukao/plateaukao" target="_blank">Profile README</a><div class="desc">GitHub profile</div></td>
+      <td class="num">1</td>
+      <td class="num mo">·</td>
+      <td class="num mo">1</td>
+      <td class="num code">·</td>
+      <td class="num asset">·</td>
+      <td class="num doc">+1</td>
+    </tr><tr>
+      <td class="repo"><span class="dot" style="background:#94a3b8"></span><a href="https://github.com/plateaukao/android_usb" target="_blank">android_usb</a><div class="desc">Android USB utilities</div></td>
+      <td class="num">1</td>
+      <td class="num mo">1</td>
+      <td class="num mo">·</td>
+      <td class="num code">+1,018</td>
+      <td class="num asset">·</td>
+      <td class="num doc">+43</td>
+    </tr><tr>
+      <td class="repo"><span class="dot" style="background:#94a3b8"></span><a href="https://github.com/plateaukao/bookperspective" target="_blank">bookperspective</a><div class="desc">Reading project</div></td>
+      <td class="num">1</td>
+      <td class="num mo">1</td>
+      <td class="num mo">·</td>
+      <td class="num code">·</td>
+      <td class="num asset">·</td>
+      <td class="num doc">+3</td>
+    </tr><tr>
+      <td class="repo"><span class="dot" style="background:#94a3b8"></span><a href="https://github.com/plateaukao/ithome_ironman_crawler" target="_blank">ironman crawler</a><div class="desc">iThome Ironman crawler</div></td>
+      <td class="num">1</td>
+      <td class="num mo">1</td>
+      <td class="num mo">·</td>
+      <td class="num code">+34</td>
+      <td class="num asset">·</td>
+      <td class="num doc">·</td>
+    </tr><tr class="subtotal">
+      <td>Total (22 repos)</td><td class="num">318</td><td class="num mo">240</td><td class="num mo">78</td>
+      <td class="num code">+67,238</td><td class="num asset">+19,975</td><td class="num doc">+2,551</td>
+    </tr></tbody>
+      </table>
+      <div class="legend"><span><i style="background:#a5b4fc"></i> code</span><span><i style="background:#6ee7b7"></i> assets</span><span><i style="background:#fcd34d"></i> docs</span></div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Analysis</h2>
+    <div class="card prose">
+      <p><strong>This report counts development work only.</strong> Two auto-noise / content repos are excluded from every number: <strong>ADR</strong> (46 commits — Architecture Decision Records generated automatically after each commit) and <strong>blog</strong> (16 commits — a one-time Hugo migration of 1,246 Blogger posts). What remains is genuine engineering: <strong>318 commits across 22 repositories</strong>, averaging <strong>6.8 commits on each of 47 active days</strong>.</p>
+
+      <div class="callout"><strong>EinkBro is the center of gravity.</strong> At 194 commits (61% of all dev activity) and ~50k lines added, the e-ink browser saw a sustained engineering push — a <em>major architecture overhaul</em> (extracting delegates, fixing dependency injection, migrating the database, splitting interfaces), a security/error-visibility/listener-leak modernization pass, and a wave of AI features (Page AI actions, GPT result history redesign, translation pipeline with a Jest test suite).</div>
+
+      <p><strong>April vs. May.</strong> April carried the bulk of the work — <strong>240 commits</strong> across 14 repos with <strong>−23k deletions</strong>, reflecting the heavy EinkBro refactoring/cleanup. May was lighter at <strong>78 commits</strong> and far fewer deletions (−2,080), shifting toward smaller new tools (sony_draw, mmgo-mac, pwidgets) rather than large-scale refactoring.</p>
+
+      <div class="callout"><strong>Code vs. assets.</strong> With ADR and blog gone, the line counts are now mostly real: <strong style="color:#a5b4fc">+67,238 (75%) is code</strong>. The one remaining distortion is <strong style="color:#6ee7b7">binary assets (+19,975, 22%)</strong> — almost entirely calliplus_android's bundled SVG calligraphy library; strip that and EinkBro, ask_web, and the Mandroid file-transfer tools account for the overwhelming majority of code written.</div>
+
+      <p><strong>New projects launched this period:</strong></p>
+      <div>
+        <span class="tag">Mandroid Transfer — macOS↔Android file browser</span>
+        <span class="tag">sony_draw — DPT-CP1 stylus drawing</span>
+        <span class="tag">mmgo-mac — mermaid CLI</span>
+        <span class="tag">Calli+ open-source release</span>
+        <span class="tag">pwidgets</span>
+        <span class="tag">KOReader patches</span>
+      </div>
+
+      <p><strong>Working style.</strong> Activity clusters into intense sprints — the <strong>Apr 6 week (100 commits)</strong> and <strong>Apr 6 alone (27 commits)</strong> stand out — separated by lighter weeks (May 18 – May 24: 5 commits). The EinkBro commit log is heavy on <code>refactor:</code> and <code>fix:</code> prefixes, pointing to a maturity phase focused on code health and UX polish rather than greenfield feature dumping. A clear theme runs through everything: <strong>e-ink devices and reading workflows</strong> — the browser, Sony DPT tooling, KOReader patches, and Android file transfer all serve that ecosystem.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Weekly breakdown</h2>
+    <div class="wgrid"><div class="wcard">
+      <h3>Apr 1 – Apr 5 <span class="wsum">53 commits · <span class="pos">+14,262</span> / <span class="neg">−1,836</span></span></h3>
+      <table class="wtable"><thead><tr><th>Repo</th><th class="num">Commits</th><th class="num">+Lines</th><th class="num">−Lines</th></tr></thead><tbody><tr><td>EinkBro browser</td><td class="num">31</td><td class="num pos">+13,198</td><td class="num neg">−1,185</td></tr><tr><td>ask_web</td><td class="num">11</td><td class="num pos">+860</td><td class="num neg">−578</td></tr><tr><td>webvtt converter</td><td class="num">5</td><td class="num pos">+48</td><td class="num neg">−13</td></tr><tr><td>sweetlime</td><td class="num">3</td><td class="num pos">+20</td><td class="num neg">−19</td></tr><tr><td>KOReader patch</td><td class="num">1</td><td class="num pos">+35</td><td class="num neg">−0</td></tr><tr><td>whisperASR</td><td class="num">1</td><td class="num pos">+67</td><td class="num neg">−40</td></tr><tr><td>ironman crawler</td><td class="num">1</td><td class="num pos">+34</td><td class="num neg">−1</td></tr></tbody></table>
+    </div><div class="wcard">
+      <h3>Apr 6 – Apr 12 <span class="wsum">100 commits · <span class="pos">+26,659</span> / <span class="neg">−16,536</span></span></h3>
+      <table class="wtable"><thead><tr><th>Repo</th><th class="num">Commits</th><th class="num">+Lines</th><th class="num">−Lines</th></tr></thead><tbody><tr><td>EinkBro browser</td><td class="num">65</td><td class="num pos">+22,166</td><td class="num neg">−14,440</td></tr><tr><td>Mandroid Transfer</td><td class="num">13</td><td class="num pos">+2,841</td><td class="num neg">−151</td></tr><tr><td>notable</td><td class="num">9</td><td class="num pos">+512</td><td class="num neg">−1,564</td></tr><tr><td>ask_web</td><td class="num">6</td><td class="num pos">+628</td><td class="num neg">−343</td></tr><tr><td>game2048</td><td class="num">5</td><td class="num pos">+445</td><td class="num neg">−35</td></tr><tr><td>whisperASR</td><td class="num">2</td><td class="num pos">+67</td><td class="num neg">−3</td></tr></tbody></table>
+    </div><div class="wcard">
+      <h3>Apr 13 – Apr 19 <span class="wsum">41 commits · <span class="pos">+22,743</span> / <span class="neg">−3,279</span></span></h3>
+      <table class="wtable"><thead><tr><th>Repo</th><th class="num">Commits</th><th class="num">+Lines</th><th class="num">−Lines</th></tr></thead><tbody><tr><td>EinkBro browser</td><td class="num">34</td><td class="num pos">+6,785</td><td class="num neg">−997</td></tr><tr><td>whisperASR</td><td class="num">4</td><td class="num pos">+417</td><td class="num neg">−56</td></tr><tr><td>Calli+ Android</td><td class="num">2</td><td class="num pos">+15,538</td><td class="num neg">−2,226</td></tr><tr><td>bookperspective</td><td class="num">1</td><td class="num pos">+3</td><td class="num neg">−0</td></tr></tbody></table>
+    </div><div class="wcard">
+      <h3>Apr 20 – Apr 26 <span class="wsum">41 commits · <span class="pos">+6,336</span> / <span class="neg">−1,470</span></span></h3>
+      <table class="wtable"><thead><tr><th>Repo</th><th class="num">Commits</th><th class="num">+Lines</th><th class="num">−Lines</th></tr></thead><tbody><tr><td>EinkBro browser</td><td class="num">25</td><td class="num pos">+2,876</td><td class="num neg">−974</td></tr><tr><td>Calli+ Android</td><td class="num">5</td><td class="num pos">+540</td><td class="num neg">−435</td></tr><tr><td>Mandroid Finder</td><td class="num">4</td><td class="num pos">+1,702</td><td class="num neg">−19</td></tr><tr><td>whisperASR</td><td class="num">4</td><td class="num pos">+85</td><td class="num neg">−34</td></tr><tr><td>sweetlime</td><td class="num">2</td><td class="num pos">+72</td><td class="num neg">−8</td></tr><tr><td>android_usb</td><td class="num">1</td><td class="num pos">+1,061</td><td class="num neg">−0</td></tr></tbody></table>
+    </div><div class="wcard">
+      <h3>Apr 27 – May 3 <span class="wsum">9 commits · <span class="pos">+891</span> / <span class="neg">−243</span></span></h3>
+      <table class="wtable"><thead><tr><th>Repo</th><th class="num">Commits</th><th class="num">+Lines</th><th class="num">−Lines</th></tr></thead><tbody><tr><td>EinkBro browser</td><td class="num">5</td><td class="num pos">+686</td><td class="num neg">−211</td></tr><tr><td>Mandroid Finder</td><td class="num">3</td><td class="num pos">+204</td><td class="num neg">−31</td></tr><tr><td>Profile README</td><td class="num">1</td><td class="num pos">+1</td><td class="num neg">−1</td></tr></tbody></table>
+    </div><div class="wcard">
+      <h3>May 4 – May 10 <span class="wsum">39 commits · <span class="pos">+4,941</span> / <span class="neg">−1,249</span></span></h3>
+      <table class="wtable"><thead><tr><th>Repo</th><th class="num">Commits</th><th class="num">+Lines</th><th class="num">−Lines</th></tr></thead><tbody><tr><td>EinkBro browser</td><td class="num">30</td><td class="num pos">+3,570</td><td class="num neg">−1,100</td></tr><tr><td>mmgo-mac</td><td class="num">6</td><td class="num pos">+850</td><td class="num neg">−92</td></tr><tr><td>mmgo (upstream)</td><td class="num">3</td><td class="num pos">+521</td><td class="num neg">−57</td></tr></tbody></table>
+    </div><div class="wcard">
+      <h3>May 11 – May 17 <span class="wsum">17 commits · <span class="pos">+7,610</span> / <span class="neg">−450</span></span></h3>
+      <table class="wtable"><thead><tr><th>Repo</th><th class="num">Commits</th><th class="num">+Lines</th><th class="num">−Lines</th></tr></thead><tbody><tr><td>mmgo-mac</td><td class="num">5</td><td class="num pos">+4,059</td><td class="num neg">−433</td></tr><tr><td>pwidgets</td><td class="num">4</td><td class="num pos">+2,687</td><td class="num neg">−11</td></tr><tr><td>KOReader patch</td><td class="num">2</td><td class="num pos">+208</td><td class="num neg">−0</td></tr><tr><td>GitHub Pages</td><td class="num">2</td><td class="num pos">+272</td><td class="num neg">−1</td></tr><tr><td>KOReader highlight</td><td class="num">2</td><td class="num pos">+83</td><td class="num neg">−0</td></tr><tr><td>EinkBro browser</td><td class="num">1</td><td class="num pos">+155</td><td class="num neg">−2</td></tr><tr><td>ask_web</td><td class="num">1</td><td class="num pos">+146</td><td class="num neg">−3</td></tr></tbody></table>
+    </div><div class="wcard">
+      <h3>May 18 – May 24 <span class="wsum">5 commits · <span class="pos">+1,134</span> / <span class="neg">−37</span></span></h3>
+      <table class="wtable"><thead><tr><th>Repo</th><th class="num">Commits</th><th class="num">+Lines</th><th class="num">−Lines</th></tr></thead><tbody><tr><td>EinkBro browser</td><td class="num">2</td><td class="num pos">+180</td><td class="num neg">−0</td></tr><tr><td>KOReader patch</td><td class="num">1</td><td class="num pos">+61</td><td class="num neg">−37</td></tr><tr><td>DPT-CP1 HA</td><td class="num">1</td><td class="num pos">+884</td><td class="num neg">−0</td></tr><tr><td>GitHub Pages</td><td class="num">1</td><td class="num pos">+9</td><td class="num neg">−0</td></tr></tbody></table>
+    </div><div class="wcard">
+      <h3>May 25 – May 31 <span class="wsum">13 commits · <span class="pos">+5,188</span> / <span class="neg">−136</span></span></h3>
+      <table class="wtable"><thead><tr><th>Repo</th><th class="num">Commits</th><th class="num">+Lines</th><th class="num">−Lines</th></tr></thead><tbody><tr><td>sony_draw</td><td class="num">7</td><td class="num pos">+2,479</td><td class="num neg">−109</td></tr><tr><td>ask_web</td><td class="num">4</td><td class="num pos">+2,633</td><td class="num neg">−27</td></tr><tr><td>EinkBro browser</td><td class="num">1</td><td class="num pos">+72</td><td class="num neg">−0</td></tr><tr><td>GitHub Pages</td><td class="num">1</td><td class="num pos">+4</td><td class="num neg">−0</td></tr></tbody></table>
+    </div></div>
+  </section>
+
+  <footer>
+    Generated June 6, 2026 · Source: GitHub Search Commits API · committer-date 2026-04-01 … 2026-05-31
+  </footer>
+</div>
+</body>
+</html>

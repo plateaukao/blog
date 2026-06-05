@@ -1,0 +1,6 @@
+{{/*
+  Raw passthrough layout for self-contained standalone HTML documents (e.g.
+  generated reports) that ship their own <html>/<head>/<style>. No theme
+  chrome. Opt in per page with `layout = "report"` in the front matter.
+*/ -}}
+{{ .Content -}}
