@@ -127,6 +127,37 @@ layout = "report"
   }
   .crow:hover .tip { opacity: 1; }
 
+  .timeline { position: relative; }
+  .timeline::before {
+    content: ""; position: absolute; left: 74px; top: 8px; bottom: 8px;
+    width: 2px; background: var(--grid);
+  }
+  .tl-item { position: relative; display: grid; grid-template-columns: 60px 1fr; gap: 30px; padding-bottom: 22px; }
+  .tl-item:last-child { padding-bottom: 2px; }
+  .tl-item::before {
+    content: ""; position: absolute; left: 71px; top: 5px; width: 8px; height: 8px;
+    border-radius: 50%; background: var(--series-1);
+    box-shadow: 0 0 0 2px var(--surface);
+  }
+  .tl-day { font-size: 12px; color: var(--muted); text-align: right; padding-top: 2px; }
+  .tl-body h3 { font-size: 15px; font-weight: 600; line-height: 1.4; }
+  .tl-body h3 .ph { font: 11px ui-monospace, SFMono-Regular, Menlo, monospace; color: var(--muted); font-weight: 400; margin-left: 7px; }
+  .tl-sub { font-size: 13.5px; color: var(--ink-2); margin: 2px 0 9px; }
+  .l-en .tl-sub { max-width: 60ch; }
+  .l-zh .tl-sub { max-width: 38em; }
+  .tl-chips { display: flex; flex-wrap: wrap; gap: 6px; }
+  .chip {
+    font-size: 12px; line-height: 1; padding: 5px 10px; border-radius: 999px;
+    border: 1px solid var(--border); color: var(--ink-2);
+    background: color-mix(in srgb, var(--ink) 3%, transparent);
+  }
+
+  .arch { display: grid; gap: 6px; margin: 20px 0 24px; max-width: 560px; }
+  .arch-box { border: 1px solid var(--border); border-radius: 8px; padding: 10px 14px; background: var(--surface); }
+  .arch-box .t { font-size: 13.5px; font-weight: 600; }
+  .arch-box .d { font-size: 12px; color: var(--muted); margin-top: 2px; }
+  .arch-arrow { text-align: center; color: var(--muted); font-size: 11px; line-height: 1; }
+
   h2.section { font-size: 22px; letter-spacing: -0.01em; margin: 44px 0 4px; }
   .meta { font-size: 13px; color: var(--muted); margin-bottom: 14px; }
   p { margin-bottom: 14px; color: var(--ink-2); }
@@ -200,6 +231,69 @@ layout = "report"
     </div>
   </div>
 
+  <div class="card">
+    <h2>The build, stage by stage</h2>
+    <div class="sub">Each layer landed on top of the previous one — UI first, then the engine, actions, settings, and finally polish.</div>
+    <div class="timeline">
+      <div class="tl-item">
+        <div class="tl-day">Thu</div>
+        <div class="tl-body">
+          <h3>Compose UI port</h3>
+          <div class="tl-sub">The entire Android Compose UI compiling and running on iOS via Compose Multiplatform — first as a UI catalog of every screen and dialog.</div>
+          <div class="tl-chips"><span class="chip">258 files</span><span class="chip">android.* shims</span><span class="chip">UI catalog</span></div>
+        </div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-day">Thu</div>
+        <div class="tl-body">
+          <h3>Browser core<span class="ph">Phases 1–8</span></h3>
+          <div class="tl-sub">A real WKWebView engine behind the ported UI: persistence, the reader pipeline, privacy, services, and file output.</div>
+          <div class="tl-chips"><span class="chip">WKWebView shell</span><span class="chip">Room KMP</span><span class="chip">reader mode</span><span class="chip">adblock</span><span class="chip">translate · TTS · GPT</span><span class="chip">PDF &amp; web archives</span></div>
+        </div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-day">Fri</div>
+        <div class="tl-body">
+          <h3>Toolbar &amp; menu actions<span class="ph">Phases A–B</span></h3>
+          <div class="tl-sub">A central BrowserAction dispatcher mirroring Android's toolbar/menu handlers, plus a much deeper engine delegate.</div>
+          <div class="tl-chips"><span class="chip">BrowserAction dispatcher</span><span class="chip">long-press menus</span><span class="chip">engine delegate</span></div>
+        </div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-day">Fri</div>
+        <div class="tl-body">
+          <h3>Interaction &amp; power features<span class="ph">Phases C–J</span></h3>
+          <div class="tl-sub">Core settings start taking real effect, then the heavyweight features arrive one phase at a time.</div>
+          <div class="tl-chips"><span class="chip">find on page</span><span class="chip">gesture FAB</span><span class="chip">split screen</span><span class="chip">GM_* userscripts</span><span class="chip">EPUB export</span><span class="chip">backup · Instapaper</span></div>
+        </div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-day">Fri</div>
+        <div class="tl-body">
+          <h3>Services<span class="ph">Phases K–M</span></h3>
+          <div class="tl-sub">The AI, speech, and translation layers reach parity with Android.</div>
+          <div class="tl-chips"><span class="chip">chat-with-web</span><span class="chip">OpenAI · Edge TTS</span><span class="chip">image OCR</span><span class="chip">dual captions</span></div>
+        </div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-day">Fri</div>
+        <div class="tl-body">
+          <h3>Settings implementation<span class="ph">Phase N + batches</span></h3>
+          <div class="tl-sub">Every settings screen wired to real behavior — pickers, sub-editors, privacy enforcement, and a 4,400-line batch round.</div>
+          <div class="tl-chips"><span class="chip">enum pickers</span><span class="chip">toolbar layout editor</span><span class="chip">locale picker</span><span class="chip">PDF paper size</span><span class="chip">auto-hide toolbar</span></div>
+        </div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-day">Sat</div>
+        <div class="tl-body">
+          <h3>Final fixes &amp; updates</h3>
+          <div class="tl-sub">A four-domain FEATURE_GAPS audit, then an overnight run closing the remaining gaps and polishing the details.</div>
+          <div class="tl-chips"><span class="chip">AI task runner</span><span class="chip">native chat tabs</span><span class="chip">lock-screen TTS</span><span class="chip">dark-mode fixes</span><span class="chip">x.com fix</span><span class="chip">CJK mojibake fix</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <h2 class="section">Thursday — the port, then a real browser by nightfall</h2>
   <div class="meta">12 commits · +35,193 / −559</div>
   <p>
@@ -269,6 +363,15 @@ layout = "report"
     AVFoundation, adblock on <code>WKContentRuleList</code>, preferences on
     NSUserDefaults.
   </p>
+  <div class="arch">
+    <div class="arch-box"><div class="t">SwiftUI host — iosApp</div><div class="d">thin wrapper: entry point, einkbro:// scheme, external hand-offs</div></div>
+    <div class="arch-arrow">▼</div>
+    <div class="arch-box"><div class="t">ComposeApp — commonMain</div><div class="d">Compose UI · ViewModels · ConfigManager · Room KMP · Ktor</div></div>
+    <div class="arch-arrow">▼</div>
+    <div class="arch-box"><div class="t">expect/actual seam</div><div class="d">WebViewEngine · PrefsStore · TtsManager · ContentBlocker · FilePicker</div></div>
+    <div class="arch-arrow">▼</div>
+    <div class="arch-box"><div class="t">iOS frameworks</div><div class="d">WKWebView · AVFoundation · NSUserDefaults · WKContentRuleList</div></div>
+  </div>
   <p>
     Two decisions did a lot of quiet work this week: keeping the original Android
     package layout so every file diffs cleanly against its Android counterpart, and
@@ -321,6 +424,69 @@ layout = "report"
         <div class="track"><div class="bar" style="width:9.8%"></div></div>
         <span class="val">+3,460</span>
         <span class="tip">23 個 commit · +3,460 / −293 · 68 個檔案變更</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>開發歷程 —— 一層一層疊出瀏覽器</h2>
+    <div class="sub">每一層都疊在前一層之上：先有 UI，再接引擎、動作與設定，最後收尾打磨。</div>
+    <div class="timeline">
+      <div class="tl-item">
+        <div class="tl-day">週四</div>
+        <div class="tl-body">
+          <h3>Compose UI 移植</h3>
+          <div class="tl-sub">整套 Android Compose UI 透過 Compose Multiplatform 在 iOS 上編譯執行 —— 先以 UI 型錄呈現所有畫面與對話框。</div>
+          <div class="tl-chips"><span class="chip">258 個檔案</span><span class="chip">android.* shim</span><span class="chip">UI 型錄</span></div>
+        </div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-day">週四</div>
+        <div class="tl-body">
+          <h3>瀏覽器核心<span class="ph">Phase 1–8</span></h3>
+          <div class="tl-sub">在移植好的 UI 背後接上真正的 WKWebView 引擎：持久化、閱讀管線、隱私、服務與檔案輸出。</div>
+          <div class="tl-chips"><span class="chip">WKWebView 外殼</span><span class="chip">Room KMP</span><span class="chip">閱讀模式</span><span class="chip">擋廣告</span><span class="chip">翻譯 · TTS · GPT</span><span class="chip">PDF 與網頁封存</span></div>
+        </div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-day">週五</div>
+        <div class="tl-body">
+          <h3>工具列與選單動作<span class="ph">Phase A–B</span></h3>
+          <div class="tl-sub">對應 Android 工具列／選單處理器的中央 BrowserAction 派發器，加上更深入的 engine delegate。</div>
+          <div class="tl-chips"><span class="chip">BrowserAction 派發器</span><span class="chip">長按選單</span><span class="chip">engine delegate</span></div>
+        </div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-day">週五</div>
+        <div class="tl-body">
+          <h3>互動與進階功能<span class="ph">Phase C–J</span></h3>
+          <div class="tl-sub">核心設定開始真正生效，重量級功能一個階段一個階段到位。</div>
+          <div class="tl-chips"><span class="chip">頁內搜尋</span><span class="chip">手勢 FAB</span><span class="chip">分割畫面</span><span class="chip">GM_* userscript</span><span class="chip">EPUB 匯出</span><span class="chip">備份 · Instapaper</span></div>
+        </div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-day">週五</div>
+        <div class="tl-body">
+          <h3>服務層<span class="ph">Phase K–M</span></h3>
+          <div class="tl-sub">AI、語音與翻譯追上 Android 的完整度。</div>
+          <div class="tl-chips"><span class="chip">與網頁對話</span><span class="chip">OpenAI · Edge TTS</span><span class="chip">圖片 OCR</span><span class="chip">雙語字幕</span></div>
+        </div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-day">週五</div>
+        <div class="tl-body">
+          <h3>設定完整實作<span class="ph">Phase N + 批次</span></h3>
+          <div class="tl-sub">每個設定頁都接上實際行為 —— 選單、子編輯器、隱私強制執行，以及 4,400 行的批次補完。</div>
+          <div class="tl-chips"><span class="chip">列舉型選單</span><span class="chip">工具列版面編輯器</span><span class="chip">語系選擇</span><span class="chip">PDF 紙張大小</span><span class="chip">自動隱藏工具列</span></div>
+        </div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-day">週六</div>
+        <div class="tl-body">
+          <h3>最終修正與更新</h3>
+          <div class="tl-sub">四大領域的 FEATURE_GAPS 稽核，接著通宵補完剩餘缺口並打磨細節。</div>
+          <div class="tl-chips"><span class="chip">AI 任務執行器</span><span class="chip">原生聊天分頁</span><span class="chip">鎖定畫面 TTS</span><span class="chip">深色模式修正</span><span class="chip">x.com 修正</span><span class="chip">CJK 亂碼修正</span></div>
+        </div>
       </div>
     </div>
   </div>
@@ -390,6 +556,15 @@ layout = "report"
     包裝 WKWebView。TTS 建立在 AVFoundation 上、擋廣告用
     <code>WKContentRuleList</code>、偏好設定存於 NSUserDefaults。
   </p>
+  <div class="arch">
+    <div class="arch-box"><div class="t">SwiftUI 殼層 — iosApp</div><div class="d">輕薄包裝：程式入口、einkbro:// scheme、對外交接</div></div>
+    <div class="arch-arrow">▼</div>
+    <div class="arch-box"><div class="t">ComposeApp — commonMain</div><div class="d">Compose UI · ViewModel · ConfigManager · Room KMP · Ktor</div></div>
+    <div class="arch-arrow">▼</div>
+    <div class="arch-box"><div class="t">expect/actual 接縫</div><div class="d">WebViewEngine · PrefsStore · TtsManager · ContentBlocker · FilePicker</div></div>
+    <div class="arch-arrow">▼</div>
+    <div class="arch-box"><div class="t">iOS 框架</div><div class="d">WKWebView · AVFoundation · NSUserDefaults · WKContentRuleList</div></div>
+  </div>
   <p>
     本週有兩個決定默默發揮了很大的作用：一是保留原始 Android 套件結構，
     讓每個檔案都能直接與 Android 對應檔 diff；二是把 Android 版當作行為基準 ——
