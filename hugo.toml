@@ -14,7 +14,7 @@ googleAnalytics = "G-XQSZXV7E00"
 [params]
   defaultTheme = "auto"
   # Listing layout: "full" | "thumb-left" | "thumb-right"
-  listStyle = "thumb-left"
+  listStyle = "thumb-right"
   # Fallback share image (Open Graph / Twitter) for pages without their own
   # image — e.g. the home page. Posts override this with their first inline
   # image via each post's [cover].image front matter.
