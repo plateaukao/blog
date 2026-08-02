@@ -1,0 +1,47 @@
+/* Thumbnail list layouts (listStyle = "thumb-left" / "thumb-right"):
+   a small cover beside the text instead of a full-width image. Entries
+   without a cover simply have no .entry-cover and span the full width. */
+
+.list-style-thumb-left,
+.list-style-thumb-right {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: var(--gap);
+}
+
+.list-style-thumb-right {
+    flex-direction: row-reverse;
+}
+
+.list-style-thumb-left .entry-cover,
+.list-style-thumb-right .entry-cover {
+    flex-shrink: 0;
+    width: 110px;
+    margin-bottom: 0;
+}
+
+.list-style-thumb-left .entry-cover img,
+.list-style-thumb-right .entry-cover img {
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+}
+
+.list-style-thumb-left .entry-body,
+.list-style-thumb-right .entry-body {
+    flex-grow: 1;
+    min-width: 0;
+}
+
+/* The theme hides covers on tag/term pages; thumb layouts show them. */
+.tag-entry.list-style-thumb-left .entry-cover,
+.tag-entry.list-style-thumb-right .entry-cover {
+    display: flex;
+}
+
+@media screen and (max-width: 500px) {
+    .list-style-thumb-left .entry-cover,
+    .list-style-thumb-right .entry-cover {
+        width: 88px;
+    }
+}
