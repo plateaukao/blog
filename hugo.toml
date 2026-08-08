@@ -11,6 +11,12 @@ googleAnalytics = "G-XQSZXV7E00"
 [pagination]
   pagerSize = 10
 
+# CI builds with --minify, which by default drops "optional" attribute quotes
+# (name=twitter:card). Valid HTML, but X/Twitter's card scraper misses the
+# unquoted twitter:* tags, so shared links lose their title. Keep the quotes.
+[minify.tdewolff.html]
+  keepQuotes = true
+
 [params]
   defaultTheme = "auto"
   # Listing layout: "full" | "thumb-left" | "thumb-right"
