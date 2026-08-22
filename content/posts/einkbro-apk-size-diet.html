@@ -1,0 +1,267 @@
++++
+title = "EinkBro APK 瘦身記：一天內從 6.19 MB 減到 4.38 MB"
+date = "2026-08-23T01:30:00+08:00"
+description = "用 APK Analyzer 和 R8 的輸出找出三個「只為一件小事而存在」的函式庫：Material Components、WorkManager、AppCompat。拆掉它們之後 arm64 release APK 縮小 29%，順便修掉幾個沉睡已久的 bug。"
+summary = "一天之內把 EinkBro 的 arm64 release APK 從 6.19 MB 減到 4.38 MB（-29%）。記錄怎麼量、為什麼是這三個函式庫、以及過程中踩到的 Theme.Panel 與 aapt keep rule 兩個坑。"
+slug = "einkbro-apk-size-diet"
+tags = ["Android", "EinkBro", "Kotlin"]
+layout = "report"
+[cover]
+  hidden = true
++++
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>EinkBro APK 瘦身記</title>
+<style>
+  :root {
+    color-scheme: light;
+    --page:     #f9f9f7;
+    --surface:  #fcfcfb;
+    --ink:      #0b0b0b;
+    --ink-2:    #52514e;
+    --muted:    #898781;
+    --grid:     #e1e0d9;
+    --baseline: #c3c2b7;
+    --border:   rgba(11,11,11,0.10);
+    --series-1: #2a78d6;
+    --code-bg:  #f0efe9;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      color-scheme: dark;
+      --page:     #0d0d0d;
+      --surface:  #1a1a19;
+      --ink:      #ffffff;
+      --ink-2:    #c3c2b7;
+      --muted:    #898781;
+      --grid:     #2c2c2a;
+      --baseline: #383835;
+      --border:   rgba(255,255,255,0.10);
+      --series-1: #3987e5;
+      --code-bg:  #232321;
+    }
+  }
+  * { box-sizing: border-box; margin: 0; }
+  body {
+    background: var(--page);
+    color: var(--ink);
+    font: 16px/1.8 system-ui, -apple-system, "Segoe UI", "PingFang TC", "Heiti TC", "Noto Sans CJK TC", sans-serif;
+    padding: 40px 20px 80px;
+  }
+  .wrap { max-width: 760px; margin: 0 auto; }
+  .kicker { font-size: 13px; color: var(--muted); letter-spacing: .04em; margin-bottom: 8px; }
+  .kicker a { color: inherit; }
+  h1 { font-size: 30px; line-height: 1.3; margin-bottom: 14px; letter-spacing: -.01em; }
+  h2 { font-size: 21px; margin: 48px 0 14px; padding-top: 18px; border-top: 1px solid var(--border); }
+  h3 { font-size: 17px; margin: 28px 0 8px; }
+  p { margin: 0 0 14px; color: var(--ink); }
+  .lede { font-size: 18px; color: var(--ink-2); margin-bottom: 28px; }
+  ul, ol { margin: 0 0 14px 1.4em; }
+  li { margin-bottom: 6px; }
+  code { font: 13.5px/1.5 ui-monospace, SFMono-Regular, Menlo, monospace; background: var(--code-bg); padding: 1px 5px; border-radius: 4px; }
+  pre { background: var(--code-bg); padding: 14px 16px; border-radius: 8px; overflow-x: auto; margin: 0 0 16px; }
+  pre code { background: none; padding: 0; }
+  figure { margin: 24px 0 28px; }
+  figcaption { font-size: 13px; color: var(--muted); margin-top: 8px; }
+  .chart { background: var(--surface); border: 1px solid var(--border); border-radius: 10px; padding: 18px 18px 10px; overflow-x: auto; }
+  .chart svg { width: 100%; height: auto; display: block; font: 12px system-ui, sans-serif; }
+  .chart .grid line { stroke: var(--grid); stroke-width: 1; }
+  .chart .baseline { stroke: var(--baseline); stroke-width: 1; }
+  .chart .bar { fill: var(--series-1); }
+  .chart .bar-hit { fill: transparent; cursor: default; }
+  .chart .bar-hit:hover + .bar { opacity: .82; }
+  .chart .val { fill: var(--ink); font-weight: 600; }
+  .chart .cat { fill: var(--ink-2); }
+  .chart .axis { fill: var(--muted); }
+  .tip { position: fixed; pointer-events: none; background: var(--ink); color: var(--page); font-size: 12px; line-height: 1.5; padding: 6px 9px; border-radius: 6px; opacity: 0; transition: opacity .08s; white-space: nowrap; z-index: 10; }
+  .tip.on { opacity: 1; }
+  table { width: 100%; border-collapse: collapse; margin: 0 0 20px; font-size: 14.5px; }
+  th, td { text-align: left; padding: 8px 10px; border-bottom: 1px solid var(--border); vertical-align: top; }
+  th { color: var(--muted); font-weight: 500; font-size: 13px; }
+  td.num, th.num { text-align: right; font-variant-numeric: tabular-nums; white-space: nowrap; }
+  .table-wrap { overflow-x: auto; }
+  .stats { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; margin: 20px 0 8px; }
+  .stat { background: var(--surface); border: 1px solid var(--border); border-radius: 10px; padding: 14px 16px; }
+  .stat .n { font-size: 26px; font-weight: 700; letter-spacing: -.02em; font-variant-numeric: tabular-nums; }
+  .stat .l { font-size: 12.5px; color: var(--muted); margin-top: 2px; }
+  @media (max-width: 560px) { .stats { grid-template-columns: 1fr; } h1 { font-size: 25px; } }
+  .note { border-left: 3px solid var(--series-1); padding: 8px 14px; background: var(--surface); border-radius: 0 8px 8px 0; margin: 0 0 16px; color: var(--ink-2); }
+  .note p:last-child { margin-bottom: 0; }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<div class="kicker">EinkBro · 開發紀錄 · 2026-08-22 / 23</div>
+<h1>EinkBro APK 瘦身記：一天內從 6.19 MB 減到 4.38 MB</h1>
+<p class="lede">起因只是想確認一句話對不對：「classes.dex 在 APK 裡是未壓縮的」。答案是不對——但順著 APK Analyzer 往下挖，發現有三個函式庫各自只為了一件小事被留在 app 裡，拆掉之後 arm64 release APK 少了 29%。這篇記錄怎麼量、砍了什麼、以及過程中踩到的兩個坑。</p>
+
+<div class="stats">
+  <div class="stat"><div class="n">6.19 → 4.38 MB</div><div class="l">arm64 release APK（-29%）</div></div>
+  <div class="stat"><div class="n">6.22 → 5.26 MB</div><div class="l">classes.dex（解壓後）</div></div>
+  <div class="stat"><div class="n">2.07 → 1.05 MB</div><div class="l">resources.arsc（APK 內不壓縮）</div></div>
+</div>
+
+<figure>
+  <div class="chart">
+    <svg viewBox="0 0 720 300" role="img" aria-label="EinkBro arm64 release APK 大小在四個階段的變化：6.19、4.89、4.79、4.38 MB">
+      <g class="grid">
+        <line x1="60" x2="700" y1="50" y2="50"/>
+        <line x1="60" x2="700" y1="110" y2="110"/>
+        <line x1="60" x2="700" y1="170" y2="170"/>
+      </g>
+      <text class="axis" x="52" y="54" text-anchor="end">7</text>
+      <text class="axis" x="52" y="114" text-anchor="end">5</text>
+      <text class="axis" x="52" y="174" text-anchor="end">3</text>
+      <text class="axis" x="52" y="234" text-anchor="end">1 MB</text>
+      <!-- y: 1 MB = 230, 7 MB = 50 -> 30 px per MB -->
+      <g data-label="起點 v16.3.2" data-value="6.19 MB">
+        <rect class="bar-hit" x="92" y="40" width="120" height="190"/>
+        <rect class="bar" x="112" y="74.3" width="80" height="155.7" rx="4"/>
+        <text class="val" x="152" y="66" text-anchor="middle">6.19</text>
+        <text class="cat" x="152" y="254" text-anchor="middle">起點</text>
+        <text class="axis" x="152" y="272" text-anchor="middle">v16.3.2</text>
+      </g>
+      <g data-label="拆掉 Material Components + 只打包 31 個語系" data-value="4.89 MB（-1.30）">
+        <rect class="bar-hit" x="248" y="40" width="120" height="190"/>
+        <rect class="bar" x="268" y="113.3" width="80" height="116.7" rx="4"/>
+        <text class="val" x="308" y="105" text-anchor="middle">4.89</text>
+        <text class="cat" x="308" y="254" text-anchor="middle">Material + 語系</text>
+        <text class="axis" x="308" y="272" text-anchor="middle">-1.30 MB</text>
+      </g>
+      <g data-label="WorkManager 改成 coroutine" data-value="4.79 MB（-0.10）">
+        <rect class="bar-hit" x="404" y="40" width="120" height="190"/>
+        <rect class="bar" x="424" y="116.3" width="80" height="113.7" rx="4"/>
+        <text class="val" x="464" y="108" text-anchor="middle">4.79</text>
+        <text class="cat" x="464" y="254" text-anchor="middle">WorkManager</text>
+        <text class="axis" x="464" y="272" text-anchor="middle">-0.10 MB</text>
+      </g>
+      <g data-label="AppCompat 換成 framework Material" data-value="4.38 MB（-0.41）">
+        <rect class="bar-hit" x="560" y="40" width="120" height="190"/>
+        <rect class="bar" x="580" y="128.6" width="80" height="101.4" rx="4"/>
+        <text class="val" x="620" y="120" text-anchor="middle">4.38</text>
+        <text class="cat" x="620" y="254" text-anchor="middle">AppCompat</text>
+        <text class="axis" x="620" y="272" text-anchor="middle">-0.41 MB</text>
+      </g>
+      <line class="baseline" x1="60" x2="700" y1="230" y2="230"/>
+    </svg>
+  </div>
+  <figcaption>arm64 release APK 大小（MB），每根長條是一個 commit 之後的量測結果。</figcaption>
+</figure>
+<div class="tip" id="tip"></div>
+
+<h2>先把量尺弄對</h2>
+<p>APK Analyzer 對 <code>classes.dex</code> 會同時顯示「raw」和「download」兩個數字，很容易混在一起講。實際用 <code>unzip -lv</code> 看 release APK：</p>
+<pre><code> Length   Method    Size  Cmpr  Name
+ 6217104  Defl:N  2970374  52%  classes.dex
+ 2066756  Stored  2066756   0%  resources.arsc
+  266664  Stored   266664   0%  lib/arm64-v8a/libadblock-client.so</code></pre>
+<p>所以 <code>classes.dex</code> 在 APK 裡是 <strong>有壓縮的</strong>（52%），6.2 MB 是裝到手機上解開後的大小，下載時只佔 3 MB。反而是 <code>resources.arsc</code> 真的一個位元組都沒壓——targetSdk 30 之後系統要直接 mmap 它，這是規定——所以那 2.07 MB 全都是實打實的下載量。後面砍資源表的效果這麼明顯，原因就在這裡。</p>
+<p>另一個好用的工具是 <code>apkanalyzer dex packages --defined-only --proguard-mapping mapping.txt</code>：把 R8 混淆後的 dex 還原成套件名稱，再按頂層套件加總 bytes，就能列出「誰佔了多少」。一開始的排行榜是這樣：</p>
+<div class="table-wrap"><table>
+<thead><tr><th>套件</th><th class="num">dex bytes</th><th>備註</th></tr></thead>
+<tbody>
+<tr><td>info.plateaukao.einkbro</td><td class="num">1,001 KB</td><td>app 自己的程式碼</td></tr>
+<tr><td>androidx.compose.*</td><td class="num">~1,500 KB</td><td>UI 框架，留著</td></tr>
+<tr><td>com.tom_roush.pdfbox + fontbox</td><td class="num">349 KB</td><td>另存 PDF 功能，留著</td></tr>
+<tr><td>com.google.android.material</td><td class="num">178 KB</td><td><strong>沒有任何 XML layout 在用</strong></td></tr>
+<tr><td>androidx.work</td><td class="num">133 KB</td><td>只有廣告過濾清單下載在用</td></tr>
+<tr><td>androidx.appcompat</td><td class="num">197 KB</td><td>只剩 AlertDialog 和 theme parent</td></tr>
+<tr><td>androidx.recyclerview</td><td class="num">96 KB</td><td><strong>程式碼裡一個 RecyclerView 都沒有</strong></td></tr>
+<tr><td>okhttp3 + okio</td><td class="num">195 KB</td><td>Edge TTS 的 WebSocket 需要，留著</td></tr>
+</tbody>
+</table></div>
+<p>「library-level cut」指的就是這種：整個函式庫或它的一大塊，因為還有某個地方碰到它所以 R8 沒辦法自己丟掉。找到那個「某個地方」，通常比想像中小。</p>
+
+<h2>第一刀：Material Components，而且它其實被引了兩次</h2>
+<p>app 自己宣告了 <code>material:1.12</code>，用到的地方總共三個：一個沒有人呼叫的 <code>setBottomSheetBehavior()</code>、兩個 dialog style 的 parent、還有一個沒被引用的 <code>CustomSnackbar</code>。把 style 的 parent 改成 AppCompat 的版本，其它刪掉，就可以拿掉依賴。</p>
+<p>但拿掉之後 dex 裡還是有 Material。追 <code>gradle dependencies</code> 才發現 <code>ad-filter</code> 模組依賴一個叫 <code>SmoothProgressAnimator</code> 的函式庫，而它拖進了 Material 1.2.1、RecyclerView 和 androidx.transition。ad-filter 用它做什麼？只有一行：</p>
+<pre><code>import io.github.edsuns.smoothprogress.BuildConfig
+…
+raw.replace(DEBUG_FLAG, if (BuildConfig.DEBUG) "" else "//")</code></pre>
+<p>它拿的是<strong>別人 AAR 裡</strong>的 <code>BuildConfig.DEBUG</code>，那永遠是 <code>false</code>。所以注入 JS 裡那些 <code>{{DEBUG}} console.log(...)</code> 從來沒有在任何版本亮過。改用模組自己的 <code>BuildConfig</code>，debug build 終於會印了，依賴也一起消失。</p>
+
+<h3>順手處理語系</h3>
+<p>resources.arsc 裡有 88 個語系設定，但 app 本身只翻了 31 種語言。多出來的 57 個全是 AppCompat / Material 帶進來的字串——日期選擇器、時間選擇器、chip、badge 的翻譯——app 根本不會顯示。而且每個語系設定在 string type 裡都有一張約 3 KB 的 entry offset 表，不管它定義了幾條字串。</p>
+<pre><code>androidResources {
+    localeFilters += listOf("af", "ar", "ca", …, "zh-rCN", "zh-rTW")
+}</code></pre>
+<p>這等於是側載 APK 版本的 Play 語言分割。這一刀下去 APK 從 6.19 MB 變 4.89 MB，其中 resources.arsc 從 2.07 MB 掉到 1.16 MB。</p>
+
+<h2>第二刀：WorkManager 換成 coroutine</h2>
+<p>WorkManager 在 app 裡只做一件事：<code>DownloadWorker → InstallationWorker</code> 這條鏈，下載廣告過濾清單再餵給 native 的 ad-block client。值得保留的特性有三個：離線時等網路（<code>NetworkType.CONNECTED</code>）、同一個 id 進行中時忽略第二次呼叫（<code>ExistingWorkPolicy.KEEP</code>）、以及 process 死掉之後工作還在。</p>
+<p>新的 <code>FilterUpdater</code> 是一個 <code>SupervisorJob + Dispatchers.IO</code> 的 scope，每個 filter id 一個 <code>Job</code>：</p>
+<ul>
+  <li>等網路：用 <code>ConnectivityManager.registerNetworkCallback</code> 包成 suspend function。<code>registerDefaultNetworkCallback</code> 比較簡單但要 API 24，ad-filter 的 minSdk 是 23。</li>
+  <li>KEEP：<code>download()</code> 加 <code>@Synchronized</code>，job 還活著就直接 return。</li>
+  <li>Process 死掉：<code>Filter</code> 的 <code>downloadState</code> 本來就會存進 SharedPreferences。啟動時看到還停在 ENQUEUED / DOWNLOADING / INSTALLING 的，代表上次是被殺掉而不是真的失敗，就重新排進去。真正 FAILED 的不碰——壞掉的 URL 只會試一次，不會每次開 app 都重試。</li>
+</ul>
+<p>一個意外的副作用：WorkManager 自己的 manifest 裡宣告了 <code>ACCESS_NETWORK_STATE</code>，而 app 狀態列的 Wi-Fi 圖示一直是靠它合併進來的。現在得自己宣告，同時 <code>WAKE_LOCK</code>、<code>RECEIVE_BOOT_COMPLETED</code>、<code>FOREGROUND_SERVICE</code> 三個沒在用的權限也從合併後的 manifest 消失了。</p>
+<p>重寫時也修了兩個舊 bug：安裝成功後新資料現在會立刻載進 detector（原本那行 <code>enableFilter()</code> 被註解掉了，得重開 app 才生效）；下載中途的狀態更新不再把 <code>isEnabled</code> 和 <code>checksum</code> 清掉。</p>
+
+<h2>第三刀：AppCompat 換成 framework 的 Material theme</h2>
+<p>這個 app 沒有任何 XML layout，全部是 Compose，所以 AppCompat 能做的事本來就不多。清點完全部用法：九個 <code>AlertDialog</code>、<code>AppCompatDialogFragment</code>、一個 <code>AppCompatActivity</code>、兩個 <code>AppCompatImageButton</code>、一個 <code>ContextThemeWrapper</code>、<code>setDefaultNightMode(FOLLOW_SYSTEM)</code>，加上 theme 的 parent。minSdk 24 之後這些在 framework 都有對應：<code>android.app.AlertDialog</code>、<code>DialogFragment</code>、<code>FragmentActivity</code>、<code>ImageButton</code>、<code>Theme.Material.Light.NoActionBar</code>（<code>values-night</code> 放 <code>Theme.Material.NoActionBar</code>）。日夜模式本來就是靠 <code>values-night</code> 加系統 <code>uiMode</code> 在切，<code>FOLLOW_SYSTEM</code> 做的就是這件事。</p>
+<p>Theme 屬性要搬到 <code>android:</code> namespace，87 個用 <code>?attr/colorControlNormal</code> 上色的向量圖也要改成 <code>?android:attr/colorControlNormal</code>。改完 build 過、測試過，但接下來踩了兩個坑。</p>
+
+<h3>坑一：只把引用拿掉不夠，AppCompat 得整個離開 classpath</h3>
+<p>程式碼已經沒有任何地方碰 AppCompat，dex 裡卻還留著 131 個 class：Toolbar、ActionMenuView、MenuBuilder……它們出現在 R8 的 <code>seeds.txt</code> 裡。原因是 AGP 會替所有合併進來的 layout XML 產生 keep rule，包含 AppCompat 自己的 <code>abc_*.xml</code>；resource shrinker 之後雖然會把那些 layout 刪掉，但 R8 已經先把 class 留下來了。</p>
+<p>所以要從 <code>constraintlayout</code> 和 <code>koin-android</code> 把 <code>androidx.appcompat</code> exclude 掉，從 <code>adblock-client</code>（宣告了但沒用）移除，再拿掉沒人用的 <code>koin-android-compat</code>。這一步才是大頭：又少了 120 KB 的 dex，而且 AppCompat 的 drawable、layout、theme 全都不再打包，APK 的檔案數從 653 掉到 368。</p>
+
+<h3>坑二：對話框的框線不見了</h3>
+<p>在模擬器上跑第一輪看起來都正常，直到打開主選單：原本黑色的圓角框線消失了，其它 Compose dialog 也一樣。視窗背景是 <code>background_with_border_margin.xml</code>，框線顏色讀的就是 <code>colorControlNormal</code>。</p>
+<p>追到 <code>DialogFragment.setStyle(STYLE_NO_FRAME, 0)</code>：theme 傳 0 並不是「沒有 theme」，androidx 會偷偷代入 <code>android.R.style.Theme_Panel</code>。<code>Theme.Panel</code> 繼承自最古老的 base <code>Theme</code>，而那個 <code>Theme</code> 把 <code>colorControlNormal</code> 定義成 <code>@color/legacy_control_normal</code>，dialog 的 <code>ContextThemeWrapper</code> 會把整條鏈疊在 activity theme 上面——於是框線被畫成幾乎是白色。以前 AppCompat 的屬性在 app 自己的 namespace，這條 overlay 碰不到它，所以一直是「剛好能動」。</p>
+<pre><code>&lt;style name="EinkPanelDialogTheme" parent="@android:style/Theme.Panel"&gt;
+    &lt;item name="android:colorControlNormal"&gt;@android:color/black&lt;/item&gt;
+    &lt;item name="android:colorPrimary"&gt;@android:color/white&lt;/item&gt;
+    &lt;item name="android:colorAccent"&gt;@android:color/black&lt;/item&gt;
+    …
+&lt;/style&gt;</code></pre>
+<p>保留 <code>Theme.Panel</code> 的視窗行為，把 app 的顏色釘回去，<code>values-night</code> 再放一份深色版，明確傳給 <code>setStyle()</code>。另外兩個小細節：<code>Theme.Material.Light.Dialog.Alert</code> 是完整 theme 不是 overlay，不重新指定 <code>android:colorAccent</code> 的話 radio button 會變成 Material 的青綠色；<code>Widget.Material.Button.ButtonBar.AlertDialog</code> 是 private style，dialog 按鈕改用公開的 <code>Widget.Material.Button.Borderless</code>。</p>
+
+<h2>留下來的，以及為什麼</h2>
+<div class="table-wrap"><table>
+<thead><tr><th>函式庫</th><th class="num">dex</th><th>為什麼留著</th></tr></thead>
+<tbody>
+<tr><td>pdfbox + fontbox</td><td class="num">360 KB</td><td>另存 PDF 的目錄與合併。fontbox 從 <code>PDDocument → PDResources → fonts</code> 可達，R8 砍不掉；BouncyCastle 和 4.6 MB 的字型資源早就 exclude 了。</td></tr>
+<tr><td>OkHttp + okio</td><td class="num">195 KB</td><td>27 個 <code>newCall</code>、OpenAI 的 SSE、Google Drive 的 multipart，以及 Edge TTS 的 <strong>WebSocket</strong>。Android 沒有 <code>java.net.http</code>，自己寫 wss client 不合理。</td></tr>
+<tr><td>Compose</td><td class="num">~1.3 MB</td><td>整個 UI。</td></tr>
+</tbody>
+</table></div>
+<p>到這裡已經沒有「只為一件小事存在」的函式庫了，剩下的都是功能本身的成本。</p>
+
+<h2>幾個可以帶走的結論</h2>
+<ol>
+  <li><strong>先看 <code>unzip -lv</code>，再相信任何「X 佔了 Y MB」的說法。</strong> dex 有壓縮、arsc 沒有，下載量和安裝量是兩件事。</li>
+  <li><strong>一個 import 就能把整個函式庫留在 app 裡。</strong> 那個 <code>BuildConfig.DEBUG</code> 的 import 帶進了三個函式庫，而且它的值永遠是 false。</li>
+  <li><strong>R8 拿掉的是「沒被引用的 class」，不是「沒被用到的函式庫」。</strong> 函式庫自己的 layout 會透過 aapt keep rule 把 View class 釘住；要省這塊只能讓它離開 classpath。</li>
+  <li><strong>語系過濾是側載 APK 版的 Play 語言分割。</strong> 函式庫帶進來的翻譯通常比 app 自己的還多。</li>
+  <li><strong>每一刀都要在模擬器上看過對話框。</strong> 單元測試抓不到框線變白這種事。</li>
+</ol>
+
+<div class="note">
+<p>三個 commit：<code>6466dafcf</code>（Material + 語系）、<code>758815b18</code>（WorkManager）、<code>6600c4aba</code>（AppCompat）。每一個都有對應的 ADR 記錄細節。</p>
+</div>
+
+</div>
+<script>
+(function(){
+  var tip = document.getElementById('tip');
+  var groups = document.querySelectorAll('.chart g[data-label]');
+  for (var i = 0; i < groups.length; i++) {
+    (function(g){
+      g.addEventListener('mousemove', function(e){
+        tip.textContent = g.getAttribute('data-label') + ' · ' + g.getAttribute('data-value');
+        tip.style.left = (e.clientX + 12) + 'px';
+        tip.style.top = (e.clientY - 34) + 'px';
+        tip.className = 'tip on';
+      });
+      g.addEventListener('mouseleave', function(){ tip.className = 'tip'; });
+    })(groups[i]);
+  }
+})();
+</script>
+</body>
+</html>
